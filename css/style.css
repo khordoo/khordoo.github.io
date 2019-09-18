@@ -123,7 +123,7 @@ a {
       -webkit-transform: translateY(-90%);
       -ms-transform: translateY(-90%);
       transform: translateY(-90%);
-      background: #57d131 !important; }
+      background: #4446b8 !important; }
     .site-navbar.scrolled .navbar-brand {
       color: #000; }
     .site-navbar.scrolled .dropdown > a:before {
@@ -173,7 +173,7 @@ a {
   .site-hero .site-subheading {
     max-width: 640px;
     margin: 0 auto;
-    color: rgba(255, 255, 255, 0.5); }
+    color: rgba(255, 255, 255, 1); }
 
 .site-section {
   padding: 5em 0; }
@@ -275,7 +275,7 @@ a {
   .btn.btn-primary {
     color: #fff; }
     .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-      background: #4ebe2a; }
+      background: #436ee2; }
 
 .progress {
   overflow: visible;
