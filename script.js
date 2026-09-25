@@ -202,6 +202,8 @@ function initTerminalCLI() {
             <div><span class="text-emerald-400 font-bold">skills</span> — Tech stack matrix</div>
             <div><span class="text-emerald-400 font-bold">certs</span> — Official certs</div>
             <div><span class="text-amber-400 font-bold">awards</span> — Honors & awards</div>
+            <div><span class="text-emerald-400 font-bold">photo</span> — View original photo</div>
+            <div><span class="text-emerald-400 font-bold">ascii</span> — View ASCII portrait</div>
             <div><span class="text-emerald-400 font-bold">contact</span> — Get in touch</div>
             <div><span class="text-emerald-400 font-bold">theme</span> — Toggle light/dark</div>
             <div><span class="text-emerald-400 font-bold">clear</span> — Clear terminal</div>
@@ -324,6 +326,18 @@ function initTerminalCLI() {
         const isDark = document.documentElement.classList.contains('dark');
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
         outRow.innerHTML = `Theme switched to: <span class="text-emerald-400 font-bold">${isDark ? 'DARK CRT' : 'LIGHT PRECISION'}</span>`;
+        break;
+
+      case 'photo':
+        const photoBtn = document.querySelector('[data-phosphor="photo"]');
+        if (photoBtn) photoBtn.click();
+        outRow.innerHTML = `<span class="text-emerald-400">Switched portrait viewport to High-Resolution Photograph.</span>`;
+        break;
+
+      case 'ascii':
+        const greenBtn = document.querySelector('[data-phosphor="green"]');
+        if (greenBtn) greenBtn.click();
+        outRow.innerHTML = `<span class="text-emerald-400">Switched portrait viewport to CRT ASCII art mode.</span>`;
         break;
 
       case 'clear':
