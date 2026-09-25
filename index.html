@@ -1,1142 +1,1564 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Mahmood Khordoo &mdash; Personal Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahmood Khordoo — Senior Machine Learning Engineer &amp; Tech Lead</title>
+  <meta name="description" content="Portfolio of Mahmood Khordoo. Senior Machine Learning Engineer & Tech Lead specializing in Generative AI, Multi-Agent Systems, MLOps, and Bio-Inspired Computing." />
+  <meta name="keywords" content="Mahmood Khordoo, Machine Learning Engineer, MLOps, GenAI, LangGraph, Multi-Agent Systems, RAG, PyTorch, AWS, Bedrock, Montreal" />
+  <meta name="author" content="Mahmood Khordoo" />
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mahmood Khordoo — Senior Machine Learning Engineer & Tech Lead" />
+  <meta property="og:description" content="Generative AI · Multi-Agent Orchestration · Enterprise MLOps · Bio-Inspired Computing" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://khordoo.github.io/" />
+  <meta property="og:image" content="assets/mahmood.jpg" />
 
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'monospace'],
+            display: ['Space Grotesk', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          },
+          colors: {
+            emerald: {
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              900: '#064e3b'
+            },
+            slate: {
+              850: '#131b2e',
+              900: '#0f172a',
+              950: '#070b14'
+            }
+          }
+        }
+      }
+    };
+  </script>
 
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <!-- Google Material Symbols -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <link rel="stylesheet" href="css/aos.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-[#f8fafc] text-[#0f172a] dark:bg-[#031417] dark:text-[#e6fffa] font-body selection:bg-emerald-500/20 selection:text-emerald-700 dark:selection:text-emerald-300">
 
-    <link rel="stylesheet" href="css/style.css">
-    
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  
-
-  <div id="overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
-
-
-  <div class="site-wrap">
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-   
-    
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-
-      <div class="container">
-        <div class="row align-items-center">
-          
-          <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0"><span class="text-primary">.</span> </a></h1>
-          </div>
-
-          <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#about-section" class="nav-link">Profile</a></li>
-                
-                <li><a href="#portfolio-me-section" class="nav-link">Portfolio</a></li>
-                <!-- <li><a href="#services-section" class="nav-link">Services</a></li> -->
-                <li><a href="#testimonials-section" class="nav-link">Awards</a></li>
-                <li><a href="#certifications-section" class="nav-link">Certifications</a></li>
-                <li><a href="#pricing-section" class="nav-link">Education</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-
-
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
-
-        </div>
-      </div>
+  <!-- ==========================================================================
+       Top Navigation & Telemetry Bar
+       ========================================================================== -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/95 dark:bg-[#041a1f]/95 backdrop-blur-md border-b border-slate-900/10 dark:border-cyan-900/40 transition-colors">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between font-mono text-xs">
       
-    </header>
-
-  
-     
-    <div class="site-blocks-cover overlay" style="background-image: url(images/ai_2.jpg);" data-aos="fade" id="home-section">
-   
-      <div class="container">
-        
-        <div class="row align-items-center justify-content-center">
-
-          
-          <div class="col-md-8 mt-lg-5 text-center">
-            <h1 class="text-uppercase" data-aos="fade-up">MAHMOOD KHORDOO</h1>
-            <p class="mb-5 desc"  data-aos="fade-up" data-aos-delay="100">Machine Learning Engineer| Data Engineer| Data Scientist</p>
-            <div data-aos="fade-up" data-aos-delay="100">
-              <div class="col-md-12 p-3">
-                <a href="https://linkedin.com/in/khordoo" class="pl-3 pr-3"> <span class="icon-linkedin"></span></a>
-                <a href="https://github.com/khordoo" class="pl-3 pr-3"><span class="icon-github"></span></a>
-                <a href="https://twitter.com/mkhordoo" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-
-              
-             </div>
-              <a href="#contact-section" class="btn smoothscroll btn-primary mr-2 mb-2">Get In Touch</a>
-              
-            </div>
-          </div>
-            
-        </div>
-      </div>
-
-      <a href="#about-section" class="mouse smoothscroll">
-        <span class="mouse-icon">
-          <span class="mouse-wheel"></span>
+      <!-- Brand & Session State -->
+      <div class="flex items-center gap-3">
+        <a href="#hero" class="flex items-center gap-2 font-bold tracking-tight text-slate-900 dark:text-emerald-400 hover:opacity-80 transition-opacity">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>mahmood@lab:~$</span>
+        </a>
+        <span class="hidden md:inline-block text-slate-400 dark:text-slate-500">|</span>
+        <span class="hidden md:inline-flex items-center gap-1.5 text-[11px] text-slate-500 dark:text-emerald-300/70">
+          <span class="text-emerald-600 dark:text-emerald-400">SYS: ONLINE</span>
+          <span>// MTL [45.5°N 73.5°W]</span>
         </span>
-      </a>
-    </div>  
+      </div>
 
-    
-    <div class="site-section cta-big-image" id="about-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center" data-aos="fade">
-            <h2 class="section-title mb-3">Profile</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-            <figure class="circle-bg">
-            <img src="images/mahmood.jpg" alt="Image" class="img-fluid">
-            </figure>
-          </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            <div class="mb-4">
-              <h3 class="h3 mb-4 text-black">About me</h3>
-              <p>I am an experienced Data Scientist who is passionate about data. I use my advance analytics skillsets to build machine and deep learning models to solve business problems and turn them into actionable intelligence.</p>
-              <p>My passion is exploring, understanding and visualizing the data while applying artificial intelligence and machine learning on the data to facilitate decision making under uncertainties.
-              </p>
-              
-            </div>
-            
-            
-              
-            <div class="mb-4">
-              <ul class="list-unstyled ul-check success">
-                <li>Data Enthusiast</li>
-                <li>Real passion for AI</li>
-                <!-- <li>Possimus aut consequuntur incidunt</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Consectetur adipisicing elit</li> -->
-              </ul>
-              
-            </div>
+      <!-- Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-5 text-[12px] font-medium text-slate-600 dark:text-slate-300">
+        <a href="#projects" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">01.work</a>
+        <a href="#experience" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">02.experience</a>
+        <a href="#stack" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">03.stack</a>
+        <a href="#certs" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">04.certs</a>
+        <a href="#terminal" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">05.terminal</a>
+      </nav>
 
-            
-            
-          </div>
-        </div>
-      </div>  
+      <!-- Controls & Quick Actions -->
+      <div class="flex items-center gap-2.5">
+        <button id="theme-toggle-btn" title="Toggle Theme (Light / Dark CRT)" class="retro-btn text-[11px] py-1 px-2.5">
+          <span class="material-symbols-outlined text-[14px]">contrast</span>
+          <span class="hidden sm:inline">THEME</span>
+        </button>
+        <a href="mailto:mahmood.khordoo@gmail.com" class="retro-btn retro-btn-primary text-[11px] py-1 px-2.5">
+          <span>[say hi]</span>
+        </a>
+      </div>
+
     </div>
+  </header>
 
-    <section class="site-section" id="portfolio-me-section" >
-      <div class="container">
+  <!-- Main Container -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 pt-20 pb-24 flex flex-col gap-12">
 
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-7 text-center">
-            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Portfolio</h2>
-            <p class="lead" data-aos="fade-up" data-aos-delay="100">Here is a quick showcase of some the applications that I have developed.</p>
-          </div>
-        </div>
-        
-        <div class="row" >
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="3000">
-
-            <div class="owl-carousel slide-one-item-alt ">
-              <img src="images/disaster-watch.gif" alt="Image" class="img-fluid">
-              <img src="images/traffic-watch.png" alt="Image" class="img-fluid">
-              <!-- <img src="images/chatbot.png" alt="Image" class="img-fluid"> -->
-              <img src="images/rocktyping.png" alt="Image" class="img-fluid">
-              <img src="images/poreflow.png" alt="Image" class="img-fluid">
-              <img src="images/res-assist.jpg" alt="Image" class="img-fluid">
-              <img src="images/eor-select.jpg" alt="Image" class="img-fluid">
-
-            </div>
-            <div class="custom-direction">
-              <a href="#" class="custom-prev"><span><span class="icon-keyboard_backspace"></span></span></a><a href="#" class="custom-next"><span><span class="icon-keyboard_backspace"></span></span></a>
-            </div>
-
-          </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            
-            <div class="owl-carousel slide-one-item-alt-text">
-              <div>
-                <h2 class="section-title mb-3">Disaster Watch</h2>
-                <p class="lead">Real-time text stream processing, Natural Language Processing</p>
-                <p>Disaster Watch is a crisis mapping platform that collects data from twitter, extracts disaster-related information from tweets, and visualizes the results on a map. It enables users to quickly locate information in different geographic areas at a glance, and to determine physical constraints caused by the disaster, such as non-accessible bridges or roads, and take an informed action. Such information helps both public officials and disaster responders (e.g., humanitarian organizations, disaster relief agencies, or local actors) answer the following questions</p>
-                <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
-              </div>
-              <div>
-                <h2 class="section-title mb-3">Traffic Watch</h2>
-                <p class="lead">Object detection, Time series predictions, Geospatial Mapping</p>
-                <p>Traffic Watch is built using free and open source software, open standards, and open data - YOLO, TensorFlow 2.0, NodeJS and Express, VueJS, Vuetify, and Mapbox GL JS are used to create the system components. It collects camera images from the City of Calgary’s open data website every 5 minutes, analyzes them using a machine learning models built by YOLO and TensorFlow 2.0, and displays results on a map</p>
-                <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
-              </div>
-              <!-- <div>
-                <h2 class="section-title mb-3">Conversational Chatbot</h2>
-                <p class="lead">Encoder-Decoder with Attension</p>
-                <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit  Quo suscipit omnis iste velit maxime.</p>
-
-                <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
-              </div> -->
-              <div>
-                <h2 class="section-title mb-3">Advanced Fuzzy Clustering for Reservoir Rocktypes</h2>
-                <p class="lead">Fuzzy possibilistic C-means clustering(FPCM) algorithms new developed similarity fucntion</p>
-                <p>This is the industry's first fully automated reservoir rock typing software to help geoscientists rapidly classify dynamic reservoir rock types to obtain accurate rock flow data. Its visualization, processing, and classification of CCAL and SCAL rock data enables improved description of reservoir flow behavior and faster understanding of static and dynamic rock properties that impact production.</p>
-
-                <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
-              </div>
-              <div>
-                <h2 class="section-title mb-3">Predictive Pore Scale fluid flow Simulator</h2>
-                <p class="lead">High Speec C++ Pore Scale flow Simulation</p>
-                <p>I have developed an advanced predictive nano-scale numerical simulator which can be considered to be among the most advanced of their type, particularly for modeling wetting films and layers and unsteady-state flow dynamics. Depressurization pore-scale physics has been extensively studied and detailed pore and throat network models have been developed for analyzing fluid flow behavior in light and heavy oil systems.</p>
-                <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
-              </div>
-              <div>
-                <h2 class="section-title mb-3">ResAssit</h2>
-                <p class="lead">Smart Automated DataBase to Simulation Coupling</p>
-                <p>The ResAssit uses a simulation-based real-time planning system which are tested for performance and proved excellent preformance under common conditions.It is Compatibel with a variaety of database technologies including MySQL,SQL Sever,Postgres and MSAccess</p>
-                <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
-              </div>
-              <div>
-                <h2 class="section-title mb-3">EOR Select</h2>
-                <p class="lead">Inteligent EOR Screening Tool</p>
-                <p>Evaluating the feasibility of different EOR methods simply deciding which EOR method is the most suitable for your reservoir can be a daunting task. Only with the right expertise, technical knowledge and resources these challenges can be tackled.
-
-                  EORselect provides fast,reliable and intelligent enhanced EOR screening solution tool that helps you find the most reliable solutions for your screening taks</p>
-                <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
-              </div>
-            </div>  
-            
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="site-section" id="certifications-section" >
-      <div class="container">
-
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-7 text-center">
-            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Certifications</h2>
-          </div>
-        </div>
-        
-        <div class="row" >
-          <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="2000">
-
-            <div class="owl-carousel slide-one-item-alt ">
-              <img src="images/aws-certified-ml-specialty.png" alt="Image" class="img-fluid">
-              <img src="images/aws-certified-developer.png" alt="Image" class="img-fluid">
-              <!-- <img src="images/chatbot.png" alt="Image" class="img-fluid"> -->
-              <img src="images/aws-certified-solutions-architect.png" alt="Image" class="img-fluid">
-              <img src="images/ibm-data-science-professional-certificate.png" alt="Image" class="img-fluid">
-              <img src="images/tripplebyte.png" alt="Image" class="img-fluid">
-              <img src="images/databases-and-sql-for-data-science.png" alt="Image" class="img-fluid">
-
-            </div>
-            <div class="custom-direction">
-              <a href="#" class="custom-prev"><span><span class="icon-keyboard_backspace"></span></span></a><a href="#" class="custom-next"><span><span class="icon-keyboard_backspace"></span></span></a>
-            </div>
-
-          </div>
-          <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            
-            <div class="owl-carousel slide-one-item-alt-text">
-              <div>
-                <h2 class="section-title mb-3">AWS Certified Machine Learning Speciality</h2>
-              </div>
-              <div>
-                <h2 class="section-title mb-3">AWS Certified Developer</h2>
-              </div>
-              <!-- <div>
-                <h2 class="section-title mb-3">Conversational Chatbot</h2>
-                <p class="lead">Encoder-Decoder with Attension</p>
-                <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit  Quo suscipit omnis iste velit maxime.</p>
-
-                <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
-              </div> -->
-              <div>
-                <h2 class="section-title mb-3">AWS Certified Solution Architect</h2>
-                
-              </div>
-              <div>
-                <h2 class="section-title mb-3">Professional Data Science Certificate</h2>
-                
-              </div>
-              <div>
-                <h2 class="section-title mb-3">Data Science Certificate</h2>
-                <p class="lead">Tripple Byte</p>
-                <p>Scored in the top 10% of test takers on the Triplebyte assessment for Data Science Engineering</p>
-                <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p>
-              </div>
-              <div>
-                <h2 class="section-title mb-3">Databases and SQL for Data Science</h2>
-                
-              </div>
-            </div>  
-            
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section class="site-section border-bottom" id="team-section">
-      <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-8 text-center">
-            <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Our Team</h2>
-            <p class="lead" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</p>
-          </div>
-        </div>
-        <div class="row">
-          
-
-          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="">
-            <div class="team-member">
-              <figure>
-                <ul class="social">
-                  <li><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span class="icon-instagram"></span></a></li>
-                </ul>
-                <img src="images/person_5.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="p-3">
-                <h3>Kaiara Spencer</h3>
-                <span class="position">Product Manager</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member">
-              <figure>
-                <ul class="social">
-                  <li><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span class="icon-instagram"></span></a></li>
-                </ul>
-                <img src="images/person_6.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="p-3">
-                <h3>Dave Simpson</h3>
-                <span class="position">Product Manager</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member">
-              <figure>
-                <ul class="social">
-                  <li><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span class="icon-instagram"></span></a></li>
-                </ul>
-                <img src="images/person_7.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="p-3">
-                <h3>Ben Thompson</h3>
-                <span class="position">Product Manager</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member">
-              <figure>
-                <ul class="social">
-                  <li><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span class="icon-instagram"></span></a></li>
-                </ul>
-                <img src="images/person_8.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="p-3">
-                <h3>Kyla Stewart</h3>
-                <span class="position">Product Manager</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="">
-            <div class="team-member">
-              <figure>
-                <ul class="social">
-                  <li><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span class="icon-instagram"></span></a></li>
-                </ul>
-                <img src="images/person_1.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="p-3">
-                <h3>Kaiara Spencer</h3>
-                <span class="position">Product Manager</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member">
-              <figure>
-                <ul class="social">
-                  <li><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span class="icon-instagram"></span></a></li>
-                </ul>
-                <img src="images/person_2.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="p-3">
-                <h3>Dave Simpson</h3>
-                <span class="position">Product Manager</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="team-member">
-              <figure>
-                <ul class="social">
-                  <li><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span class="icon-instagram"></span></a></li>
-                </ul>
-                <img src="images/person_3.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="p-3">
-                <h3>Ben Thompson</h3>
-                <span class="position">Product Manager</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member">
-              <figure>
-                <ul class="social">
-                  <li><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span class="icon-instagram"></span></a></li>
-                </ul>
-                <img src="images/person_4.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="p-3">
-                <h3>Chris Stewart</h3>
-                <span class="position">Product Manager</span>
-              </div>
-            </div>
-          </div>
-
-
-          
-        </div>
-      </div>
-    </section>
-
-    <section class="site-section" id="portfolio-section">
+    <!-- ==========================================================================
+         Hero Section (Dual Column: Spec Identity + Large ASCII Portrait)
+         ========================================================================== -->
+    <section id="hero" class="pt-4 sm:pt-8">
       
+      <!-- Top Telemetry Ribbon -->
+      <div class="w-full flex items-center justify-between pb-3 mb-6 border-b border-slate-900/15 dark:border-cyan-900/40 font-mono text-[11px] text-slate-500 dark:text-emerald-400/80">
+        <div class="flex items-center gap-2">
+          <span class="inline-block w-2 h-2 bg-emerald-500 rounded-full animate-ping"></span>
+          <span class="font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400">SPEC // MK-SYS.2026</span>
+          <span class="hidden sm:inline text-slate-400 dark:text-slate-600">•</span>
+          <span class="hidden sm:inline">ARCHIVE VOL. 26</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span id="nav-section-telemetry" class="text-slate-600 dark:text-slate-400 font-semibold">// SEC: HERO</span>
+        </div>
+      </div>
 
-      <div class="container">
+      <!-- 2-Column Hero Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left Column: Identity, Thesis, Buttons & Terminal Card (7 cols) -->
+        <div class="lg:col-span-7 flex flex-col gap-5">
+          
+          <div>
+            <div class="font-mono text-xs uppercase tracking-widest text-emerald-600 dark:text-emerald-400 font-semibold mb-1">
+              // lead machine learning engineer &amp; systems architect
+            </div>
+            <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white uppercase leading-[1.05]">
+              Mahmood<br />Khordoo
+            </h1>
+            <p class="font-mono text-sm sm:text-base text-slate-700 dark:text-emerald-200 mt-2 font-medium">
+              Generative AI · Multi-Agent Systems · Enterprise MLOps · Bio-Inspired Computing
+            </p>
+          </div>
 
-        <div class="row mb-3">
-          <div class="col-12 text-center" data-aos="fade">
-            <h2 class="section-title mb-3">Portfolio</h2>
+          <!-- Architectural Thesis Quote Card -->
+          <div class="p-4 bg-white dark:bg-[#071d22] border-l-4 border-emerald-600 dark:border-emerald-400 border border-slate-900/15 dark:border-cyan-900/40 shadow-sm">
+            <p class="font-display text-sm sm:text-base text-slate-800 dark:text-slate-200 leading-snug">
+              “Architecting resilient autonomous reasoning systems, high-throughput model pipelines, and multi-agent infrastructure.”
+            </p>
+            <div class="mt-2 font-mono text-[11px] text-slate-500 dark:text-slate-400">
+              Technical Lead @ Rio Tinto · 10+ Years Advancing Predictive &amp; Autonomous AI
+            </div>
+          </div>
+
+          <!-- Action Buttons Bar -->
+          <div class="flex flex-wrap gap-2 pt-1">
+            <a href="https://github.com/khordoo" target="_blank" rel="noopener" class="retro-btn">
+              <span class="material-symbols-outlined text-[15px]">terminal</span>
+              <span>GitHub ↗</span>
+            </a>
+            <a href="https://linkedin.com/in/khordoo" target="_blank" rel="noopener" class="retro-btn">
+              <span class="material-symbols-outlined text-[15px]">link</span>
+              <span>LinkedIn ↗</span>
+            </a>
+            <a href="https://huggingface.co/mkhordoo" target="_blank" rel="noopener" class="retro-btn">
+              <span class="material-symbols-outlined text-[15px]">token</span>
+              <span>Hugging Face ↗</span>
+            </a>
+            <a href="#experience" class="retro-btn retro-btn-primary">
+              <span class="material-symbols-outlined text-[15px]">description</span>
+              <span>Experience Log</span>
+            </a>
+            <a href="mailto:mahmood.khordoo@gmail.com" class="retro-btn">
+              <span class="material-symbols-outlined text-[15px]">mail</span>
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+          <!-- Interactive Mini Terminal Box (imnosovsky & awesomejev style) -->
+          <div class="terminal-card mt-2">
+            <div class="terminal-bar">
+              <span class="font-bold flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                mahmood@lab: ~
+              </span>
+              <span class="text-slate-400 text-[11px]">[-][□][x]</span>
+            </div>
+            <div class="terminal-body space-y-2 text-xs sm:text-sm">
+              <div>
+                <span class="terminal-prompt">mahmood@lab:~$</span>
+                <span class="terminal-cmd font-semibold">whoami</span>
+              </div>
+              <div class="text-slate-200">
+                Mahmood Khordoo — Senior Machine Learning Engineer &amp; Technical Lead
+              </div>
+              <div class="text-emerald-400 space-y-1 font-mono text-[12px]">
+                <div>&gt; <span class="text-white font-semibold">GenAI &amp; Agents:</span> LangGraph · Multi-Agent Orchestration · Advanced RAG</div>
+                <div>&gt; <span class="text-white font-semibold">Production MLOps:</span> AWS SageMaker · Ray · vLLM · Distributed Inference</div>
+                <div>&gt; <span class="text-white font-semibold">Impact:</span> Industrialized Enterprise MLOps · 4mo to &lt;5wk Multi-Agent RAG Acceleration</div>
+              </div>
+              <div class="pt-1 flex items-center justify-between text-[11px] text-slate-400 border-t border-teal-900/60 mt-2">
+                <span>mahmood@lab:~$ <span class="inline-block w-2 h-3.5 bg-emerald-400 cursor-blink align-middle"></span></span>
+                <span class="text-emerald-400/90 font-mono">// press <kbd class="px-1.5 py-0.5 bg-teal-950 border border-teal-800 rounded text-emerald-300 font-bold">/</kbd> to take over terminal</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Large Monospace ASCII Face Portrait (5 cols) -->
+        <div class="lg:col-span-5 flex flex-col">
+          
+          <div id="ascii-container" class="ascii-frame phosphor-green">
+            
+            <!-- Window Header -->
+            <div class="spec-header !bg-[#02181d] !border-b !border-teal-900/80">
+              <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="font-bold text-emerald-400">PORTRAIT.ASC // HEADSHOT</span>
+              </div>
+              <div class="text-[10px] text-slate-400 tracking-wider">45.5°N 73.5°W</div>
+            </div>
+
+            <!-- Phosphor Mode Controls -->
+            <div class="bg-[#032026] px-3 py-1.5 border-b border-teal-900/60 flex items-center justify-between text-[10px] font-mono text-slate-300">
+              <span class="text-slate-400 uppercase tracking-wider">PHOSPHOR:</span>
+              <div class="flex items-center gap-1.5">
+                <button data-phosphor="green" class="retro-btn active text-[10px] py-0.5 px-1.5 border-teal-800 text-emerald-400">GREEN</button>
+                <button data-phosphor="cyan" class="retro-btn text-[10px] py-0.5 px-1.5 border-teal-800 text-sky-400">CYAN</button>
+                <button data-phosphor="amber" class="retro-btn text-[10px] py-0.5 px-1.5 border-teal-800 text-amber-400">AMBER</button>
+                <button data-phosphor="photo" class="retro-btn text-[10px] py-0.5 px-1.5 border-teal-800 text-white">PHOTO</button>
+              </div>
+            </div>
+
+            <!-- ASCII Canvas & CRT Overlays -->
+            <div class="ascii-screen">
+              <div class="crt-scanlines"></div>
+              <div class="crt-radial-glow"></div>
+
+              <!-- Real Photo Overlay (Toggled via PHOTO button) -->
+              <div id="photo-overlay" class="hidden absolute inset-0 z-20 bg-slate-950 flex flex-col items-center justify-center p-4">
+                <img src="assets/mahmood_cropped.jpg" alt="Mahmood Khordoo portrait" class="w-full max-w-[340px] aspect-[700/950] object-cover border border-emerald-500/40 shadow-xl" />
+                <div class="mt-2 text-center font-mono text-[11px] text-emerald-400 font-semibold">
+                  Mahmood Khordoo — High-Resolution Source
+                </div>
+              </div>
+
+              <!-- High-Fidelity 70-Line ASCII Portrait -->
+              <pre aria-label="ASCII portrait of Mahmood Khordoo" class="ascii-pre">                                &#x27;&#x27;;;;!!;:.
+                             .&#x27;:!~~~+xmmxx~+&quot;
+                            &#x27;;~xxmmxmmxXXOmmmx!&#x27;
+                          .;!+xxmXOOOOXXXXXXmmXm!.
+                         .&quot;xmmmXmXOOXXXXOXXXXXXXmx:
+                        .!mXXOXXXXXXXXXXXXXXXXXXXXm!.
+                        &quot;mXXXXXXXXmmmxx+~~++xmmmXXmx;
+                       ;mOXmx++++~!!!&quot;;;:::;&quot;!~xmXXXx;
+                      &#x27;+Om~~!&quot;&quot;&quot;&quot;;;;::&#x27;&#x27;....&#x27;&#x27;:&quot;~mXXX~&#x27;
+                      !Xx!&quot;;;:::::&#x27;&#x27;&#x27;&#x27;.......&#x27;&#x27;:;!mXXX&quot;
+                     :mm!&quot;;:::&#x27;&#x27;&#x27;&#x27;&#x27;........&#x27;&#x27;&#x27;&#x27;&#x27;;&quot;~XOXx:
+                     !X~;::&#x27;&#x27;&#x27;&#x27;............&#x27;&#x27;&#x27;&#x27;&#x27;:;!mXXx;
+                    &#x27;xx&quot;;:&#x27;&#x27;................&#x27;&#x27;&#x27;&#x27;&#x27;;!x#Om+&#x27;
+                    &quot;m!:&#x27;&#x27;&#x27;....     .   ......&#x27;&#x27;&#x27;;!mOOOX&quot;
+                    ~x:&#x27;&#x27;&#x27;&#x27;&#x27;:&#x27;.......&#x27;........&#x27;&#x27;&#x27;;~mXXOO~
+                   &#x27;x!&#x27;;!~xmx+&quot;:&#x27;&#x27;&#x27;:!++++&quot;:&#x27;&#x27;..&#x27;&#x27;;+XXOXOm&#x27;
+                   ;#OmOXX#M#Om!;&quot;&quot;~mO#M@@#XX+~!&quot;;~OOOXXm:
+                   &quot;MO!&quot;&quot;xXOXXOOXO###OOXmmmxXXX@MO+X#OOO#&quot;
+                   !Mm:;+XXOXmm##O#O+xXOOXmx!&quot;;+M#X##OOOO!
+                   !mx&#x27;;&quot;;&quot;!~!x@~:#M++x+XOXm+!;~@~&quot;X@#XXX~.
+                   !.:.&#x27;&#x27;::;::#O. &quot;@O;&quot;!!!!!&quot;&quot;:~M:&#x27;&quot;#MXXX~.
+                   ;&quot;.      &#x27;XM;  .O@:.&#x27;:;;:&#x27;. Ox&#x27;&#x27;;mXXOO+.
+                   &#x27;X+~&quot;&quot;&quot;!~mm;.   ;#X!:&#x27;...&#x27;:xX:&#x27;&#x27;&#x27;X#+xx~&#x27;
+                   ;&quot;&#x27;&quot;!!!!;::.     &#x27;~xx+++~xx~&#x27;.&#x27;&#x27;.X#;:!+
+                   :~ .  ..&#x27;&#x27;:!;.&#x27;~x!;&#x27;&#x27;&#x27;....  ...&#x27;&#x27;xm;!~;
+                    &quot;.&#x27;&#x27;.&#x27;&#x27;&#x27;&#x27;;+x!~x++;&#x27;:;:&#x27;......&#x27;&#x27;&#x27;mm&quot;+;.
+                    &#x27;..&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;;!!:&#x27;::::;;:&#x27;&#x27;&#x27;...&#x27;&#x27;&#x27;x+&quot;!&quot;.
+                    &#x27;&#x27;..&#x27;&#x27;&#x27;&#x27;&#x27;..::&#x27;&#x27;.&#x27;:::::;:&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;;!&quot;;;.
+                    &#x27;&#x27;&#x27;&#x27;&#x27;::::&quot;~~!~+~!&quot;!!;::&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;:&#x27;;+&quot;;.
+                    .&#x27;&#x27;&#x27;&#x27;;~x+~!!!!&quot;!~!~x~;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;:&#x27;~XOM+;
+                     :&#x27;&#x27;:::&#x27;&#x27;&#x27;&#x27;::::&#x27;&#x27;&#x27;..&#x27;::::::&#x27;::&#x27;+M;+x.
+                     &#x27;;::&#x27;...&#x27;;&quot;&quot;&quot;&quot;:&#x27;...&#x27;:;:::::::&#x27;+#!&quot;&quot;
+                      ;;::&#x27;&#x27;..&#x27;;&quot;&quot;;&#x27;...&#x27;&#x27;::;;:::&#x27;&#x27;:xO##+.
+                       &quot;;:::&#x27;.........&#x27;&#x27;::;;;;::;&quot;&quot;;.:O!
+                        ;:::&#x27;&#x27;......&#x27;&#x27;:::;;;:;&quot;++:    ~:
+                       &#x27;&#x27;;;:;:&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;:::;;;;&quot;!++;      .
+                       .:xx:;::;::::;;;:;~+x~:
+                       .;xX:;;;;;;;;&quot;&quot;~xXx&quot;.
+                        &#x27;xO:;&quot;&quot;!~~+xXO#x;
+                         ;O;:;&quot;~+xmXX+&#x27;
+                       &#x27;:!+::;&quot;!!+x~&#x27;
+                       &#x27;&#x27;&#x27;:&#x27;&#x27;;&quot;!~!&#x27;
+                       .&#x27;..&#x27;&#x27;:&quot;!;            :&#x27;
+               :       .  .::;&quot;:&#x27;&#x27;         &#x27;;:
+                   ;.  ..&#x27;&#x27;;;:::&#x27;&#x27;:.      ;;.
+               .   &#x27;  ....&#x27;&quot;&#x27;&#x27;&#x27;.&#x27;&#x27;;!;.  .::                    .
+               &#x27;   .:.  &#x27;;&quot;~&#x27;..&#x27;&#x27;.:!x+&#x27;&#x27;:&#x27;
+               &#x27;   .;;. .;x! ..&#x27;.:&quot;~;&#x27;&#x27;&#x27;.
+               :.  .;!.. &#x27;:...&#x27;:;&quot;;. ...
+               ..   ; .&#x27;. ..&#x27;;;:&#x27;.                          .     :
+               .&#x27;     ..&#x27;.&#x27;&quot;&quot;;&#x27;                            .
+                .       &#x27;:&quot;~&#x27;                              .
+         .              .;!.                               .
+         :.              &quot;;                                .
+        .;.              x&#x27;                                           :
+     .  &#x27;&quot;&#x27;             :!
+        .&quot;              !                                               .
+         .             &quot;&#x27;
+         .&#x27;::         &#x27;;
+    .   &#x27;:;~:         !.                                                  :
+    &#x27;:&quot;!&quot;!!~&#x27;        :!
+   :!~~~~!~!         &quot;                                                .
+ .:&quot;~~~!~~x;    &#x27;   ;;
+&#x27;;&quot;!!~+x+!:    &#x27;.   &quot;
+:;&quot;~xmx&quot;.      .   :;                                                  ...
+;&quot;+m+;.       .    &quot;.                                            ..........
+~~&quot;&#x27;          .   ;&quot;                                            .........&#x27;&#x27;...
+:. ...       .   .!&#x27;                                            ........&#x27;&#x27;&#x27;&#x27;..
+.....     . ..   :&quot;                                              ......&#x27;&#x27;&#x27;&#x27;&#x27;.&#x27;
+:&#x27;&#x27;......&#x27;&#x27;.&#x27;....!:.................................................&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;&#x27;:::</pre>
+            </div>
+
+            <!-- Bottom CRT Status Bar -->
+            <div class="bg-[#02181d] px-3 py-1.5 border-t border-teal-900/80 flex items-center justify-between font-mono text-[10px] text-slate-400">
+              <span>RES: 78x70 CHARS</span>
+              <span class="text-emerald-400 font-medium">TERMINAL PHOSPHOR // ACTIVE</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==========================================================================
+         Research Profile & Spec Sheet (AwesomeJEV Key-Value Primitives)
+         ========================================================================== -->
+    <section class="grid grid-cols-1 md:grid-cols-12 gap-5">
+      
+      <!-- Spec Sheet Table (AwesomeJEV style) -->
+      <div class="md:col-span-7 spec-box">
+        <div class="spec-header">
+          <span>MAHMOOD • SYSTEM SPEC SHEET</span>
+          <span class="text-emerald-400">v2.6 // PROD</span>
+        </div>
+        <table class="spec-table">
+          <tbody>
+            <tr>
+              <td class="key">role</td>
+              <td class="val font-semibold text-emerald-700 dark:text-emerald-400">Senior Machine Learning Engineer &amp; Technical Lead</td>
+            </tr>
+            <tr>
+              <td class="key">specialization</td>
+              <td class="val">Generative AI, Multi-Agent Reasoning Systems, Production MLOps, Biological Connectome Sim</td>
+            </tr>
+            <tr>
+              <td class="key">enterprise impact</td>
+              <td class="val">
+                <span class="badge-spec badge-emerald mr-1.5">&lt; 5 WEEKS</span> Multi-Agent RAG · 
+                <span class="badge-spec badge-emerald mr-1.5">MULT-MM$ IMPACT</span> Industrial MLOps · 
+                <span class="badge-spec badge-cyan">80% SPEEDUP</span> AsyncIO ETL
+              </td>
+            </tr>
+            <tr>
+              <td class="key">core framework</td>
+              <td class="val font-mono text-xs">LangGraph, PyTorch, Transformers, AWS SageMaker, Ray, Triton, vLLM, Docker</td>
+            </tr>
+            <tr>
+              <td class="key">awards &amp; honors</td>
+              <td class="val">
+                <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">AWS GenAI Hackathon Winner</span> · 
+                <span class="text-xs font-semibold text-amber-600 dark:text-amber-400">Google Grand Prize (TF 2.0)</span> · 
+                <span class="text-xs font-semibold text-sky-600 dark:text-sky-400">Arize Phoenix Agentic AI</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="key">certifications</td>
+              <td class="val">
+                <span class="text-xs font-semibold">AWS ML Specialty</span> · 
+                <span class="text-xs font-semibold">AWS Solutions Architect</span> · 
+                <span class="text-xs font-semibold">AWS Developer</span> · 
+                <span class="text-xs font-semibold">DeepLearning.AI</span> · 
+                <span class="text-xs font-semibold">Udacity</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="key">dispatch</td>
+              <td class="val">
+                <a href="mailto:mahmood.khordoo@gmail.com" class="text-emerald-600 dark:text-emerald-400 font-semibold hover:underline">mahmood.khordoo@gmail.com</a>
+                <span class="text-slate-400 mx-1">·</span>
+                <span class="text-slate-600 dark:text-slate-400">Montreal, QC [Remote-Friendly]</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Architectural Primitives / Code Snippet Box (AwesomeJEV style) -->
+      <div class="md:col-span-5 spec-box">
+        <div class="spec-header">
+          <span>PRIMITIVES // AGENTIC ARCHITECTURE</span>
+          <span class="text-sky-400">PYTHON 3.12</span>
+        </div>
+        <div class="p-3 bg-[#08171a] font-mono text-[11px] sm:text-[12px] leading-relaxed text-emerald-300 overflow-x-auto">
+          <div class="text-slate-400">// Dual-Process Reflex &amp; Strategic Planner</div>
+          <div><span class="text-sky-400">from</span> langgraph.graph <span class="text-sky-400">import</span> StateGraph, END</div>
+          <div><span class="text-sky-400">from</span> typesafe_jev <span class="text-sky-400">import</span> JevClient</div>
+          <br />
+          <div><span class="text-amber-400">class</span> <span class="text-white font-bold">AgentState</span>(TypedDict):</div>
+          <div class="pl-4">query: <span class="text-sky-400">str</span></div>
+          <div class="pl-4">system1_reflex: <span class="text-sky-400">ReflexAction</span></div>
+          <div class="pl-4">system2_advice: <span class="text-sky-400">Optional</span>[StrategicPlan]</div>
+          <br />
+          <div class="text-slate-400">// High-concurrency sub-50ms execution</div>
+          <div>graph = StateGraph(AgentState)</div>
+          <div>graph.add_node(<span class="text-amber-300">"reflex_fast"</span>, run_fast_policy)</div>
+          <div>graph.add_node(<span class="text-amber-300">"reasoner_deep"</span>, run_system2_llm)</div>
+          <div>graph.add_edge(<span class="text-amber-300">"reflex_fast"</span>, END)</div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==========================================================================
+         Section 01: Selected Work / Featured Projects (AwesomeJEV Style)
+         (Only Public Research & Open-Source Projects)
+         ========================================================================== -->
+    <section id="projects" class="flex flex-col gap-4">
+      
+      <!-- Section Title Bar -->
+      <div class="flex items-baseline justify-between border-b-2 border-slate-900 dark:border-cyan-900 pb-2">
+        <div class="flex items-center gap-2">
+          <span class="font-mono text-emerald-600 dark:text-emerald-400 font-bold text-sm">01 /</span>
+          <h2 class="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight text-slate-900 dark:text-white">
+            Selected Work
+          </h2>
+        </div>
+        <span class="font-mono text-xs text-slate-500 dark:text-slate-400 font-medium">[9 PRODUCTION &amp; RESEARCH ARCHIVES]</span>
+      </div>
+
+      <!-- Filter & Query Console (AwesomeJEV Layout) -->
+      <div class="spec-box p-3 sm:p-4 bg-white dark:bg-[#071c22]">
+        
+        <div class="flex items-center justify-between font-mono text-xs text-slate-500 dark:text-slate-400 mb-2">
+          <span class="font-bold text-slate-900 dark:text-emerald-400 uppercase tracking-wider">FILTER &amp; QUERY CONSOLE</span>
+          <span id="projects-count" class="font-bold text-emerald-600 dark:text-emerald-400">[9 SHOWN]</span>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="relative mb-3">
+          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400 font-mono text-sm">
+            &gt;
+          </div>
+          <input 
+            type="text" 
+            id="project-search" 
+            placeholder="search name, description, stack, keyword (e.g. PyTorch, RAG, AWS, JEV, LangGraph)..." 
+            class="w-full pl-8 pr-4 py-2 border-1.5 border-slate-900 dark:border-cyan-800 bg-slate-50 dark:bg-[#031518] text-slate-900 dark:text-white font-mono text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-emerald-500"
+          />
+        </div>
+
+        <!-- Filter Chips & View Mode Toggle -->
+        <div class="flex flex-wrap items-center justify-between gap-2 pt-1 border-t border-slate-200 dark:border-cyan-950">
+          
+          <!-- Category Filters -->
+          <div class="flex flex-wrap items-center gap-1.5">
+            <button data-filter="all" class="retro-btn active bg-slate-900 text-white text-[11px] py-1 px-2.5">All (9)</button>
+            <button data-filter="genai" class="retro-btn text-[11px] py-1 px-2.5">GenAI &amp; Agents</button>
+            <button data-filter="mlops" class="retro-btn text-[11px] py-1 px-2.5">Production MLOps</button>
+            <button data-filter="edge" class="retro-btn text-[11px] py-1 px-2.5">Edge AI &amp; Vision</button>
+            <button data-filter="research" class="retro-btn text-[11px] py-1 px-2.5">Research &amp; Bio</button>
+          </div>
+
+          <!-- View Mode: Grid vs Table -->
+          <div class="flex items-center gap-1 font-mono text-[11px]">
+            <span class="text-slate-400 mr-1 hidden sm:inline">VIEW:</span>
+            <button data-view="grid" class="retro-btn active bg-slate-900 text-white text-[11px] py-1 px-2">⊞ Cards</button>
+            <button data-view="table" class="retro-btn text-[11px] py-1 px-2">☰ Table</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Empty State -->
+      <div id="projects-empty" class="hidden p-8 text-center font-mono text-sm text-slate-500 spec-box">
+        &gt; No projects matched query. Try broadening your search or resetting filters.
+      </div>
+
+      <!-- View 1: Responsive Grid Cards -->
+      <div id="projects-grid" class="retro-grid">
+
+        <!-- Card 1: DustyLM -->
+        <article class="project-card spec-box flex flex-col justify-between" data-category="genai research">
+          <div class="spec-header">
+            <span class="truncate">01 • DUSTYLM</span>
+            <span class="badge-spec badge-emerald">8M PARAMS</span>
+          </div>
+          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
+            <img src="assets/dusty-ui.png" alt="DustyLM web interface" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            <div class="absolute top-2 left-2 badge-spec badge-emerald shadow-xs">SFT RELEASE</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between gap-3">
+            <div>
+              <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">DustyLM</h3>
+              <p class="font-mono text-xs text-emerald-600 dark:text-emerald-400 font-medium">8M-Parameter Language Model From Scratch</p>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                An 8M-parameter language model you can train from scratch in 15 minutes. Custom PyTorch architecture, SFT dataset curation (<code>dusty-chat</code>), published PyPI SDK (<code>dustylm-sdk</code>), and in-browser WebAssembly demo.
+              </p>
+            </div>
+            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500">PyTorch · Transformers · PyPI · Wasm · Hugging Face</div>
+              <div class="flex items-center gap-2">
+                <a href="https://github.com/khordoo/dusty-lm" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo]</a>
+                <a href="https://khordoo.github.io/dusty-lm/" target="_blank" rel="noopener" class="text-emerald-600 dark:text-emerald-400 hover:underline font-bold">[live site]</a>
+                <a href="https://huggingface.co/mkhordoo/dusty-8m-sft" target="_blank" rel="noopener" class="text-amber-600 dark:text-amber-400 hover:underline font-bold">[weights]</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: JEV Reflex Autonomy Lab -->
+        <article class="project-card spec-box flex flex-col justify-between" data-category="research genai">
+          <div class="spec-header">
+            <span class="truncate">02 • JEV REFLEX AUTONOMY</span>
+            <span class="badge-spec badge-cyan">SYSTEM 1/2</span>
+          </div>
+          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
+            <img src="assets/jev-dashboard.png" alt="JEV Reflex Autonomy Lab dashboard" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            <div class="absolute top-2 left-2 badge-spec badge-cyan shadow-xs">SIM LAB</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between gap-3">
+            <div>
+              <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">JEV Reflex Autonomy Lab</h3>
+              <p class="font-mono text-xs text-sky-600 dark:text-sky-400 font-medium">Dual-Process Multi-Drone Autonomy &amp; Strategy</p>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                Multi-drone simulation exploring TypeSafe Jev System 1 fast reflex policies augmented with System 2 strategic reasoning models via OpenRouter. 1-15 drones navigating dense orbital obstacle fields in real time.
+              </p>
+            </div>
+            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500">TypeScript · TypeSafe Jev · OpenRouter · Canvas 2D</div>
+              <div class="flex items-center gap-2">
+                <a href="https://github.com/khordoo/jev-reflex-autonomy-lab" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo]</a>
+                <a href="https://khordoo.github.io/jev-reflex-autonomy-lab/watch-demo.html" target="_blank" rel="noopener" class="text-emerald-600 dark:text-emerald-400 hover:underline font-bold">[play demo]</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: FLINCH: Fly Brain Duel -->
+        <article class="project-card spec-box flex flex-col justify-between" data-category="research">
+          <div class="spec-header">
+            <span class="truncate">03 • FLINCH: FLY BRAIN DUEL</span>
+            <span class="badge-spec badge-amber">CONNECTOME</span>
+          </div>
+          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
+            <img src="assets/flinch-preview.jpeg" alt="FLINCH game preview" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            <div class="absolute top-2 left-2 badge-spec badge-amber shadow-xs">PLAYABLE</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between gap-3">
+            <div>
+              <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">FLINCH: Fly Brain Duel</h3>
+              <p class="font-mono text-xs text-amber-600 dark:text-amber-400 font-medium">Human vs. Drosophila Neural Simulation</p>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                Playable escape duel against a connectome-based Drosophila melanogaster fly brain model. Features interactive LC4/LPLC2 circuit silencing and replay analysis comparing biological reflex timing to human reaction.
+              </p>
+            </div>
+            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500">TypeScript · Vite · Drosophila Connectome · WebGL</div>
+              <div class="flex items-center gap-2">
+                <a href="https://flinch-fly-brain-duel.vercel.app" target="_blank" rel="noopener" class="text-emerald-600 dark:text-emerald-400 hover:underline font-bold">[play online]</a>
+                <a href="https://github.com/khordoo/flinch-fly-brain-duel" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo]</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Advanced Agentic RAG -->
+        <article class="project-card spec-box flex flex-col justify-between" data-category="genai mlops">
+          <div class="spec-header">
+            <span class="truncate">04 • ADVANCED AGENTIC RAG</span>
+            <span class="badge-spec badge-emerald">EVAL SUITE</span>
+          </div>
+          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
+            <img src="assets/poreflow.png" alt="Advanced Agentic RAG Pipeline" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            <div class="absolute top-2 left-2 badge-spec badge-emerald shadow-xs">PROD RAG</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between gap-3">
+            <div>
+              <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">Advanced Agentic RAG</h3>
+              <p class="font-mono text-xs text-emerald-600 dark:text-emerald-400 font-medium">Hierarchical Chunking, Reranking &amp; Telemetry</p>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                Production-grade Retrieval-Augmented Generation pipeline featuring Reciprocal Rank Fusion (RRF), semantic chunking, cross-encoder reranking, and automated evaluation using Phoenix Experiments and RAGAS telemetry.
+              </p>
+            </div>
+            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500">Python · LangChain · Phoenix · RAGAS · Vector DB</div>
+              <div class="flex items-center gap-2">
+                <a href="https://github.com/khordoo/advanced-agentic-rag" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo &amp; docs]</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5: Industrial MLOps Platform -->
+        <article class="project-card spec-box flex flex-col justify-between" data-category="mlops">
+          <div class="spec-header">
+            <span class="truncate">05 • INDUSTRIAL MLOPS PLATFORM</span>
+            <span class="badge-spec badge-emerald">MULT-MM$ IMPACT</span>
+          </div>
+          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
+            <img src="assets/ai_2.jpg" alt="Industrial MLOps Platform" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            <div class="absolute top-2 left-2 badge-spec badge-emerald shadow-xs">ENTERPRISE PROD</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between gap-3">
+            <div>
+              <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">Industrial MLOps Platform</h3>
+              <p class="font-mono text-xs text-emerald-600 dark:text-emerald-400 font-medium">Automated Training, Deployment &amp; Monitoring</p>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                Designed and productionized an industrial machine learning solution with automated training, deployment, and monitoring, delivering MULT-MM$ impact.
+              </p>
+            </div>
+            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500">AWS SageMaker · Ray · vLLM · MLflow · Docker · CI/CD</div>
+              <div class="flex items-center gap-2">
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold">[enterprise-platform]</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6: CLAUTH -->
+        <article class="project-card spec-box flex flex-col justify-between" data-category="mlops genai">
+          <div class="spec-header">
+            <span class="truncate">06 • CLAUTH</span>
+            <span class="badge-spec badge-cyan">PYPI PUBLISHED</span>
+          </div>
+          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
+            <img src="assets/res-assist.jpg" alt="CLAUTH Bedrock CLI" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            <div class="absolute top-2 left-2 badge-spec badge-cyan shadow-xs">CLI TOOL</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between gap-3">
+            <div>
+              <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">CLAUTH: AWS Bedrock CLI</h3>
+              <p class="font-mono text-xs text-sky-600 dark:text-sky-400 font-medium">Automated IAM/SSO Auth for Claude Code</p>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                Published developer tool on PyPI automating the multi-step authentication wizard for Claude Code on AWS Bedrock. Features interactive IAM profile management and dynamic model discovery across AWS regions.
+              </p>
+            </div>
+            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500">Python · PyPI · AWS Bedrock · SSO / IAM · Docker</div>
+              <div class="flex items-center gap-2">
+                <a href="https://pypi.org/project/clauth/" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[PyPI package]</a>
+                <a href="https://github.com/khordoo/clauth" target="_blank" rel="noopener" class="text-emerald-600 dark:text-emerald-400 hover:underline font-bold">[repo]</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 7: Disaster Watch -->
+        <article class="project-card spec-box flex flex-col justify-between" data-category="research">
+          <div class="spec-header">
+            <span class="truncate">07 • DISASTER WATCH</span>
+            <span class="badge-spec badge-amber">GOOGLE GRAND PRIZE</span>
+          </div>
+          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
+            <img src="assets/disaster-watch.gif" alt="Disaster Watch platform demo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            <div class="absolute top-2 left-2 badge-spec badge-amber shadow-xs">AWARD WINNER</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between gap-3">
+            <div>
+              <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">Disaster Watch</h3>
+              <p class="font-mono text-xs text-amber-600 dark:text-amber-400 font-medium">Real-Time NLP Crisis Mapping Platform</p>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                Won Google Grand Prize in the TensorFlow 2.0 Competition for developing an NLP platform that identifies natural disaster tweets in real time using deep NER classification and geoparsing for rapid emergency relief.
+              </p>
+            </div>
+            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500">TensorFlow 2.0 · Keras · NLP / NER · Geoparsing</div>
+              <div class="flex items-center gap-2">
+                <a href="https://github.com/khordoo/disaster-watch" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo]</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 8: Edge Object Detection -->
+        <article class="project-card spec-box flex flex-col justify-between" data-category="edge">
+          <div class="spec-header">
+            <span class="truncate">08 • EDGE OBJECT DETECTION</span>
+            <span class="badge-spec badge-cyan">JETSON TX2</span>
+          </div>
+          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
+            <img src="assets/traffic-watch.png" alt="Jetson Edge Object Detection" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            <div class="absolute top-2 left-2 badge-spec badge-cyan shadow-xs">30+ FPS</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between gap-3">
+            <div>
+              <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">Edge Object Detection</h3>
+              <p class="font-mono text-xs text-sky-600 dark:text-sky-400 font-medium">Low-Latency Embedded Vision &amp; Telemetry</p>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                Real-time object detection and classification running directly on Nvidia Jetson TX2 hardware using Nvidia DeepStream SDK, streaming live inference telemetry securely to AWS IoT Core over MQTT.
+              </p>
+            </div>
+            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500">Nvidia DeepStream · Jetson TX2 · Docker · AWS IoT · MQTT</div>
+              <div class="flex items-center gap-2">
+                <a href="https://github.com/khordoo/edge-object-detection" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo]</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 9: Advanced Reinforcement Learning -->
+        <article class="project-card spec-box flex flex-col justify-between" data-category="research">
+          <div class="spec-header">
+            <span class="truncate">09 • DEEP REINFORCEMENT LEARNING</span>
+            <span class="badge-spec badge-emerald">TOP-10 GYM</span>
+          </div>
+          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
+            <img src="assets/rocktyping.png" alt="Reinforcement learning simulation" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+            <div class="absolute top-2 left-2 badge-spec badge-emerald shadow-xs">TOP-10</div>
+          </div>
+          <div class="p-4 flex-1 flex flex-col justify-between gap-3">
+            <div>
+              <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">Deep RL Implementations</h3>
+              <p class="font-mono text-xs text-emerald-600 dark:text-emerald-400 font-medium">Custom PyTorch DQN, Double &amp; Dueling Agents</p>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                Custom implementations of DQN, Double DQN, and Dueling DQN built from scratch in PyTorch. Achieved top-10 rankings on OpenAI Gym competitive leaderboards with novel prioritized replay buffer sampling.
+              </p>
+            </div>
+            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500">PyTorch · OpenAI Gym · Dueling DQN · Deep RL</div>
+              <div class="flex items-center gap-2">
+                <a href="https://github.com/khordoo/deep-rl-implementations" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo]</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- View 2: High-Density Directory Table (AwesomeJEV Style) -->
+      <div id="projects-table" class="hidden spec-box overflow-x-auto bg-white dark:bg-[#071c22]">
+        <table class="dir-table">
+          <thead>
+            <tr>
+              <th style="width: 22%;">PROJECT</th>
+              <th style="width: 40%;">DESCRIPTION</th>
+              <th style="width: 20%;">STACK</th>
+              <th style="width: 10%;">IMPACT / STARS</th>
+              <th style="width: 8%;">LINKS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="project-row" data-category="genai research">
+              <td>
+                <div class="font-bold text-slate-900 dark:text-white">DustyLM</div>
+                <div class="text-slate-500 text-[10px]">khordoo · 8M-Param LLM</div>
+              </td>
+              <td>8M-parameter language model trained from scratch in 15 minutes. Custom SFT dataset &amp; PyPI SDK.</td>
+              <td>PyTorch, Wasm, PyPI</td>
+              <td><span class="badge-spec badge-emerald">★ 8M Params</span></td>
+              <td><a href="https://github.com/khordoo/dusty-lm" target="_blank" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a> <a href="https://khordoo.github.io/dusty-lm/" target="_blank" class="text-emerald-600 dark:text-emerald-400 font-bold">[site]</a></td>
+            </tr>
+            <tr class="project-row" data-category="research genai">
+              <td>
+                <div class="font-bold text-slate-900 dark:text-white">JEV Reflex Autonomy</div>
+                <div class="text-slate-500 text-[10px]">khordoo · Dual-Process Lab</div>
+              </td>
+              <td>Multi-drone autonomy simulation demonstrating TypeSafe Jev System 1 reflexes with System 2 guidance.</td>
+              <td>TypeScript, Jev, OpenRouter</td>
+              <td><span class="badge-spec badge-cyan">★ 17 Stars</span></td>
+              <td><a href="https://github.com/khordoo/jev-reflex-autonomy-lab" target="_blank" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a> <a href="https://khordoo.github.io/jev-reflex-autonomy-lab/watch-demo.html" target="_blank" class="text-emerald-600 dark:text-emerald-400 font-bold">[demo]</a></td>
+            </tr>
+            <tr class="project-row" data-category="research">
+              <td>
+                <div class="font-bold text-slate-900 dark:text-white">FLINCH: Fly Brain Duel</div>
+                <div class="text-slate-500 text-[10px]">khordoo · Connectome Model</div>
+              </td>
+              <td>Playable escape duel against a simulated Drosophila connectome neural model with LC4/LPLC2 replay.</td>
+              <td>TypeScript, Vite, WebGL</td>
+              <td><span class="badge-spec badge-amber">★ Playable</span></td>
+              <td><a href="https://flinch-fly-brain-duel.vercel.app" target="_blank" class="text-emerald-600 dark:text-emerald-400 font-bold">[play]</a> <a href="https://github.com/khordoo/flinch-fly-brain-duel" target="_blank" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a></td>
+            </tr>
+            <tr class="project-row" data-category="genai mlops">
+              <td>
+                <div class="font-bold text-slate-900 dark:text-white">Advanced Agentic RAG</div>
+                <div class="text-slate-500 text-[10px]">khordoo · Pipeline &amp; Eval</div>
+              </td>
+              <td>Production RAG pipeline with hierarchical chunking, RRF reranking, Phoenix and RAGAS evaluations.</td>
+              <td>Python, LangChain, Phoenix</td>
+              <td><span class="badge-spec badge-emerald">Sub-50ms</span></td>
+              <td><a href="https://github.com/khordoo/advanced-agentic-rag" target="_blank" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a></td>
+            </tr>
+            <tr class="project-row" data-category="mlops">
+              <td>
+                <div class="font-bold text-slate-900 dark:text-white">Industrial MLOps Platform</div>
+                <div class="text-slate-500 text-[10px]">Enterprise · Production Platform</div>
+              </td>
+              <td>Designed and productionized an industrial machine learning solution with automated training, deployment, and monitoring, delivering MULT-MM$ impact.</td>
+              <td>SageMaker, Ray, Docker, CI/CD</td>
+              <td><span class="badge-spec badge-emerald">MULT-MM$ Impact</span></td>
+              <td><span class="text-emerald-600 dark:text-emerald-400 font-bold">[enterprise]</span></td>
+            </tr>
+            <tr class="project-row" data-category="mlops genai">
+              <td>
+                <div class="font-bold text-slate-900 dark:text-white">CLAUTH</div>
+                <div class="text-slate-500 text-[10px]">PyPI · Developer CLI</div>
+              </td>
+              <td>Modern CLI for Claude Code on AWS Bedrock authentication, SSO setup wizard &amp; model auto-discovery.</td>
+              <td>Python, Bedrock, Docker</td>
+              <td><span class="badge-spec badge-cyan">Published</span></td>
+              <td><a href="https://pypi.org/project/clauth/" target="_blank" class="text-sky-600 dark:text-sky-400 font-bold">[pypi]</a> <a href="https://github.com/khordoo/clauth" target="_blank" class="text-emerald-600 dark:text-emerald-400 font-bold">[repo]</a></td>
+            </tr>
+            <tr class="project-row" data-category="research">
+              <td>
+                <div class="font-bold text-slate-900 dark:text-white">Disaster Watch</div>
+                <div class="text-slate-500 text-[10px]">Google Grand Prize Winner</div>
+              </td>
+              <td>Real-time NLP crisis mapping platform classifying disaster social media data via deep NER.</td>
+              <td>TensorFlow 2.0, Keras, NLP</td>
+              <td><span class="badge-spec badge-amber">Grand Prize</span></td>
+              <td><a href="https://github.com/khordoo/disaster-watch" target="_blank" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a></td>
+            </tr>
+            <tr class="project-row" data-category="edge">
+              <td>
+                <div class="font-bold text-slate-900 dark:text-white">Jetson Edge Vision</div>
+                <div class="text-slate-500 text-[10px]">Jetson TX2 · IoT Streaming</div>
+              </td>
+              <td>Real-time object detection on edge hardware using Nvidia DeepStream SDK streaming to AWS IoT Core.</td>
+              <td>DeepStream, MQTT, AWS IoT</td>
+              <td><span class="badge-spec badge-cyan">30+ FPS</span></td>
+              <td><a href="https://github.com/khordoo/edge-object-detection" target="_blank" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a></td>
+            </tr>
+            <tr class="project-row" data-category="research">
+              <td>
+                <div class="font-bold text-slate-900 dark:text-white">Deep RL Implementations</div>
+                <div class="text-slate-500 text-[10px]">PyTorch · OpenAI Gym</div>
+              </td>
+              <td>Custom DQN, Double DQN, and Dueling DQN agents achieving top-10 competitive rankings on Gym leaderboards.</td>
+              <td>PyTorch, OpenAI Gym</td>
+              <td><span class="badge-spec badge-emerald">Top-10 Rank</span></td>
+              <td><a href="https://github.com/khordoo/deep-rl-implementations" target="_blank" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+    <!-- ==========================================================================
+         Section 02: Chronology / Experience Log (STAR Method - No Private Figures)
+         ========================================================================== -->
+    <section id="experience" class="flex flex-col gap-4">
+      
+      <div class="flex items-baseline justify-between border-b-2 border-slate-900 dark:border-cyan-900 pb-2">
+        <div class="flex items-center gap-2">
+          <span class="font-mono text-emerald-600 dark:text-emerald-400 font-bold text-sm">02 /</span>
+          <h2 class="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight text-slate-900 dark:text-white">
+            Chronology
+          </h2>
+        </div>
+        <span class="font-mono text-xs text-slate-500 dark:text-slate-400 font-medium">EXP_LOG // PROVEN ARCHITECTURE</span>
+      </div>
+
+      <div class="flex flex-col gap-4">
+
+        <!-- Role 1: Rio Tinto -->
+        <article class="spec-box p-5 bg-white dark:bg-[#071c22]">
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-2 mb-3 border-b border-slate-200 dark:border-cyan-950 font-mono text-xs">
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-emerald-600 dark:text-emerald-400">commit a1f2e8d</span>
+              <span class="text-slate-400 dark:text-slate-600">•</span>
+              <span class="text-slate-900 dark:text-white font-bold">RIO TINTO</span>
+              <span class="text-slate-500 dark:text-slate-400">| Montreal, QC</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="badge-spec badge-emerald">CURRENT</span>
+              <span class="text-slate-600 dark:text-slate-400">SEPTEMBER 2021 — PRESENT</span>
+            </div>
+          </div>
+
+          <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white">Senior Data Engineer - Generative AI &amp; Machine Learning</h3>
+          <div class="font-mono text-xs text-sky-600 dark:text-sky-400 font-medium mt-0.5">Enterprise Generative AI, Multi-Agent Systems &amp; Production MLOps</div>
+
+          <ul class="mt-4 space-y-3 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                <strong>Reusable Multi-Agent RAG Framework:</strong> Led the architecture, development, and production deployment of advanced RAG and agentic AI systems on AWS and Azure using LangGraph, multi-agent workflows for intent routing, tool use, grounding verification, and self-correction, reducing delivery timelines to under 5 weeks and generating significant six-figure savings through reuse.
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                <strong>Enterprise Retrieval Optimization:</strong> Designed and optimized enterprise retrieval pipelines using hierarchical parent-child retrieval, hybrid dense and sparse search (BM25, pgvector, Qdrant), RRF fusion, contextual chunking, and cross-encoder reranking to improve grounding over complex technical corpuses.
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                <strong>Autonomous Prompt Optimization:</strong> Built a self-improving Azure DevOps LLM agent using Arize traces, deterministic evaluations, and autonomous prompt optimization, improving strict task success from 19% to 85%.
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                <strong>Industrial MLOps Platform:</strong> Designed and productionized an industrial machine learning platform with automated training, deployment, drift detection, and monitoring on AWS SageMaker, delivering MULT-MM$ impact and establishing the corporate blueprint for all subsequent deployments.
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                <strong>RAG &amp; LLM Evaluation Framework:</strong> Developed RAG and LLM evaluation pipelines using RAGAS, synthetic QA generation, grounding evaluation, and multi-metric scoring to systematically measure answer quality and identify failure modes.
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                <strong>Containerized AI Infrastructure:</strong> Productionized AI and ML workloads using FastAPI, Docker, PostgreSQL, Qdrant, Redis, Langfuse, and cloud observability, with automated CI/CD and Infrastructure as Code across AWS and Azure.
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                <strong>Distributed Ingestion Engine:</strong> Designed reliable document ingestion infrastructure using content-hash fingerprinting, reconciliation, retry protection, and distributed ingestion workers to keep enterprise knowledge bases current and production-ready.
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                <strong>MLOps &amp; LLMOps Governance:</strong> Established and implemented MLOps and LLMOps best practices across experimentation and production, standardizing cloud deployment, APIs, CI/CD, Infrastructure as Code, observability, and production monitoring for enterprise AI systems.
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Role 2: TMC -->
+        <article class="spec-box p-5 bg-white dark:bg-[#071c22]">
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-2 mb-3 border-b border-slate-200 dark:border-cyan-950 font-mono text-xs">
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sky-600 dark:text-sky-400">commit 4c891bf</span>
+              <span class="text-slate-400 dark:text-slate-600">•</span>
+              <span class="text-slate-900 dark:text-white font-bold">TMC</span>
+              <span class="text-slate-500 dark:text-slate-400">| Montreal, QC</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="badge-spec badge-slate">15 MOS</span>
+              <span class="text-slate-600 dark:text-slate-400">JUNE 2020 — AUGUST 2021</span>
+            </div>
+          </div>
+
+          <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white">Senior Data Engineer - Machine Learning &amp; MLOps</h3>
+          <div class="font-mono text-xs text-sky-600 dark:text-sky-400 font-medium mt-0.5">High-Throughput Time-Series Pipelines &amp; Model Deployment</div>
+
+          <ul class="mt-4 space-y-3 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+            <li class="flex items-start gap-2">
+              <span class="text-sky-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                Designed the organization's ML Industrialization Blueprint, transforming experimental machine learning models into fully automated, containerized production systems with standardized training, validation, deployment, and inference pipelines.
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-sky-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                Architected an end-to-end automated ML lifecycle on AWS SageMaker, covering feature pipelines, model training, evaluation, model versioning, deployment, performance monitoring, drift detection, automated retraining, promotion, rollback, and disaster recovery.
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-sky-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                Built cloud-native ML infrastructure using Docker, CI/CD, Infrastructure as Code, serverless AWS services, and version-controlled pipelines, enabling reproducible deployments across development and production environments.
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-sky-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                Implemented unified data and feature pipelines supporting both model inference and data/model drift detection, improving consistency between training and production environments.
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-sky-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                Designed monitoring and observability for production ML systems covering model performance, data quality, operational failures, and retraining triggers; optimized PI server data extraction with Python AsyncIO (<span class="font-bold text-emerald-600 dark:text-emerald-400">80% speedup</span>).
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Role 3: SensorUp -->
+        <article class="spec-box p-5 bg-white dark:bg-[#071c22]">
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-2 mb-3 border-b border-slate-200 dark:border-cyan-950 font-mono text-xs">
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-sky-600 dark:text-sky-400">commit 8e23b1a</span>
+              <span class="text-slate-400 dark:text-slate-600">•</span>
+              <span class="text-slate-900 dark:text-white font-bold">SENSORUP INC.</span>
+              <span class="text-slate-500 dark:text-slate-400">| Calgary, AB</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="badge-spec badge-slate">24 MOS</span>
+              <span class="text-slate-600 dark:text-slate-400">MARCH 2018 — MARCH 2020</span>
+            </div>
+          </div>
+
+          <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white">Data Scientist – Geospatial &amp; Real-Time Predictions</h3>
+          <div class="font-mono text-xs text-sky-600 dark:text-sky-400 font-medium mt-0.5">IoT Streaming Architecture &amp; Spatial ML</div>
+
+          <ul class="mt-4 space-y-3 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+            <li class="flex items-start gap-2">
+              <span class="text-sky-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                Developed and productionized machine learning and data science solutions across NLP, computer vision, geospatial analytics, and real-time sensor data.
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-sky-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                Developed an NLP and geospatial machine learning system to identify and geo-locate natural disasters from real-time social media streams, contributing to the Google TensorFlow Grand Prize recognition.
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-sky-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                Deployed computer vision and object detection models using YOLO, NVIDIA Jetson, and DeepStream, processing 128 live video feeds at the edge and transmitting inference results through MQTT.
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-sky-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                Architected a serverless real-time data pipeline using AWS Lambda, Kinesis, and IoT Core to process high-frequency GPS data from <span class="font-bold text-emerald-600 dark:text-emerald-400">15,000+ railcars</span> and support real-time operational analytics.
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Role 4: Foundations (Independent Dev) -->
+        <article class="spec-box p-5 bg-white dark:bg-[#071c22]">
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-2 mb-3 border-b border-slate-200 dark:border-cyan-950 font-mono text-xs">
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-slate-600 dark:text-slate-400">commit 1f99c0d</span>
+              <span class="text-slate-400 dark:text-slate-600">•</span>
+              <span class="text-slate-900 dark:text-white font-bold">INDEPENDENT RESEARCH</span>
+              <span class="text-slate-500 dark:text-slate-400">| Calgary, AB</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="badge-spec badge-slate">12 MOS</span>
+              <span class="text-slate-600 dark:text-slate-400">APRIL 2017 — MARCH 2018</span>
+            </div>
+          </div>
+
+          <h3 class="font-display font-bold text-xl text-slate-900 dark:text-white">Python Algorithm Developer</h3>
+          <div class="font-mono text-xs text-sky-600 dark:text-sky-400 font-medium mt-0.5">Computational Modeling &amp; Clustering Algorithms</div>
+
+          <ul class="mt-4 space-y-3 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+            <li class="flex items-start gap-2">
+              <span class="text-slate-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                Developed a novel implementation of the Fuzzy C-Mean clustering algorithm, improving clustering accuracy and eliminating the need for initial user input.
+              </div>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-slate-500 mt-1 font-mono text-xs">▶</span>
+              <div>
+                Built a dynamic numerical simulator using Python and C++ to model fluid transport in high-dimensional porous media.
+              </div>
+            </li>
+          </ul>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- ==========================================================================
+         Section 03: System Specs / Tech Stack Matrix (AwesomeJEV Category Rows)
+         ========================================================================== -->
+    <section id="stack" class="flex flex-col gap-4">
+      
+      <div class="flex items-baseline justify-between border-b-2 border-slate-900 dark:border-cyan-900 pb-2">
+        <div class="flex items-center gap-2">
+          <span class="font-mono text-emerald-600 dark:text-emerald-400 font-bold text-sm">03 /</span>
+          <h2 class="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight text-slate-900 dark:text-white">
+            System Specs
+          </h2>
+        </div>
+        <span class="font-mono text-xs text-slate-500 dark:text-slate-400 font-medium">STACK_MATRIX // CORE COMPUTE</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <!-- Category 1: Core Compute & Languages -->
+        <div class="spec-box p-4 bg-white dark:bg-[#071c22]">
+          <div class="spec-header !-mt-4 !-mx-4 !mb-3">
+            <span>[01] CORE COMPUTE &amp; LANGUAGES</span>
+            <span class="text-emerald-400 font-mono text-[10px]">RUNTIME</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">Python 3.12</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">PyTorch</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">C++20</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">CUDA</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Go (Golang)</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">SQL</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">TypeScript</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">AsyncIO</span>
           </div>
         </div>
 
-        <div class="row justify-content-center mb-5" data-aos="fade-up">
-          <div id="filters" class="filters text-center button-group col-md-7">
-            <button class="btn btn-primary active" data-filter="*">All</button>
-            <button class="btn btn-primary" data-filter=".web">Web</button>
-            <button class="btn btn-primary" data-filter=".design">Design</button>
-            <button class="btn btn-primary" data-filter=".brand">Brand</button>
+        <!-- Category 2: GenAI & Multi-Agent Systems -->
+        <div class="spec-box p-4 bg-white dark:bg-[#071c22]">
+          <div class="spec-header !-mt-4 !-mx-4 !mb-3">
+            <span>[02] GENAI &amp; AGENTIC SYSTEMS</span>
+            <span class="text-emerald-400 font-mono text-[10px]">INTELLIGENCE</span>
           </div>
-        </div>  
-        
-        <div id="posts" class="row no-gutter">
-          <div class="item web col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
-            <a href="images/img_1.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/img_1.jpg">
-            </a>
+          <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">LangGraph</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">Multi-Agent Orchestration</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Advanced RAG</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">RRF Reranking</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">DSPy</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">LoRA / PEFT</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">AWS Bedrock</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Phoenix / RAGAS</span>
           </div>
-          <div class="item web col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
-            <a href="images/img_2.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/img_2.jpg">
-            </a>
+        </div>
+
+        <!-- Category 3: Cloud, MLOps & Production Serving -->
+        <div class="spec-box p-4 bg-white dark:bg-[#071c22]">
+          <div class="spec-header !-mt-4 !-mx-4 !mb-3">
+            <span>[03] CLOUD, MLOPS &amp; SERVING</span>
+            <span class="text-sky-400 font-mono text-[10px]">DISTRIBUTED</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">AWS SageMaker</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Ray Cluster</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Triton Inference</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">vLLM</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Docker</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">CI/CD Pipelines</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Drift Detection</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">AWS Lambda / Step Functions</span>
+          </div>
+        </div>
+
+        <!-- Category 4: Data Engineering, IoT & Edge -->
+        <div class="spec-box p-4 bg-white dark:bg-[#071c22]">
+          <div class="spec-header !-mt-4 !-mx-4 !mb-3">
+            <span>[04] DATA STREAMS, IOT &amp; EMBEDDED</span>
+            <span class="text-amber-400 font-mono text-[10px]">INGESTION</span>
+          </div>
+          <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">Nvidia DeepStream</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Jetson TX2 Edge</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">AWS IoT Core</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">MQTT Protocols</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">PostgreSQL</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">DynamoDB</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">FastAPI</span>
+            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Redis / Vector DB</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==========================================================================
+         Section 04: Accreditations, Certifications & Honors
+         ========================================================================== -->
+    <section id="certs" class="flex flex-col gap-6">
+      
+      <div class="flex items-baseline justify-between border-b-2 border-slate-900 dark:border-cyan-900 pb-2">
+        <div class="flex items-center gap-2">
+          <span class="font-mono text-emerald-600 dark:text-emerald-400 font-bold text-sm">04 /</span>
+          <h2 class="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight text-slate-900 dark:text-white">
+            Accreditations &amp; Honors
+          </h2>
+        </div>
+        <span class="font-mono text-xs text-slate-500 dark:text-slate-400 font-medium">SYS.CREDENTIALS &amp; AWARDS // VERIFIED</span>
+      </div>
+
+      <!-- Part A: Honors & Global Awards (Featured prominently) -->
+      <div class="flex flex-col gap-3">
+        <div class="flex items-center justify-between">
+          <span class="font-mono text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider flex items-center gap-2">
+            <span class="text-amber-500 text-sm">★</span>
+            Honors &amp; Global Awards (03)
+          </span>
+          <span class="font-mono text-[10px] text-slate-400">COMPETITIONS &amp; BENCHMARKS</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+          <!-- Award 1: Google Grand Prize -->
+          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between border-l-4 border-l-amber-500">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <span class="badge-spec badge-amber text-[9px]">GLOBAL AWARD</span>
+                <span class="font-mono text-[10px] text-slate-400 font-bold">GOOGLE // TF 2.0</span>
+              </div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-2xl">🏆</span>
+                <h4 class="font-display font-bold text-base text-slate-900 dark:text-white leading-snug">Google Grand Prize Winner</h4>
+              </div>
+              <div class="font-mono text-[11px] text-amber-600 dark:text-amber-400 font-semibold mb-2">TensorFlow 2.0 Global Competition</div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Awarded top worldwide honor for developing Disaster Watch, a real-time crisis mapping platform integrating natural language processing, entity recognition, and geoparsing for emergency response dispatch.
+              </p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-slate-100 dark:border-cyan-950 font-mono text-[10px] text-slate-400">
+              WORLDWIDE RECOGNITION · NLP &amp; GEOPARSING
+            </div>
           </div>
 
-          <div class="item brand col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
-            <a href="images/img_3.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/img_3.jpg">
-            </a>
+          <!-- Award 2: Winner, AWS GenAI Hackathon -->
+          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between border-l-4 border-l-emerald-500">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <span class="badge-spec badge-emerald text-[9px]">HACKATHON WINNER</span>
+                <span class="font-mono text-[10px] text-slate-400 font-bold">AWS // AMAZON</span>
+              </div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-2xl">🥇</span>
+                <h4 class="font-display font-bold text-base text-slate-900 dark:text-white leading-snug">Winner — AWS GenAI Hackathon</h4>
+              </div>
+              <div class="font-mono text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold mb-2">Architected Winning Solution</div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Architected and productionized the winning enterprise generative AI solution, demonstrating multi-agent orchestration, resilient prompt engineering, and serverless cloud deployment.
+              </p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-slate-100 dark:border-cyan-950 font-mono text-[10px] text-slate-400">
+              FIRST PLACE · AWS BEDROCK &amp; MULTI-AGENT
+            </div>
           </div>
 
-          <div class="item design col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
-
-            <a href="images/img_4.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/img_4.jpg">
-            </a>
-
+          <!-- Award 3: Arize Phoenix: Building Self-Improving Agents -->
+          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between border-l-4 border-l-cyan-500">
+            <div>
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <span class="badge-spec badge-cyan text-[9px]">AGENTIC EVALUATION</span>
+                <span class="font-mono text-[10px] text-slate-400 font-bold">ARIZE // PHOENIX</span>
+              </div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-2xl">⚡</span>
+                <h4 class="font-display font-bold text-base text-slate-900 dark:text-white leading-snug">Arize Phoenix: Building Self-Improving Agents</h4>
+              </div>
+              <div class="font-mono text-[11px] text-sky-600 dark:text-sky-400 font-semibold mb-2">Cloud Resource Provisioning &amp; Online Evaluation</div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                Engineered self-improving agents utilizing Arize CLI skills and Phoenix golden datasets; implemented continuous online evaluation loops to autonomously optimize prompt reliability for agents responsible for provisioning resources in cloud environments.
+              </p>
+            </div>
+            <div class="pt-3 mt-3 border-t border-slate-100 dark:border-cyan-950 font-mono text-[10px] text-slate-400">
+              ARIZE CLI · GOLDEN DATASET · ONLINE EVAL
+            </div>
           </div>
 
-          <div class="item web col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
-            <a href="images/img_5.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/img_5.jpg">
-            </a>
+        </div>
+      </div>
+
+      <!-- Part B: Verified Professional Certifications -->
+      <div class="flex flex-col gap-3 pt-2">
+        <div class="flex items-center justify-between border-t border-dashed border-slate-300 dark:border-cyan-900/60 pt-4">
+          <span class="font-mono text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider flex items-center gap-2">
+            <span class="w-2 h-2 bg-emerald-500 rounded-full inline-block"></span>
+            Professional Accreditations (07)
+          </span>
+          <span class="font-mono text-[10px] text-slate-400">AWS // DEEPLEARNING.AI // UDACITY // TRIPLEBYTE // IBM</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+          <!-- Cert 1: AWS ML Specialty -->
+          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between">
+            <div class="flex items-start gap-3">
+              <div class="w-14 h-14 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
+                <img src="assets/aws-ml.png" alt="AWS Certified Machine Learning Specialty" class="w-full h-full object-contain" />
+              </div>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-center justify-between">
+                  <span class="badge-spec badge-emerald text-[9px]">SPECIALTY</span>
+                  <span class="font-mono text-[10px] text-slate-400 font-bold">AWS</span>
+                </div>
+                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white mt-1">Machine Learning - Specialty</h4>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              Deep Learning, SageMaker, Model Deployment, Feature Stores, Distributed Training.
+            </p>
           </div>
 
-          <div class="item brand col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
-            <a href="images/img_6.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/img_6.jpg">
-            </a>
+          <!-- Cert 2: AWS Solutions Architect -->
+          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between">
+            <div class="flex items-start gap-3">
+              <div class="w-14 h-14 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
+                <img src="assets/aws-architect.png" alt="AWS Certified Solutions Architect" class="w-full h-full object-contain" />
+              </div>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-center justify-between">
+                  <span class="badge-spec badge-cyan text-[9px]">ARCHITECT</span>
+                  <span class="font-mono text-[10px] text-slate-400 font-bold">AWS</span>
+                </div>
+                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white mt-1">Solutions Architect</h4>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              Multi-Region HA, Cloud Security, Distributed Systems Architecture, Cost Optimization.
+            </p>
           </div>
 
-          <div class="item web col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
-            <a href="images/img_7.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/img_7.jpg">
-            </a>
+          <!-- Cert 3: AWS Developer Associate -->
+          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between">
+            <div class="flex items-start gap-3">
+              <div class="w-14 h-14 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
+                <img src="assets/aws-developer.png" alt="AWS Certified Developer Associate" class="w-full h-full object-contain" />
+              </div>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-center justify-between">
+                  <span class="badge-spec badge-cyan text-[9px]">ASSOCIATE</span>
+                  <span class="font-mono text-[10px] text-slate-400 font-bold">AWS</span>
+                </div>
+                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white mt-1">Developer - Associate</h4>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              Serverless Lambda, Containers, Microservices, CI/CD Pipeline Automation, IAM.
+            </p>
           </div>
 
-          <div class="item design col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
-            <a href="images/img_8.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/img_8.jpg">
-            </a>
+          <!-- Cert 4: Deep Learning Specialization -->
+          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between">
+            <div class="flex items-start gap-3">
+              <div class="w-14 h-14 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
+                <img src="assets/cert_deeplearning.png" alt="Deep Learning Specialization" class="w-full h-full object-contain rounded" />
+              </div>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-center justify-between">
+                  <span class="badge-spec badge-emerald text-[9px]">SPECIALIZATION</span>
+                  <span class="font-mono text-[10px] text-slate-400 font-bold">DEEPLEARNING.AI</span>
+                </div>
+                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white mt-1">Deep Learning Specialization</h4>
+                <div class="font-mono text-[10px] text-slate-400 mt-0.5">ID: EMPUKWSQAE7Q</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              Neural Networks, Backprop, CNNs, Sequence Models, Attention Mechanisms &amp; Transformers.
+            </p>
           </div>
 
-          <div class="item web col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
-            <a href="images/img_9.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/img_9.jpg">
-            </a>
+          <!-- Cert 5: Data Engineering NanoDegree -->
+          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between">
+            <div class="flex items-start gap-3">
+              <div class="w-14 h-14 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
+                <img src="assets/cert_udacity.png" alt="Data Engineering NanoDegree" class="w-full h-full object-contain rounded" />
+              </div>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-center justify-between">
+                  <span class="badge-spec badge-cyan text-[9px]">NANODEGREE</span>
+                  <span class="font-mono text-[10px] text-slate-400 font-bold">UDACITY</span>
+                </div>
+                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white mt-1">Data Engineering NanoDegree</h4>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              Data Modeling, Cloud Data Warehouses, Apache Spark, Data Lakes &amp; Automated Airflow Pipelines.
+            </p>
           </div>
 
-          <div class="item design col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
-            <a href="images/img_10.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/img_10.jpg">
-            </a>
+          <!-- Cert 6: Triplebyte Certified Data Scientist -->
+          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between">
+            <div class="flex items-start gap-3">
+              <div class="w-14 h-14 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
+                <img src="assets/cert_triplebyte.png" alt="Triplebyte Certified Data Scientist" class="w-full h-full object-contain rounded" />
+              </div>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-center justify-between">
+                  <span class="badge-spec badge-emerald text-[9px]">CERTIFIED</span>
+                  <span class="font-mono text-[10px] text-slate-400 font-bold">TRIPLEBYTE</span>
+                </div>
+                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white mt-1">Triplebyte Certified Data Scientist</h4>
+                <div class="font-mono text-[10px] text-slate-400 mt-0.5">ID: JbNDjOg</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              Advanced Machine Learning, Statistical Inference, Python Data Science, Algorithmic Analysis.
+            </p>
           </div>
 
-          <div class="item brand col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
-            <a href="images/img_11.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/img_11.jpg">
-            </a>
+          <!-- Cert 7: Professional Data Science Certificate -->
+          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between">
+            <div class="flex items-start gap-3">
+              <div class="w-14 h-14 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
+                <img src="assets/cert_ibm.png" alt="IBM Data Science Professional" class="w-full h-full object-contain rounded" />
+              </div>
+              <div class="min-w-0 flex-1">
+                <div class="flex items-center justify-between">
+                  <span class="badge-spec badge-slate text-[9px]">PROFESSIONAL</span>
+                  <span class="font-mono text-[10px] text-slate-400 font-bold">IBM</span>
+                </div>
+                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white mt-1">Professional Data Science Certificate</h4>
+                <div class="font-mono text-[10px] text-slate-400 mt-0.5">ID: CUNQGFUWD3KR</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              Statistical Analysis, Machine Learning Algorithms, Python, SQL &amp; Data Engineering.
+            </p>
           </div>
 
-          <div class="item design col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
-            <a href="images/img_12.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/img_12.jpg">
-            </a>
-          </div>
-
-          <div class="item web col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4">
-            <a href="images/img_13.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="images/img_13.jpg">
-            </a>
+          <!-- Credential Verification Summary Card (Spans 2 columns on desktop) -->
+          <div class="spec-box p-4 bg-slate-50/60 dark:bg-[#06181d] flex flex-col justify-between border-dashed border-slate-300 dark:border-cyan-900/60 md:col-span-2">
+            <div>
+              <div class="flex items-center justify-between">
+                <span class="badge-spec badge-emerald text-[9px]">CREDENTIAL AUDIT</span>
+                <span class="font-mono text-[10px] text-slate-400 font-bold">ALL VERIFIED</span>
+              </div>
+              <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white mt-2">Continuous Learning &amp; Verification Matrix</h4>
+              <p class="text-xs text-slate-600 dark:text-slate-400 mt-1 leading-relaxed">
+                Rigorous accreditations spanning Cloud Architecture, Deep Learning, MLOps, and Data Engineering. All certifications, licenses, and competition victories are independently verified.
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 pt-3 mt-2 border-t border-slate-200 dark:border-cyan-950 font-mono text-[10px]">
+              <span class="text-emerald-600 dark:text-emerald-400 font-semibold">● 7 Professional Certifications</span>
+              <span class="text-slate-400">·</span>
+              <span class="text-amber-600 dark:text-amber-400 font-semibold">● 3 Major Honors &amp; Awards</span>
+              <span class="text-slate-400">·</span>
+              <span class="text-sky-600 dark:text-sky-400 font-semibold">● Top Global Rankings</span>
+            </div>
           </div>
 
         </div>
       </div>
 
     </section>
-     -->
-  
-   
-    
 
-    <section class="site-section testimonial-wrap" id="testimonials-section" data-aos="fade">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h2 class="section-title mb-3">Awards</h2>
-          </div>
+    <!-- ==========================================================================
+         Section 05: Academic Background & Degrees
+         ========================================================================== -->
+    <section class="flex flex-col gap-4">
+      
+      <div class="flex items-baseline justify-between border-b-2 border-slate-900 dark:border-cyan-900 pb-2">
+        <div class="flex items-center gap-2">
+          <span class="font-mono text-emerald-600 dark:text-emerald-400 font-bold text-sm">05 /</span>
+          <h2 class="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight text-slate-900 dark:text-white">
+            Academic Foundations
+          </h2>
         </div>
+        <span class="font-mono text-xs text-slate-500 dark:text-slate-400 font-medium">DEGREES &amp; ALGORITHMIC ROOTS</span>
       </div>
-      <div class="slide-one-item home-slider owl-carousel">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <div class="spec-box p-4 bg-white dark:bg-[#071c22]">
+          <div class="font-mono text-xs text-emerald-600 dark:text-emerald-400 font-semibold mb-1">GRADUATE DEGREE // CALGARY, AB</div>
+          <h4 class="font-display font-bold text-lg text-slate-900 dark:text-white">University of Calgary</h4>
+          <p class="font-mono text-xs text-slate-600 dark:text-slate-300 font-medium mt-0.5">Master of Engineering - MEng, Computational Modeling &amp; Engineering</p>
+          <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
+            Advanced fluid dynamics, dynamic modeling, mathematical simulation, and computational porous media analysis.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==========================================================================
+         Section 06: Interactive CLI Terminal Sandbox
+         ========================================================================== -->
+    <section id="terminal" class="flex flex-col gap-4">
+      
+      <div class="flex items-baseline justify-between border-b-2 border-slate-900 dark:border-cyan-900 pb-2">
+        <div class="flex items-center gap-2">
+          <span class="font-mono text-emerald-600 dark:text-emerald-400 font-bold text-sm">06 /</span>
+          <h2 class="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight text-slate-900 dark:text-white">
+            Interactive CLI Sandbox
+          </h2>
+        </div>
+        <span class="font-mono text-xs text-slate-500 dark:text-slate-400 font-medium">TERMINAL // LIVE SHELL</span>
+      </div>
+
+      <div class="spec-box !bg-[#031518] text-slate-200">
+        
+        <div class="spec-header !bg-[#021013] !border-b !border-teal-900/60">
+          <span class="text-emerald-400 font-bold flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            mahmood@lab:~/portfolio [zsh]
+          </span>
+          <span class="text-[11px] text-slate-400">TTY: /dev/pts/1</span>
+        </div>
+
+        <div id="interactive-terminal" class="p-4 font-mono text-xs sm:text-sm max-h-[360px] min-h-[220px] overflow-y-auto space-y-2">
+          
+          <div class="text-slate-400">
+            Welcome to Mahmood Khordoo's interactive shell. Type <span class="text-emerald-400 font-bold">help</span> to list commands.
+          </div>
+
+          <div id="terminal-cli-output" class="space-y-1"></div>
+
+          <div class="flex items-center gap-2 pt-2 border-t border-teal-900/40">
+            <span class="text-emerald-400 font-bold shrink-0">mahmood@lab:~$</span>
+            <input 
+              type="text" 
+              id="terminal-cli-input" 
+              placeholder="type a command (whoami, about, projects, exp, skills, certs, contact, theme, clear)..." 
+              class="w-full bg-transparent border-none outline-none text-white font-mono text-xs sm:text-sm placeholder:text-slate-600 focus:outline-none"
+            />
+          </div>
+
+        </div>
+
+        <div class="px-4 py-2 bg-[#021013] border-t border-teal-900/60 flex items-center justify-between font-mono text-[10px] text-slate-400">
+          <span>Shortcuts: Press <kbd class="px-1 bg-slate-900 text-emerald-400 border border-slate-700 font-bold">/</kbd> anywhere to focus</span>
+          <span>Up / Down arrows for history</span>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==========================================================================
+         Section 07: Dispatch / Transmission Footer
+         ========================================================================== -->
+    <footer id="contact" class="spec-box p-6 bg-white dark:bg-[#071c22] mt-4">
+      
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-slate-200 dark:border-cyan-950">
         <div>
-          <div class="testimonial">
-            
-            <blockquote class="mb-5">
-              <p>SUSE Foundation Cloud Native Challenge Scholarship</p>
-            </blockquote>
-
-            <figure class="mb-4 d-flex align-items-center justify-content-center">
-              <div><img src="images/award.png" alt="Image" class="w-50 img-fluid mb-3"></div>
-              <p>SUSE, 2021</p>
-            </figure>
+          <div class="font-mono text-xs uppercase tracking-wider text-emerald-600 dark:text-emerald-400 font-semibold mb-1 flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            NODE DISPATCH // MONTREAL, QC
           </div>
+          <h3 class="font-display font-bold text-2xl text-slate-900 dark:text-white">
+            Available for Research Collaboration &amp; Staff/Lead Advisory.
+          </h3>
+          <p class="text-sm text-slate-600 dark:text-slate-300 mt-1 max-w-2xl leading-relaxed">
+            Specializing in high-concurrency autonomous reasoning architectures, multi-agent evaluation frameworks, and distributed ML pipelines.
+          </p>
         </div>
-          <div>
-            <div class="testimonial">
-              
-              <blockquote class="mb-5">
-                <p>Google Grand Prize winner at TensorFlow 2.0 Challenge</p>
-              </blockquote>
 
-              <figure class="mb-4 d-flex align-items-center justify-content-center">
-                <div><img src="images/award.png" alt="Image" class="w-50 img-fluid mb-3"></div>
-                <p>Google, 2019</p>
-              </figure>
-            </div>
-          </div>
-          <div>
-            <div class="testimonial">
-              
-              <blockquote class="mb-5">
-                <p>OpenAI top 10 leaderboards on RL environment Challenge</p>
-              </blockquote>
-
-              <figure class="mb-4 d-flex align-items-center justify-content-center">
-                <div><img src="images/award.png" alt="Image" class="w-50 img-fluid mb-3"></div>
-                <p>OpenAI, 2019</p>
-              </figure>
-            </div>
-          </div>
-          <div>
-            <div class="testimonial">
-
-              <blockquote class="mb-5">
-                <p>Excellence Influential Engineers Award in Predictive Simulations</p>
-              </blockquote>
-              <figure class="mb-4 d-flex align-items-center justify-content-center">
-                <div><img src="images/award.png" alt="Image" class="w-50 img-fluid mb-3"></div>
-                <p>NIOC, 2016</p>
-              </figure>
-              
-            </div>
-          </div>
-
-          <div>
-            <div class="testimonial">
-
-              <blockquote class="mb-5">
-                <p>Full Dual-Master Degree Scholarship (2 years)</p>
-              </blockquote>
-              <figure class="mb-4 d-flex align-items-center justify-content-center">
-                <div><img src="images/award.png" alt="Image" class="w-50 img-fluid mb-3"></div>
-                <p>NIOC, 2004</p>
-              </figure>
-
-              
-            </div>
-          </div>
-
-          <div>
-            <div class="testimonial">
-
-              <blockquote class="mb-5">
-                <p>Full Bachelor’s Degree Scholarship (4 years)</p>
-              </blockquote>
-              <figure class="mb-4 d-flex align-items-center justify-content-center">
-                <div><img src="images/award.png" alt="Image" class="w-50 img-fluid mb-3"></div>
-                <p>NIOC, 2000</p>
-              </figure>
-
-            </div>
-          </div>
-
-          <div>
-            <div class="testimonial">
-
-              <blockquote class="mb-5">
-                <p>Golden Medal Undergraduate Excellence Award</p>
-              </blockquote>
-              <figure class="mb-4 d-flex align-items-center justify-content-center">
-                <div><img src="images/award.png" alt="Image" class="w-50 img-fluid mb-3"></div>
-                <p>NIOC, 2002</p>
-              </figure>
-
-            </div>
-          </div>
-
-        </div>
-    </section>
-    
-    <section class="site-section border-bottom bg-light" id="services-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center" data-aos="fade">
-            <h2 class="section-title mb-3">Skills</h2>
-          </div>
-        </div>
-        <div class="row align-items-stretch">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-            <div class="unit-4">
-              <div class="unit-4-icon mr-4"></div>
-              <div>
-                <h3>Core Skills</h3>
-                <div class="pull-left">
-                  <ul class="pull-left  text-left">
-                      <li>Python</li>
-                      <li>Deep Learning</li>
-                      <li>Machine Learning</li>
-                      <li>Real-time stream processing</li>   
-                  </ul>
-              </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="unit-4">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-graphic-design"></span></div>
-              <div>
-                <h3>Interests</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="unit-4">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-settings"></span></div>
-              <div>
-                <h3>Technical Skills</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div> -->
-
-
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="">
-            <div class="unit-4">
-              <div class="unit-4-icon mr-4"></div>
-              <div>
-                <h3>Interests</h3>
-                <div class="pull-left">
-                  <ul class="pull-left  text-left">
-                      <li>Reinforcement Learning</li>
-                      <li>Natural Language Processing</li>
-                      <li>Computer-vision</li>
-                      <li>Time series Forecasting</li>
-                      <li>Predictive Maintenance</li>
-                      <li>Anamoly detection</li>
-                  </ul>
-              </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="unit-4">
-              <div class="unit-4-icon mr-4"><span class="text-primary flaticon-smartphone"></span></div>
-              <div>
-                <h3>Financial Investment</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.</p>
-                <p><a href="#">Learn More</a></p>
-              </div>
-            </div>
-          </div> -->
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="unit-4">
-              <div class="unit-4-icon mr-4"></div>
-              <div>
-                <h3>Technical Skills</h3>
-                <div class="pull-left">
-                  <ul class="pull-left text-left">
-                     <li>Machine Learning: Pytorch, Tensorflow, Keras, Scikit-learn, Pandas, Numpy</li>
-                      <li>Languages: Python, Matlab, SQL, HTML|CSS|JavaScript, Java/Android</li>
-                      <li>Databases: PostgreSQL, DynamoDB, Elasticsearch</li>
-                      <li>Backend: Docker, Codeship, Terrafrom, Flask, Gunicorn, Unix</li>
-                      <li>Visualization: Kiabana,Tableau, Kepler, Vue.js, Mapbox, Matplotlib </li>
-                  </ul>
-              </div>
-              </div>
-            </div>
-          </div>
-
+        <div class="flex flex-wrap gap-2 shrink-0">
+          <a href="mailto:mahmood.khordoo@gmail.com" class="retro-btn retro-btn-primary py-2 px-4 text-xs font-bold shadow-sm">
+            <span class="material-symbols-outlined text-[16px]">mail</span>
+            <span>Transmit Message</span>
+          </a>
         </div>
       </div>
-    </section>
 
-
-
-    <section class="site-section bg-light" id="pricing-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center" data-aos="fade-up">
-            <h2 class="section-title mb-3">Education</h2>
-          </div>
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-3 font-mono text-xs text-slate-500 dark:text-slate-400">
+        <div class="flex items-center gap-4">
+          <a href="https://github.com/khordoo" target="_blank" rel="noopener" class="hover:text-emerald-600 dark:hover:text-emerald-400">GITHUB</a>
+          <span>·</span>
+          <a href="https://linkedin.com/in/khordoo" target="_blank" rel="noopener" class="hover:text-emerald-600 dark:hover:text-emerald-400">LINKEDIN</a>
+          <span>·</span>
+          <a href="https://huggingface.co/mkhordoo" target="_blank" rel="noopener" class="hover:text-emerald-600 dark:hover:text-emerald-400">HUGGING FACE</a>
+          <span>·</span>
+          <a href="https://pypi.org/project/clauth/" target="_blank" rel="noopener" class="hover:text-emerald-600 dark:hover:text-emerald-400">PYPI</a>
         </div>
-        <div class="row mb-5">
-          <div class="col-md-6 mb-4 mb-lg-0 col-lg-4" data-aos="fade-up" data-aos-delay="">
-            <div class="pricing">
-              <div class=" text-left mb-4 ">
-                <span class="date"><span class="icon-calendar"></span> 2005 - 2006</span>
-              </div>
-
-              <ul class="list-unstyled  success mb-5">          
-                <li class="text-black" >M.Eng. Reservoir Engineering</li>
-                <li>University of Calgary</li>
-                <li>Calgary,Alberta, Canada</li>
-                
-              </ul>
-
-            </div>
-          </div>
-          <div class="col-md-6 mb-4 mb-lg-0 col-lg-4" data-aos="fade-up" data-aos-delay="">
-            <div class="pricing">
-              <div class=" text-left mb-4 ">
-                <span class="date"><span class="icon-calendar"></span> 2004 - 2005</span>
-              </div>
-
-              <ul class="list-unstyled  success mb-5">          
-                <li class="text-black" >M.Sc. Chemical Engineering</li>
-                <li>Petroleum Univeristy of Technology</li>
-                <li>Tehran, Iran</li>
-                
-              </ul>
-
-            </div>
-          </div>
-          <div class="col-md-6 mb-4 mb-lg-0 col-lg-4" data-aos="fade-up" data-aos-delay="">
-            <div class="pricing">
-              <div class=" text-left mb-4 ">
-                <span class="date"><span class="icon-calendar"></span> 2004 - 2006</span>
-              </div>
-
-              <ul class="list-unstyled  success mb-5">          
-                <li class="text-black" >B.Sc. Petroleum Engineering</li>
-                <li>Petroleum Univeristy of Technology</li>
-                <li>Ahvaz, Iran</li>
-                
-              </ul>
-
-            </div>
-          </div>
-        </div>
-        
-        <!-- <div class="row site-section" id="faq-section">
-          <div class="col-12 text-center" data-aos="fade">
-            <h2 class="section-title">Frequently Ask Questions</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            
-            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="text-black h4 mb-4">Can I accept both Paypal and Stripe?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
-            </div>
-            
-            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="text-black h4 mb-4">What available is refund period?</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
-            </div>
-
-            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="text-black h4 mb-4">Can I accept both Paypal and Stripe?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
-            </div>
-            
-            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="text-black h4 mb-4">What available is refund period?</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
-            </div>
-          </div>
-          <div class="col-lg-6">
-
-            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="text-black h4 mb-4">Where are you from?</h3>
-              <p>Voluptatum nobis obcaecati perferendis dolor totam unde dolores quod maxime corporis officia et. Distinctio assumenda minima maiores.</p>
-            </div>
-            
-            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="text-black h4 mb-4">What is your opening time?</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
-            </div>
-
-            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="text-black h4 mb-4">Can I accept both Paypal and Stripe?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
-            </div>
-            
-            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-              <h3 class="text-black h4 mb-4">What available is refund period?</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
-            </div>
-          </div>
+        <div class="text-[11px]">
+          MAHMOOD KHORDOO &bull; HOSTED ON GITHUB PAGES &bull; EST. 2026
         </div>
       </div>
-    </section> -->
 
-    <!-- <section class="site-section" id="about-section">
-      <div class="container">
-        <div class="row mb-5">
-          
-          <div class="col-lg-5 ml-auto mb-5 order-1 order-lg-2" data-aos="fade" data-aos="fade-up" data-aos-delay="">
-            <img src="images/ai.jpg" alt="Image" class="img-fluid rounded">
-          </div>
-          <div class="col-lg-6 order-2 order-lg-1" data-aos="fade">
-
-            <div class="row">
-
-              
-              
-              <div class="col-md-12 mb-md-5 mb-0 col-lg-6" data-aos="fade-up" data-aos-delay="">
-                <div class="unit-4">
-                  <div class="unit-4-icon mr-4 mb-3"><span class="text-primary flaticon-head"></span></div>
-                  <div>
-                    <h3>Web &amp; Mobile Specialties</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis consect.</p>
-                    <p class="mb-0"><a href="#">Learn More</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12 mb-md-5 mb-0 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="unit-4">
-                  <div class="unit-4-icon mr-4 mb-3"><span class="text-primary flaticon-smartphone"></span></div>
-                  <div>
-                    <h3>Intuitive Thinkers</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis.</p>
-                    <p class="mb-0"><a href="#">Learn More</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-  -->
-    
-    
-<!-- 
-    <section class="site-section bg-white" id="blog-section">
-      <div class="container bg-white">
-        <div class="row mb-5">
-          <div class="col-12 text-center" data-aos="fade">
-            <h2 class="section-title mb-3">Experience</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="">
-            <div class="h-entry">
-              <a href="single.html">
-                <img src="images/img_1.jpg" alt="Image" class="img-fluid">
-              </a>
-              <h2 class="font-size-regular"><a href="#">Where Do You Learn HTML & CSS in 2019?</a></h2>
-              <div class="meta mb-4">Ham Brook <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-              <p><a href="#">Continue Reading...</a></p>
-            </div> 
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="h-entry">
-              <a href="single.html">
-                <img src="images/img_4.jpg" alt="Image" class="img-fluid">
-              </a>
-              <h2 class="font-size-regular"><a href="#">Where Do You Learn HTML & CSS in 2019?</a></h2>
-              <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-              <p><a href="#">Continue Reading...</a></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="h-entry">
-              <a href="single.html">
-                <img src="images/img_3.jpg" alt="Image" class="img-fluid">
-              </a>
-              <h2 class="font-size-regular"><a href="#">Where Do You Learn HTML & CSS in 2019?</a></h2>
-              <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-              <p><a href="#">Continue Reading...</a></p>
-            </div> 
-          </div>
-          
-        </div>
-      </div>
-    </section>  -->
-
-   
-
-
-    <section class="site-section bg-light" id="contact-section" data-aos="fade">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12 text-center">
-            <h2 class="section-title mb-3">Contact</h2>
-            <p class="lead" data-aos="fade-up" data-aos-delay="100">Interested in working together? Drop me a line!</p>
-          </div>
-        </div>
-        <div class="row mb-5">
-          
-
-
-          <div class="col-md-4 text-center">
-            <p class="mb-4">
-              <span class="icon-room d-block h4 text-primary"></span>
-              <span>Calgary, AB, Canada</span>
-            </p>
-          </div>
-          <div class="col-md-4 text-center">
-            <p class="mb-4">
-              <span class="icon-phone d-block h4 text-primary"></span>
-              <a href="#">+1 403 561 2847</a>
-            </p>
-          </div>
-          <div class="col-md-4 text-center">
-            <p class="mb-0">
-              <span class="icon-mail_outline d-block h4 text-primary"></span>
-              <a href="#">m.khordoo@gmail.com</a>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 mb-5">
-
-            
-
-            <form action="#" class="p-5 bg-white">
-              
-              <h2 class="h4 text-black mb-5">Contact Form</h2> 
-
-              <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control">
-                </div>
-                <div class="col-md-6">
-                  <label class="text-black" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control">
-                </div>
-              </div>
-
-              <div class="row form-group">
-                
-                <div class="col-md-12">
-                  <label class="text-black" for="email">Email</label> 
-                  <input type="email" id="email" class="form-control">
-                </div>
-              </div>
-
-              <div class="row form-group">
-                
-                <div class="col-md-12">
-                  <label class="text-black" for="subject">Subject</label> 
-                  <input type="subject" id="subject" class="form-control">
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="text-black" for="message">Message</label> 
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
-                </div>
-              </div>
-
-  
-            </form>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
-    
-    <footer class="site-footer">
-      <div class="container">
- 
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-              <a href="https://twitter.com/mkhordoo" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-              <a href="https://github.com/khordoo" class="pl-3 pr-3"><span class="icon-github"></span></a>
-              <a href="https://linkedin.com/in/khordoo" class="pl-3 pr-3"> <span class="icon-linkedin"></span></a>
-          </div>
-          
-        </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-              <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-        
-            </div>
-          </div>
-          
-        </div>
-      </div>
     </footer>
 
-  </div> <!-- .site-wrap -->
+  </main>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
-
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+  <!-- Interactive JavaScript Engine -->
+  <script src="script.js"></script>
+</body>
 </html>

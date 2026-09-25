@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+/* ==========================================================================
+   Precision Engineering Lab & Retro MS-DOS Theme Variables
+   Inspired by awesomejev.com (rectangles, crisp borders) & imnosovsky.dev
+   ========================================================================== */
+
+:root {
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Light Theme (Default - Precision Lab) */
+  --bg-page: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-surface-dim: #f1f5f9;
+  --bg-surface-high: #e2e8f0;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-dim: #64748b;
+  --border-strong: #0f172a;
+  --border-subtle: #cbd5e1;
+  --border-hairline: #e2e8f0;
+
+  /* Accents */
+  --accent-primary: #059669; /* Terminal Emerald */
+  --accent-primary-hover: #047857;
+  --accent-primary-wash: #ecfdf5;
+  --accent-cyan: #0284c7; /* Signal Cyan */
+  --accent-amber: #d97706; /* Telemetry Amber */
+  --accent-red: #dc2626;
+
+  /* Terminal Phosphors */
+  --term-bg: #07171b;
+  --term-fg: #6ee7b7;
+  --term-border: #134e4a;
+  --term-header: #022026;
+  --term-cursor: #34d399;
+}
+
+html.dark {
+  --bg-page: #041216;
+  --bg-surface: #071a1f;
+  --bg-surface-dim: #0a242c;
+  --bg-surface-high: #0f303b;
+  --text-main: #e6fffa;
+  --text-muted: #94d8ce;
+  --text-dim: #5c9993;
+  --border-strong: #145967;
+  --border-subtle: #0f404b;
+  --border-hairline: #0a2d35;
+
+  --accent-primary: #10b981;
+  --accent-primary-hover: #34d399;
+  --accent-primary-wash: rgba(16, 185, 129, 0.12);
+  --accent-cyan: #38bdf8;
+  --accent-amber: #fbbf24;
+
+  --term-bg: #031417;
+  --term-fg: #86efac;
+  --term-border: #155e75;
+  --term-header: #020c0e;
+  --term-cursor: #4ade80;
+}
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+::selection {
+  background-color: rgba(5, 150, 105, 0.25);
+  color: #047857;
+}
+
+/* Typography Utility Classes */
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* ==========================================================================
+   AwesomeJEV Neo-Brutalist & Retro PC Elements
+   ========================================================================== */
+
+/* Crisp Inverted Header Boxes */
+.spec-box {
+  background-color: var(--bg-surface);
+  border: 1.5px solid var(--border-strong);
+  box-shadow: 2px 2px 0px rgba(15, 23, 42, 0.08);
+  position: relative;
+}
+
+.spec-header {
+  background-color: var(--border-strong);
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 0.4rem 0.75rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1.5px solid var(--border-strong);
+}
+
+/* Spec sheet key-value table */
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+
+.spec-table tr {
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.spec-table tr:last-child {
+  border-bottom: none;
+}
+
+.spec-table td {
+  padding: 0.5rem 0.75rem;
+  vertical-align: top;
+}
+
+.spec-table td.key {
+  color: var(--text-dim);
+  width: 25%;
+  min-width: 110px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.spec-table td.val {
+  color: var(--text-main);
+}
+
+/* Directory / Table View (AwesomeJEV style) */
+.dir-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+
+.dir-table th {
+  background-color: var(--bg-surface-dim);
+  color: var(--text-dim);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-bottom: 1.5px solid var(--border-strong);
+}
+
+.dir-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border-hairline);
+  vertical-align: middle;
+}
+
+.dir-table tr:hover td {
+  background-color: var(--bg-surface-dim);
+}
+
+/* Sharp Button Controls */
+.retro-btn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.75rem;
+  border: 1.5px solid var(--border-strong);
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  user-select: none;
+}
+
+.retro-btn:hover {
+  background-color: var(--border-strong);
+  color: #ffffff;
+}
+
+.retro-btn.active {
+  background-color: var(--border-strong);
+  color: #ffffff;
+}
+
+.retro-btn-primary {
+  background-color: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: #ffffff;
+}
+
+.retro-btn-primary:hover {
+  background-color: var(--accent-primary-hover);
+  border-color: var(--accent-primary-hover);
+  color: #ffffff;
+}
+
+/* Tag Badges */
+.badge-spec {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.15rem 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 2px;
+}
+
+.badge-emerald {
+  background-color: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.badge-cyan {
+  background-color: #f0f9ff;
+  color: #0284c7;
+  border: 1px solid #bae6fd;
+}
+
+.badge-amber {
+  background-color: #fffbeb;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.badge-slate {
+  background-color: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+/* ==========================================================================
+   ASCII Portrait Display & CRT Scanline Effects
+   ========================================================================== */
+
+.ascii-frame {
+  position: relative;
+  background-color: var(--term-bg);
+  border: 1.5px solid var(--border-strong);
+  box-shadow: 4px 4px 0px rgba(15, 23, 42, 0.15);
+  overflow: hidden;
+}
+
+.ascii-screen {
+  position: relative;
+  overflow: hidden;
+  padding: 0.75rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 480px;
+}
+
+.ascii-pre {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: clamp(3.8px, 0.5vw, 7.2px);
+  line-height: 1.08;
+  letter-spacing: 0px;
+  white-space: pre;
+  user-select: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+/* Phosphor Colors */
+.phosphor-green .ascii-pre {
+  color: #34d399;
+  text-shadow: 0 0 4px rgba(52, 211, 153, 0.4);
+}
+
+.phosphor-cyan .ascii-pre {
+  color: #38bdf8;
+  text-shadow: 0 0 4px rgba(56, 189, 248, 0.45);
+}
+
+.phosphor-amber .ascii-pre {
+  color: #fbbf24;
+  text-shadow: 0 0 4px rgba(251, 191, 36, 0.45);
+}
+
+/* CRT Scanlines Overlay */
+.crt-scanlines {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.28) 0px,
+    rgba(0, 0, 0, 0.28) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  opacity: 0.75;
+  z-index: 10;
+}
+
+.crt-radial-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 50% 45%,
+    rgba(52, 211, 153, 0.12) 0%,
+    transparent 75%
+  );
+  z-index: 5;
+}
+
+/* ==========================================================================
+   Terminal Window & Interactive Shell
+   ========================================================================== */
+
+.terminal-card {
+  background-color: var(--term-bg);
+  border: 1.5px solid var(--border-strong);
+  color: #a7f3d0;
+  font-family: var(--font-mono);
+  box-shadow: 2px 2px 0px rgba(15, 23, 42, 0.08);
+}
+
+.terminal-bar {
+  background-color: var(--term-header);
+  border-bottom: 1px solid var(--term-border);
+  padding: 0.4rem 0.75rem;
+  font-size: 0.75rem;
+  color: #6ee7b7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.terminal-body {
+  padding: 0.85rem;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+
+.terminal-prompt {
+  color: #34d399;
+  font-weight: 600;
+}
+
+.terminal-cmd {
+  color: #ffffff;
+}
+
+.terminal-input-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  flex: 1;
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* ==========================================================================
+   Responsive Grids & Utilities
+   ========================================================================== */
+
+.retro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .retro-grid {
+    grid-template-columns: 1fr;
+  }
+}
