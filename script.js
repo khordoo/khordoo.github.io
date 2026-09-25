@@ -312,7 +312,7 @@ function initTerminalCLI() {
       case 'email':
         outRow.innerHTML = `
           <div class="text-slate-300">
-            Direct dispatch: <a href="mailto:mahmood.khordoo@gmail.com" class="text-emerald-400 font-bold hover:underline">mahmood.khordoo@gmail.com</a>
+            Direct dispatch: <a href="mailto:m.khordoo@gmail.com" class="text-emerald-400 font-bold hover:underline">m.khordoo@gmail.com</a>
             <br/>
             GitHub: <a href="https://github.com/khordoo" target="_blank" class="text-sky-400 hover:underline">github.com/khordoo</a>
             <br/>
