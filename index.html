@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahmood Khordoo — Senior Machine Learning Engineer &amp; Tech Lead</title>
-  <meta name="description" content="Portfolio of Mahmood Khordoo. Senior Machine Learning Engineer & Tech Lead specializing in Generative AI, Multi-Agent Systems, MLOps, and Bio-Inspired Computing." />
-  <meta name="keywords" content="Mahmood Khordoo, Machine Learning Engineer, MLOps, GenAI, LangGraph, Multi-Agent Systems, RAG, PyTorch, AWS, Bedrock, Montreal" />
+  <title>Mahmood Khordoo — Senior Machine Learning Engineer &amp; Tech Lead (Montreal)</title>
+  <meta name="description" content="Portfolio of Mahmood Khordoo — Montreal-based Senior Machine Learning Engineer & Tech Lead specializing in Generative AI, Multi-Agent Systems, Enterprise MLOps, and Bio-Inspired Computing." />
+  <meta name="keywords" content="Mahmood Khordoo, Machine Learning Engineer, Staff ML Engineer, MLOps, GenAI, LangGraph, Multi-Agent Systems, RAG, PyTorch, AWS, Bedrock, Montreal" />
   <meta name="author" content="Mahmood Khordoo" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Mahmood Khordoo — Senior Machine Learning Engineer & Tech Lead" />
-  <meta property="og:description" content="Generative AI · Multi-Agent Orchestration · Enterprise MLOps · Bio-Inspired Computing" />
+  <meta property="og:description" content="Montreal, QC · Generative AI · Multi-Agent Orchestration · Enterprise MLOps · Bio-Inspired Computing" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://khordoo.github.io/" />
-  <meta property="og:image" content="assets/mahmood.jpg" />
+  <meta property="og:image" content="assets/mahmood2.jpg" />
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
@@ -60,171 +60,220 @@
   <!-- ==========================================================================
        Top Navigation & Telemetry Bar
        ========================================================================== -->
-  <header class="fixed top-0 inset-x-0 z-50 bg-white/95 dark:bg-[#041a1f]/95 backdrop-blur-md border-b border-slate-900/10 dark:border-cyan-900/40 transition-colors">
+  <header class="fixed top-0 inset-x-0 z-50 bg-white/95 dark:bg-[#041a1f]/95 backdrop-blur-md border-b border-slate-900/15 dark:border-cyan-900/50 transition-colors">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between font-mono text-xs">
       
-      <!-- Brand & Session State -->
+      <!-- Brand & Montreal Node State -->
       <div class="flex items-center gap-3">
         <a href="#hero" class="flex items-center gap-2 font-bold tracking-tight text-slate-900 dark:text-emerald-400 hover:opacity-80 transition-opacity">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>mahmood@lab:~$</span>
+          <span>mahmood@mtl:~$</span>
         </a>
-        <span class="hidden md:inline-block text-slate-400 dark:text-slate-500">|</span>
-        <span class="hidden md:inline-flex items-center gap-1.5 text-[11px] text-slate-500 dark:text-emerald-300/70">
-          <span class="text-emerald-600 dark:text-emerald-400">SYS: ONLINE</span>
-          <span>// MTL [45.5°N 73.5°W]</span>
+        <span class="hidden md:inline-block text-slate-400 dark:text-slate-600">|</span>
+        <span class="hidden md:inline-flex items-center gap-1.5 text-[11px] text-slate-500 dark:text-emerald-300/80">
+          <span class="text-emerald-600 dark:text-emerald-400 font-semibold">SYS: ONLINE</span>
+          <span>// MONTREAL, QC [45.5°N 73.5°W]</span>
         </span>
       </div>
 
       <!-- Navigation Links -->
       <nav class="hidden lg:flex items-center gap-5 text-[12px] font-medium text-slate-600 dark:text-slate-300">
+        <a href="#terminal" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">00.shell</a>
         <a href="#projects" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">01.work</a>
         <a href="#experience" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">02.experience</a>
         <a href="#stack" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">03.stack</a>
         <a href="#certs" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">04.certs</a>
-        <a href="#terminal" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">05.terminal</a>
+        <a href="#education" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">05.roots</a>
       </nav>
 
       <!-- Controls & Quick Actions -->
       <div class="flex items-center gap-2.5">
-        <button id="theme-toggle-btn" title="Toggle Theme (Light / Dark CRT)" class="retro-btn text-[11px] py-1 px-2.5">
+        <button id="theme-toggle-btn" title="Toggle Theme (Light Precision / Dark CRT)" class="retro-btn text-[11px] py-1 px-2.5">
           <span class="material-symbols-outlined text-[14px]">contrast</span>
-          <span class="hidden sm:inline">THEME</span>
+          <span id="theme-toggle-label" class="hidden sm:inline">DARK</span>
         </button>
         <a href="mailto:m.khordoo@gmail.com" class="retro-btn retro-btn-primary text-[11px] py-1 px-2.5">
-          <span>[say hi]</span>
+          <span>[let's talk]</span>
         </a>
       </div>
 
     </div>
   </header>
 
+  <!-- Scroll Progress Telemetry Bar -->
+  <div id="scroll-progress-bar" aria-hidden="true"></div>
+
   <!-- Main Container -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 pt-20 pb-24 flex flex-col gap-12">
 
     <!-- ==========================================================================
-         Hero Section (Dual Column: Spec Identity + Large ASCII Portrait)
+         Hero Section (Dual Column: Identity + Executive Impact KPIs | Portrait)
          ========================================================================== -->
-    <section id="hero" class="pt-4 sm:pt-8">
+    <section id="hero" class="pt-4 sm:pt-6">
       
       <!-- Top Telemetry Ribbon -->
-      <div class="w-full flex items-center justify-between pb-3 mb-6 border-b border-slate-900/15 dark:border-cyan-900/40 font-mono text-[11px] text-slate-500 dark:text-emerald-400/80">
-        <div class="flex items-center gap-2">
-          <span class="inline-block w-2 h-2 bg-emerald-500 rounded-full animate-ping"></span>
+      <div class="w-full flex flex-wrap items-center justify-between gap-2 pb-3 mb-6 border-b border-slate-900/15 dark:border-cyan-900/40 font-mono text-[11px] text-slate-500 dark:text-emerald-400/80">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="relative flex h-2 w-2">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
           <span class="font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400">SPEC // MK-SYS.2026</span>
+          <span class="text-slate-400 dark:text-slate-600">•</span>
+          <span class="font-semibold text-slate-700 dark:text-slate-200">MONTREAL, QC</span>
           <span class="hidden sm:inline text-slate-400 dark:text-slate-600">•</span>
-          <span class="hidden sm:inline">ARCHIVE VOL. 26</span>
+          <span id="montreal-clock" class="hidden sm:inline text-slate-500 dark:text-emerald-300/80">EST</span>
         </div>
         <div class="flex items-center gap-2">
           <span id="nav-section-telemetry" class="text-slate-600 dark:text-slate-400 font-semibold">// SEC: HERO</span>
         </div>
       </div>
 
-      <!-- 2-Column Hero Grid -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <!-- 2-Column Hero Grid (Equal Height Balance) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
         
-        <!-- Left Column: Identity, Thesis, Buttons & Terminal Card (7 cols) -->
-        <div class="lg:col-span-7 flex flex-col gap-5">
+        <!-- Left Column: Identity, Thesis, Action Controls & Executive KPI Telemetry (7 cols) -->
+        <div class="lg:col-span-7 min-w-0 flex flex-col justify-between gap-5">
           
-          <div>
-            <div class="font-mono text-xs uppercase tracking-widest text-emerald-600 dark:text-emerald-400 font-semibold mb-1">
-              // lead machine learning engineer &amp; systems architect
-            </div>
-            <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white uppercase leading-[1.05]">
-              Mahmood<br />Khordoo
-            </h1>
-            <p class="font-mono text-sm sm:text-base text-slate-700 dark:text-emerald-200 mt-2 font-medium">
-              Generative AI · Multi-Agent Systems · Enterprise MLOps · Bio-Inspired Computing
-            </p>
-          </div>
-
-          <!-- Architectural Thesis Quote Card -->
-          <div class="p-4 bg-white dark:bg-[#071d22] border-l-4 border-emerald-600 dark:border-emerald-400 border border-slate-900/15 dark:border-cyan-900/40 shadow-sm">
-            <p class="font-display text-sm sm:text-base text-slate-800 dark:text-slate-200 leading-snug">
-              “Architecting resilient autonomous reasoning systems, high-throughput model pipelines, and multi-agent infrastructure.”
-            </p>
-            <div class="mt-2 font-mono text-[11px] text-slate-500 dark:text-slate-400">
-              Technical Lead @ Rio Tinto · 10+ Years Advancing Predictive &amp; Autonomous AI
-            </div>
-          </div>
-
-          <!-- Action Buttons Bar -->
-          <div class="flex flex-wrap gap-2 pt-1">
-            <a href="https://github.com/khordoo" target="_blank" rel="noopener" class="retro-btn">
-              <span class="material-symbols-outlined text-[15px]">terminal</span>
-              <span>GitHub ↗</span>
-            </a>
-            <a href="https://linkedin.com/in/khordoo" target="_blank" rel="noopener" class="retro-btn">
-              <span class="material-symbols-outlined text-[15px]">link</span>
-              <span>LinkedIn ↗</span>
-            </a>
-            <a href="https://huggingface.co/mkhordoo" target="_blank" rel="noopener" class="retro-btn">
-              <span class="material-symbols-outlined text-[15px]">token</span>
-              <span>Hugging Face ↗</span>
-            </a>
-            <a href="#experience" class="retro-btn retro-btn-primary">
-              <span class="material-symbols-outlined text-[15px]">description</span>
-              <span>Experience Log</span>
-            </a>
-            <a href="mailto:m.khordoo@gmail.com" class="retro-btn">
-              <span class="material-symbols-outlined text-[15px]">mail</span>
-              <span>Get in Touch</span>
-            </a>
-          </div>
-
-          <!-- Interactive Mini Terminal Box (imnosovsky & awesomejev style) -->
-          <div class="terminal-card mt-2">
-            <div class="terminal-bar">
-              <span class="font-bold flex items-center gap-1.5">
-                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                mahmood@lab: ~
+          <div class="flex flex-col gap-4">
+            <!-- Availability & Montreal Role Readiness Pill -->
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="inline-flex items-center gap-2 px-2.5 py-1 bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-500/50 font-mono text-[11px] font-semibold text-emerald-800 dark:text-emerald-300">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                OPEN TO STAFF / LEAD AI &amp; ML ROLES
               </span>
-              <span class="text-slate-400 text-[11px]">[-][□][x]</span>
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white dark:bg-[#071d22] border border-slate-300 dark:border-cyan-900 font-mono text-[11px] text-slate-700 dark:text-slate-300">
+                <span class="material-symbols-outlined text-[13px] text-emerald-600 dark:text-emerald-400">location_on</span>
+                <span>Montreal, QC · Hybrid / Remote</span>
+              </span>
             </div>
-            <div class="terminal-body space-y-2 text-xs sm:text-sm">
-              <div>
-                <span class="terminal-prompt">mahmood@lab:~$</span>
-                <span class="terminal-cmd font-semibold">whoami</span>
+
+            <div>
+              <div class="font-mono text-xs uppercase tracking-widest text-emerald-600 dark:text-emerald-400 font-semibold mb-1">
+                // senior machine learning engineer &amp; technical lead
               </div>
-              <div class="text-slate-200">
-                Mahmood Khordoo — Senior Machine Learning Engineer &amp; Technical Lead
+              <h1 class="font-display text-4xl sm:text-5xl lg:text-[3.6rem] font-bold tracking-tight text-slate-900 dark:text-white uppercase leading-[1.02]">
+                Mahmood<br />Khordoo
+              </h1>
+              <p class="font-mono text-sm sm:text-[15px] text-slate-700 dark:text-emerald-200 mt-2.5 font-medium">
+                Generative AI · Multi-Agent Systems · Enterprise MLOps · Bio-Inspired Computing
+              </p>
+            </div>
+
+            <!-- Architectural Thesis Quote Card -->
+            <div class="p-4 bg-white dark:bg-[#071d22] border-l-4 border-emerald-600 dark:border-emerald-400 border border-slate-900/20 dark:border-cyan-900/50 shadow-sm">
+              <p class="font-display text-sm sm:text-base text-slate-800 dark:text-slate-100 leading-snug font-medium">
+                “Architecting resilient autonomous reasoning systems, high-throughput model pipelines, and production multi-agent infrastructure.”
+              </p>
+              <div class="mt-2 font-mono text-[11px] text-slate-500 dark:text-slate-400">
+                Technical Lead @ Rio Tinto (Montreal) · 10+ Years Shipping Production &amp; Autonomous AI
               </div>
-              <div class="text-emerald-400 space-y-1 font-mono text-[12px]">
-                <div>&gt; <span class="text-white font-semibold">GenAI &amp; Agents:</span> LangGraph · Multi-Agent Orchestration · Advanced RAG</div>
-                <div>&gt; <span class="text-white font-semibold">Production MLOps:</span> AWS SageMaker · Ray · vLLM · Distributed Inference</div>
-                <div>&gt; <span class="text-white font-semibold">Impact:</span> Industrialized Enterprise MLOps · 4mo to &lt;5wk Multi-Agent RAG Acceleration</div>
+            </div>
+
+            <!-- Action Buttons Bar -->
+            <div class="flex flex-wrap gap-2 pt-0.5">
+              <a href="https://github.com/khordoo" target="_blank" rel="noopener" class="retro-btn">
+                <span class="material-symbols-outlined text-[15px]">terminal</span>
+                <span>GitHub ↗</span>
+              </a>
+              <a href="https://linkedin.com/in/khordoo" target="_blank" rel="noopener" class="retro-btn">
+                <span class="material-symbols-outlined text-[15px]">link</span>
+                <span>LinkedIn ↗</span>
+              </a>
+              <a href="https://huggingface.co/mkhordoo" target="_blank" rel="noopener" class="retro-btn">
+                <span class="material-symbols-outlined text-[15px]">token</span>
+                <span>Hugging Face ↗</span>
+              </a>
+              <a href="#experience" class="retro-btn retro-btn-primary">
+                <span class="material-symbols-outlined text-[15px]">description</span>
+                <span>Experience Log</span>
+              </a>
+              <button type="button" data-copy-email="m.khordoo@gmail.com" title="Copy m.khordoo@gmail.com to clipboard" class="retro-btn">
+                <span class="material-symbols-outlined text-[15px]">content_copy</span>
+                <span data-copy-label>Copy Email</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Executive Impact Telemetry Strip (Replaces Hero Terminal — Scannable in 5s) -->
+          <div class="grid grid-cols-2 gap-3 pt-1">
+            <div class="kpi-tile">
+              <div class="flex items-center justify-between font-mono text-[10px] text-slate-400 dark:text-slate-500 mb-1">
+                <span>IMPACT.01</span>
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold">ENTERPRISE</span>
               </div>
-              <div class="pt-1 flex items-center justify-between text-[11px] text-slate-400 border-t border-teal-900/60 mt-2">
-                <span>mahmood@lab:~$ <span class="inline-block w-2 h-3.5 bg-emerald-400 cursor-blink align-middle"></span></span>
-                <span class="text-emerald-400/90 font-mono">// press <kbd class="px-1.5 py-0.5 bg-teal-950 border border-teal-800 rounded text-emerald-300 font-bold">/</kbd> to take over terminal</span>
+              <div class="font-display text-2xl sm:text-[1.65rem] font-bold tracking-tight text-slate-900 dark:text-white leading-none">
+                MULT-MM$
+              </div>
+              <div class="font-mono text-[11px] text-slate-600 dark:text-slate-300 mt-1.5 leading-snug">
+                Industrial MLOps blueprint on AWS SageMaker
+              </div>
+            </div>
+
+            <div class="kpi-tile">
+              <div class="flex items-center justify-between font-mono text-[10px] text-slate-400 dark:text-slate-500 mb-1">
+                <span>IMPACT.02</span>
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold">AGENTIC RAG</span>
+              </div>
+              <div class="font-display text-2xl sm:text-[1.65rem] font-bold tracking-tight text-emerald-600 dark:text-emerald-400 leading-none">
+                &lt; 5 WKS
+              </div>
+              <div class="font-mono text-[11px] text-slate-600 dark:text-slate-300 mt-1.5 leading-snug">
+                Reusable LangGraph delivery · 6-figure savings
+              </div>
+            </div>
+
+            <div class="kpi-tile">
+              <div class="flex items-center justify-between font-mono text-[10px] text-slate-400 dark:text-slate-500 mb-1">
+                <span>IMPACT.03</span>
+                <span class="text-sky-600 dark:text-sky-400 font-bold">SELF-EVAL</span>
+              </div>
+              <div class="font-display text-2xl sm:text-[1.65rem] font-bold tracking-tight text-sky-600 dark:text-sky-400 leading-none">
+                19% → 85%
+              </div>
+              <div class="font-mono text-[11px] text-slate-600 dark:text-slate-300 mt-1.5 leading-snug">
+                Strict agent task accuracy via Arize prompt loops
+              </div>
+            </div>
+
+            <div class="kpi-tile">
+              <div class="flex items-center justify-between font-mono text-[10px] text-slate-400 dark:text-slate-500 mb-1">
+                <span>IMPACT.04</span>
+                <span class="text-amber-600 dark:text-amber-400 font-bold">HONORS</span>
+              </div>
+              <div class="font-display text-2xl sm:text-[1.65rem] font-bold tracking-tight text-amber-600 dark:text-amber-400 leading-none">
+                2× GLOBAL
+              </div>
+              <div class="font-mono text-[11px] text-slate-600 dark:text-slate-300 mt-1.5 leading-snug">
+                Google TF 2.0 Grand Prize &amp; AWS GenAI 1st Place
               </div>
             </div>
           </div>
 
         </div>
 
-        <!-- Right Column: Large Monospace ASCII Face Portrait (5 cols) -->
-        <div class="lg:col-span-5 flex flex-col">
+        <!-- Right Column: High-Resolution Portrait & Interactive CRT ASCII Viewport (5 cols) -->
+        <div class="lg:col-span-5 min-w-0 flex flex-col">
           
-          <div id="ascii-container" class="ascii-frame phosphor-green">
+          <div id="ascii-container" class="ascii-frame phosphor-green h-full min-w-0">
             
             <!-- Window Header -->
-            <div class="spec-header !bg-[#02181d] !border-b !border-teal-900/80">
+            <div class="spec-header !bg-[#021419] !border-b !border-teal-900/80">
               <div class="flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span class="font-bold text-emerald-400">PORTRAIT // HEADSHOT</span>
+                <span class="font-bold text-emerald-400">PORTRAIT // MONTREAL NODE</span>
               </div>
               <div class="text-[10px] text-slate-400 tracking-wider">45.5°N 73.5°W</div>
             </div>
 
-            <!-- View & Phosphor Controls -->
-            <div class="bg-[#032026] px-3 py-1.5 border-b border-teal-900/60 flex items-center justify-between text-[10px] font-mono text-slate-300">
-              <span class="text-slate-400 uppercase tracking-wider">VIEW:</span>
+            <!-- View & Phosphor Controls (Dark CRT Bezel Styled) -->
+            <div class="bg-[#031d23] px-3 py-1.5 border-b border-teal-900/70 flex items-center justify-between text-[10px] font-mono text-slate-300">
+              <span class="text-slate-400 uppercase tracking-wider">MODE:</span>
               <div class="flex items-center gap-1.5">
-                <button data-phosphor="photo" class="retro-btn active text-[10px] py-0.5 px-2 border-teal-800 text-white bg-slate-900 dark:bg-emerald-500 dark:text-slate-950 font-bold">PHOTO</button>
-                <button data-phosphor="green" class="retro-btn text-[10px] py-0.5 px-1.5 border-teal-800 text-emerald-400">ASCII (GRN)</button>
-                <button data-phosphor="cyan" class="retro-btn text-[10px] py-0.5 px-1.5 border-teal-800 text-sky-400">ASCII (CYN)</button>
-                <button data-phosphor="amber" class="retro-btn text-[10px] py-0.5 px-1.5 border-teal-800 text-amber-400">ASCII (AMB)</button>
+                <button type="button" data-phosphor="photo" class="crt-btn active">PHOTO</button>
+                <button type="button" data-phosphor="green" class="crt-btn">ASCII GRN</button>
+                <button type="button" data-phosphor="cyan" class="crt-btn">ASCII CYN</button>
+                <button type="button" data-phosphor="amber" class="crt-btn">ASCII AMB</button>
               </div>
             </div>
 
@@ -234,10 +283,19 @@
               <div class="crt-radial-glow"></div>
 
               <!-- Real Photo Overlay (DEFAULT) -->
-              <div id="photo-overlay" class="absolute inset-0 z-20 bg-[#021418] flex flex-col items-center justify-center p-4">
-                <img src="assets/mahmood_cropped.jpg" alt="Mahmood Khordoo portrait" class="w-full max-w-[340px] aspect-[700/950] object-cover border border-emerald-500/40 shadow-xl" />
-                <div class="mt-2 text-center font-mono text-[11px] text-emerald-400 font-semibold">
-                  Mahmood Khordoo — High-Resolution Source
+              <div id="photo-overlay" class="absolute inset-0 z-20 bg-[#021216] flex flex-col items-center justify-center p-5">
+                <div class="relative w-full max-w-[335px] aspect-[1137/1528] p-1.5 border border-emerald-500/40 bg-[#041d23] shadow-2xl">
+                  <!-- Precision Corner Reticles -->
+                  <span class="absolute -top-1 -left-1 w-3 h-3 border-t-2 border-l-2 border-emerald-400"></span>
+                  <span class="absolute -top-1 -right-1 w-3 h-3 border-t-2 border-r-2 border-emerald-400"></span>
+                  <span class="absolute -bottom-1 -left-1 w-3 h-3 border-b-2 border-l-2 border-emerald-400"></span>
+                  <span class="absolute -bottom-1 -right-1 w-3 h-3 border-b-2 border-r-2 border-emerald-400"></span>
+                  <img src="assets/mahmood2.jpg" alt="Mahmood Khordoo portrait" class="w-full h-full object-cover object-top" />
+                </div>
+                <div class="mt-3 flex items-center gap-2 font-mono text-[11px] text-emerald-400/95 font-medium">
+                  <span>Mahmood Khordoo</span>
+                  <span class="text-teal-700">//</span>
+                  <span class="text-slate-400">Montreal, QC</span>
                 </div>
               </div>
 
@@ -315,9 +373,9 @@
             </div>
 
             <!-- Bottom CRT Status Bar -->
-            <div class="bg-[#02181d] px-3 py-1.5 border-t border-teal-900/80 flex items-center justify-between font-mono text-[10px] text-slate-400">
-              <span>RES: 78x70 CHARS</span>
-              <span class="text-emerald-400 font-medium">TERMINAL PHOSPHOR // ACTIVE</span>
+            <div class="bg-[#021419] px-3 py-1.5 border-t border-teal-900/80 flex items-center justify-between font-mono text-[10px] text-slate-400">
+              <span id="portrait-res-readout">RES: 1137x1528 // HD SOURCE</span>
+              <span id="portrait-mode-readout" class="text-emerald-400 font-medium">OPTICAL // ACTIVE</span>
             </div>
 
           </div>
@@ -329,99 +387,146 @@
     </section>
 
     <!-- ==========================================================================
-         Research Profile & Spec Sheet (AwesomeJEV Key-Value Primitives)
+         System Spec Sheet + Embedded Live Interactive Terminal
          ========================================================================== -->
-    <section class="grid grid-cols-1 md:grid-cols-12 gap-5">
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-stretch">
       
-      <!-- Spec Sheet Table (AwesomeJEV style) -->
-      <div class="md:col-span-7 spec-box">
+      <!-- Spec Sheet Table (7 cols) -->
+      <div class="lg:col-span-7 min-w-0 spec-box flex flex-col">
         <div class="spec-header">
           <span>MAHMOOD • SYSTEM SPEC SHEET</span>
           <span class="text-emerald-400">v2.6 // PROD</span>
         </div>
-        <table class="spec-table">
-          <tbody>
-            <tr>
-              <td class="key">role</td>
-              <td class="val font-semibold text-emerald-700 dark:text-emerald-400">Senior Machine Learning Engineer &amp; Technical Lead</td>
-            </tr>
-            <tr>
-              <td class="key">specialization</td>
-              <td class="val">Generative AI, Multi-Agent Reasoning Systems, Production MLOps, Biological Connectome Sim</td>
-            </tr>
-            <tr>
-              <td class="key">enterprise impact</td>
-              <td class="val">
-                <span class="badge-spec badge-emerald mr-1.5">&lt; 5 WEEKS</span> Multi-Agent RAG · 
-                <span class="badge-spec badge-emerald mr-1.5">MULT-MM$ IMPACT</span> Industrial MLOps · 
-                <span class="badge-spec badge-cyan">80% SPEEDUP</span> AsyncIO ETL
-              </td>
-            </tr>
-            <tr>
-              <td class="key">core framework</td>
-              <td class="val font-mono text-xs">LangGraph, PyTorch, Transformers, AWS SageMaker, Ray, Triton, vLLM, Docker</td>
-            </tr>
-            <tr>
-              <td class="key">awards &amp; honors</td>
-              <td class="val">
-                <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">AWS GenAI Hackathon Winner</span> · 
-                <span class="text-xs font-semibold text-amber-600 dark:text-amber-400">Google Grand Prize (TF 2.0)</span> · 
-                <span class="text-xs font-semibold text-sky-600 dark:text-sky-400">Arize Phoenix Agentic AI</span>
-              </td>
-            </tr>
-            <tr>
-              <td class="key">certifications</td>
-              <td class="val">
-                <span class="text-xs font-semibold">AWS ML Specialty</span> · 
-                <span class="text-xs font-semibold">AWS Solutions Architect</span> · 
-                <span class="text-xs font-semibold">AWS Developer</span> · 
-                <span class="text-xs font-semibold">DeepLearning.AI</span> · 
-                <span class="text-xs font-semibold">Udacity</span>
-              </td>
-            </tr>
-            <tr>
-              <td class="key">dispatch</td>
-              <td class="val">
-                <a href="mailto:m.khordoo@gmail.com" class="text-emerald-600 dark:text-emerald-400 font-semibold hover:underline">m.khordoo@gmail.com</a>
-                <span class="text-slate-400 mx-1">·</span>
-                <span class="text-slate-600 dark:text-slate-400">Montreal, QC [Remote-Friendly]</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="flex-1">
+          <table class="spec-table h-full">
+            <tbody>
+              <tr>
+                <td class="key">role</td>
+                <td class="val font-semibold text-emerald-700 dark:text-emerald-400">Senior Machine Learning Engineer &amp; Technical Lead</td>
+              </tr>
+              <tr>
+                <td class="key">location</td>
+                <td class="val">
+                  <span class="font-semibold text-slate-900 dark:text-white">Montreal, Quebec, Canada</span>
+                  <span class="text-slate-400 mx-1">·</span>
+                  <span class="badge-spec badge-emerald">HYBRID / REMOTE</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="key">specialization</td>
+                <td class="val">Generative AI, Multi-Agent Reasoning Systems, Production MLOps, Bio-Inspired Computing</td>
+              </tr>
+              <tr>
+                <td class="key">enterprise impact</td>
+                <td class="val leading-relaxed">
+                  <span class="badge-spec badge-emerald mr-1">&lt; 5 WEEKS</span> Multi-Agent RAG ·
+                  <span class="badge-spec badge-emerald mr-1">MULT-MM$ IMPACT</span> Industrial MLOps ·
+                  <span class="badge-spec badge-cyan mr-1">19% → 85%</span> Agent Eval ·
+                  <span class="badge-spec badge-cyan">80% SPEEDUP</span> AsyncIO ETL
+                </td>
+              </tr>
+              <tr>
+                <td class="key">core stack</td>
+                <td class="val font-mono text-xs">LangGraph, PyTorch, Transformers, AWS SageMaker, Ray, Triton, vLLM, Docker</td>
+              </tr>
+              <tr>
+                <td class="key">awards &amp; honors</td>
+                <td class="val">
+                  <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400">AWS GenAI Hackathon Winner</span> ·
+                  <span class="text-xs font-semibold text-amber-600 dark:text-amber-400">Google Grand Prize (TF 2.0)</span> ·
+                  <span class="text-xs font-semibold text-sky-600 dark:text-sky-400">Arize Phoenix Agentic AI</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="key">certifications</td>
+                <td class="val">
+                  <span class="text-xs font-semibold">AWS ML Specialty</span> ·
+                  <span class="text-xs font-semibold">AWS Solutions Architect</span> ·
+                  <span class="text-xs font-semibold">AWS Developer</span> ·
+                  <span class="text-xs font-semibold">DeepLearning.AI</span> ·
+                  <span class="text-xs font-semibold">Udacity</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="key">dispatch</td>
+                <td class="val">
+                  <a href="mailto:m.khordoo@gmail.com" class="text-emerald-600 dark:text-emerald-400 font-semibold hover:underline">m.khordoo@gmail.com</a>
+                  <span class="text-slate-400 mx-1">·</span>
+                  <span class="text-slate-600 dark:text-slate-400">github.com/khordoo</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
-      <!-- Architectural Primitives / Code Snippet Box (AwesomeJEV style) -->
-      <div class="md:col-span-5 spec-box">
-        <div class="spec-header">
-          <span>PRIMITIVES // AGENTIC ARCHITECTURE</span>
-          <span class="text-sky-400">PYTHON 3.12</span>
+      <!-- Interactive Live Terminal (Replaces Primitives // Agentic Architecture) -->
+      <div id="terminal" class="lg:col-span-5 min-w-0 terminal-card scroll-mt-20">
+        <div class="terminal-bar">
+          <span class="font-bold flex items-center gap-1.5 text-emerald-400">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>mahmood@mtl: ~ [zsh]</span>
+          </span>
+          <span class="text-slate-400 text-[10px] tracking-wider">LIVE SHELL // [-][□][x]</span>
         </div>
-        <div class="p-3 bg-[#08171a] font-mono text-[11px] sm:text-[12px] leading-relaxed text-emerald-300 overflow-x-auto">
-          <div class="text-slate-400">// Dual-Process Reflex &amp; Strategic Planner</div>
-          <div><span class="text-sky-400">from</span> langgraph.graph <span class="text-sky-400">import</span> StateGraph, END</div>
-          <div><span class="text-sky-400">from</span> typesafe_jev <span class="text-sky-400">import</span> JevClient</div>
-          <br />
-          <div><span class="text-amber-400">class</span> <span class="text-white font-bold">AgentState</span>(TypedDict):</div>
-          <div class="pl-4">query: <span class="text-sky-400">str</span></div>
-          <div class="pl-4">system1_reflex: <span class="text-sky-400">ReflexAction</span></div>
-          <div class="pl-4">system2_advice: <span class="text-sky-400">Optional</span>[StrategicPlan]</div>
-          <br />
-          <div class="text-slate-400">// High-concurrency sub-50ms execution</div>
-          <div>graph = StateGraph(AgentState)</div>
-          <div>graph.add_node(<span class="text-amber-300">"reflex_fast"</span>, run_fast_policy)</div>
-          <div>graph.add_node(<span class="text-amber-300">"reasoner_deep"</span>, run_system2_llm)</div>
-          <div>graph.add_edge(<span class="text-amber-300">"reflex_fast"</span>, END)</div>
+
+        <!-- Scrollable Live Output -->
+        <div id="interactive-terminal" class="terminal-scroll flex-1 p-3.5 text-xs leading-relaxed overflow-y-auto max-h-[300px] min-h-[220px] space-y-2">
+          <div>
+            <span class="text-emerald-400 font-bold">mahmood@mtl:~$</span>
+            <span class="text-white font-semibold"> whoami</span>
+          </div>
+          <div class="text-slate-200 font-medium">
+            Mahmood Khordoo — Senior ML Engineer &amp; Tech Lead
+          </div>
+          <div class="text-emerald-300/95 space-y-1 text-[11.5px]">
+            <div>&gt; <span class="text-white font-semibold">Base:</span> Montreal, QC [45.5°N 73.5°W] · Open to Staff/Lead Roles</div>
+            <div>&gt; <span class="text-white font-semibold">GenAI &amp; Agents:</span> LangGraph · Multi-Agent Orchestration · RAG</div>
+            <div>&gt; <span class="text-white font-semibold">Production MLOps:</span> AWS SageMaker · Ray · vLLM · Drift Ops</div>
+            <div>&gt; <span class="text-white font-semibold">Impact:</span> MULT-MM$ MLOps · &lt;5wk RAG · 19%→85% Agent Eval</div>
+          </div>
+
+          <div id="terminal-cli-output" class="space-y-1"></div>
+        </div>
+
+        <!-- Quick-Run Clickable Command Chips -->
+        <div class="px-3 py-2 bg-[#021014] border-t border-teal-900/60 flex flex-wrap items-center gap-1">
+          <span class="text-[9.5px] text-slate-500 uppercase mr-0.5">RUN:</span>
+          <button type="button" data-cli-cmd="help" class="term-chip">help</button>
+          <button type="button" data-cli-cmd="projects" class="term-chip">projects</button>
+          <button type="button" data-cli-cmd="exp" class="term-chip">exp</button>
+          <button type="button" data-cli-cmd="skills" class="term-chip">skills</button>
+          <button type="button" data-cli-cmd="awards" class="term-chip">awards</button>
+          <button type="button" data-cli-cmd="montreal" class="term-chip">montreal</button>
+          <button type="button" data-cli-cmd="contact" class="term-chip">contact</button>
+          <button type="button" data-cli-cmd="clear" class="term-chip">clear</button>
+        </div>
+
+        <!-- Live Interactive Command Input -->
+        <div class="px-3.5 py-2.5 bg-[#031317] border-t border-teal-900/70 flex items-center gap-2">
+          <span class="text-emerald-400 font-bold text-xs shrink-0">mahmood@mtl:~$</span>
+          <input
+            type="text"
+            id="terminal-cli-input"
+            aria-label="Interactive portfolio terminal input"
+            placeholder="type command or press / ..."
+            class="w-full bg-transparent border-none outline-none text-white font-mono text-xs placeholder:text-slate-500 focus:outline-none"
+          />
+        </div>
+
+        <!-- Terminal Footer Hint -->
+        <div class="px-3.5 py-1.5 bg-[#020d10] border-t border-teal-900/50 flex items-center justify-between text-[10px] text-slate-400">
+          <span>Press <kbd class="px-1 py-0.5 bg-teal-950 border border-teal-800 text-emerald-300 font-bold">/</kbd> anywhere to focus</span>
+          <span>↑↓ history · <span class="text-emerald-400">TTY0</span></span>
         </div>
       </div>
 
     </section>
 
     <!-- ==========================================================================
-         Section 01: Selected Work / Featured Projects (AwesomeJEV Style)
-         (Only Public Research & Open-Source Projects)
+         Section 01: Selected Work / Featured Projects
          ========================================================================== -->
-    <section id="projects" class="flex flex-col gap-4">
+    <section id="projects" class="flex flex-col gap-4 scroll-mt-20">
       
       <!-- Section Title Bar -->
       <div class="flex items-baseline justify-between border-b-2 border-slate-900 dark:border-cyan-900 pb-2">
@@ -434,7 +539,7 @@
         <span class="font-mono text-xs text-slate-500 dark:text-slate-400 font-medium">[9 PRODUCTION &amp; RESEARCH ARCHIVES]</span>
       </div>
 
-      <!-- Filter & Query Console (AwesomeJEV Layout) -->
+      <!-- Filter & Query Console -->
       <div class="spec-box p-3 sm:p-4 bg-white dark:bg-[#071c22]">
         
         <div class="flex items-center justify-between font-mono text-xs text-slate-500 dark:text-slate-400 mb-2">
@@ -444,34 +549,34 @@
 
         <!-- Search Bar -->
         <div class="relative mb-3">
-          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400 font-mono text-sm">
+          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-emerald-600 dark:text-emerald-400 font-mono text-sm font-bold">
             &gt;
           </div>
           <input 
             type="text" 
             id="project-search" 
             placeholder="search name, description, stack, keyword (e.g. PyTorch, RAG, AWS, JEV, LangGraph)..." 
-            class="w-full pl-8 pr-4 py-2 border-1.5 border-slate-900 dark:border-cyan-800 bg-slate-50 dark:bg-[#031518] text-slate-900 dark:text-white font-mono text-xs sm:text-sm focus:outline-none focus:ring-1 focus:ring-emerald-500"
+            class="w-full pl-8 pr-4 py-2 border-[1.5px] border-slate-900 dark:border-cyan-800 bg-slate-50 dark:bg-[#031518] text-slate-900 dark:text-white font-mono text-xs sm:text-sm focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500"
           />
         </div>
 
         <!-- Filter Chips & View Mode Toggle -->
-        <div class="flex flex-wrap items-center justify-between gap-2 pt-1 border-t border-slate-200 dark:border-cyan-950">
+        <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-200 dark:border-cyan-950">
           
           <!-- Category Filters -->
           <div class="flex flex-wrap items-center gap-1.5">
-            <button data-filter="all" class="retro-btn active bg-slate-900 text-white text-[11px] py-1 px-2.5">All (9)</button>
-            <button data-filter="genai" class="retro-btn text-[11px] py-1 px-2.5">GenAI &amp; Agents</button>
-            <button data-filter="mlops" class="retro-btn text-[11px] py-1 px-2.5">Production MLOps</button>
-            <button data-filter="edge" class="retro-btn text-[11px] py-1 px-2.5">Edge AI &amp; Vision</button>
-            <button data-filter="research" class="retro-btn text-[11px] py-1 px-2.5">Research &amp; Bio</button>
+            <button type="button" data-filter="all" class="retro-btn active text-[11px] py-1 px-2.5">All (9)</button>
+            <button type="button" data-filter="genai" class="retro-btn text-[11px] py-1 px-2.5">GenAI &amp; Agents</button>
+            <button type="button" data-filter="mlops" class="retro-btn text-[11px] py-1 px-2.5">Production MLOps</button>
+            <button type="button" data-filter="edge" class="retro-btn text-[11px] py-1 px-2.5">Edge AI &amp; Vision</button>
+            <button type="button" data-filter="research" class="retro-btn text-[11px] py-1 px-2.5">Research &amp; Bio</button>
           </div>
 
           <!-- View Mode: Grid vs Table -->
           <div class="flex items-center gap-1 font-mono text-[11px]">
             <span class="text-slate-400 mr-1 hidden sm:inline">VIEW:</span>
-            <button data-view="grid" class="retro-btn active bg-slate-900 text-white text-[11px] py-1 px-2">⊞ Cards</button>
-            <button data-view="table" class="retro-btn text-[11px] py-1 px-2">☰ Table</button>
+            <button type="button" data-view="grid" class="retro-btn active text-[11px] py-1 px-2">⊞ Cards</button>
+            <button type="button" data-view="table" class="retro-btn text-[11px] py-1 px-2">☰ Table</button>
           </div>
 
         </div>
@@ -492,9 +597,9 @@
             <span class="truncate">01 • DUSTYLM</span>
             <span class="badge-spec badge-emerald">8M PARAMS</span>
           </div>
-          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
-            <img src="assets/dusty-ui.png" alt="DustyLM web interface" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-            <div class="absolute top-2 left-2 badge-spec badge-emerald shadow-xs">SFT RELEASE</div>
+          <div class="project-media bg-slate-50 dark:bg-slate-900" data-lb-title="01 • DustyLM — Live Browser WASM UI" data-lb-sub="8M-parameter language model trained from scratch in 15 minutes" data-lb-bg="bg-white">
+            <img src="assets/dusty-ui.png" alt="DustyLM browser WebAssembly chat interface" loading="lazy" class="w-full h-full object-cover object-top" />
+            <span class="project-zoom-hint">[⤢ inspect]</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between gap-3">
             <div>
@@ -504,9 +609,9 @@
                 An 8M-parameter language model you can train from scratch in 15 minutes. Custom PyTorch architecture, SFT dataset curation (<code>dusty-chat</code>), published PyPI SDK (<code>dustylm-sdk</code>), and in-browser WebAssembly demo.
               </p>
             </div>
-            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
-              <div class="text-slate-500">PyTorch · Transformers · PyPI · Wasm · Hugging Face</div>
-              <div class="flex items-center gap-2">
+            <div class="space-y-2 pt-2.5 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500 dark:text-slate-400">PyTorch · Transformers · PyPI · Wasm · Hugging Face</div>
+              <div class="flex flex-wrap items-center gap-2.5">
                 <a href="https://github.com/khordoo/dusty-lm" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo]</a>
                 <a href="https://khordoo.github.io/dusty-lm/" target="_blank" rel="noopener" class="text-emerald-600 dark:text-emerald-400 hover:underline font-bold">[live site]</a>
                 <a href="https://huggingface.co/mkhordoo/dusty-8m-sft" target="_blank" rel="noopener" class="text-amber-600 dark:text-amber-400 hover:underline font-bold">[weights]</a>
@@ -519,25 +624,26 @@
         <article class="project-card spec-box flex flex-col justify-between" data-category="research genai">
           <div class="spec-header">
             <span class="truncate">02 • JEV REFLEX AUTONOMY</span>
-            <span class="badge-spec badge-cyan">SYSTEM 1/2</span>
+            <span class="badge-spec badge-cyan">★ 24 · SYS 1/2</span>
           </div>
-          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
-            <img src="assets/jev-dashboard.png" alt="JEV Reflex Autonomy Lab dashboard" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-            <div class="absolute top-2 left-2 badge-spec badge-cyan shadow-xs">SIM LAB</div>
+          <div class="project-media bg-[#060d14]" data-lb-title="02 • JEV Reflex Autonomy Lab — Multi-Drone Telemetry" data-lb-sub="Dual-process System 1 reflex + System 2 strategic reasoning simulation" data-lb-bg="bg-[#060d14]">
+            <img src="assets/jev-dashboard.png" alt="JEV Reflex Autonomy Lab multi-drone simulation dashboard" loading="lazy" class="w-full h-full object-cover" />
+            <span class="project-zoom-hint">[⤢ inspect]</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between gap-3">
             <div>
               <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">JEV Reflex Autonomy Lab</h3>
               <p class="font-mono text-xs text-sky-600 dark:text-sky-400 font-medium">Dual-Process Multi-Drone Autonomy &amp; Strategy</p>
               <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
-                Multi-drone simulation exploring TypeSafe Jev System 1 fast reflex policies augmented with System 2 strategic reasoning models via OpenRouter. 1-15 drones navigating dense orbital obstacle fields in real time.
+                Multi-drone simulation exploring TypeSafe Jev System 1 fast reflex policies augmented with System 2 strategic reasoning models via OpenRouter. 1–15 drones navigating dense orbital obstacle fields in real time.
               </p>
             </div>
-            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
-              <div class="text-slate-500">TypeScript · TypeSafe Jev · OpenRouter · Canvas 2D</div>
-              <div class="flex items-center gap-2">
+            <div class="space-y-2 pt-2.5 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500 dark:text-slate-400">TypeScript · TypeSafe Jev · OpenRouter · Canvas 2D</div>
+              <div class="flex flex-wrap items-center gap-2.5">
                 <a href="https://github.com/khordoo/jev-reflex-autonomy-lab" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo]</a>
-                <a href="https://khordoo.github.io/jev-reflex-autonomy-lab/watch-demo.html" target="_blank" rel="noopener" class="text-emerald-600 dark:text-emerald-400 hover:underline font-bold">[play demo]</a>
+                <a href="https://jev-reflex-autonomy-lab.vercel.app" target="_blank" rel="noopener" class="text-emerald-600 dark:text-emerald-400 hover:underline font-bold">[live app]</a>
+                <a href="https://khordoo.github.io/jev-reflex-autonomy-lab/watch-demo.html" target="_blank" rel="noopener" class="text-amber-600 dark:text-amber-400 hover:underline font-bold">[watch demo]</a>
               </div>
             </div>
           </div>
@@ -549,9 +655,9 @@
             <span class="truncate">03 • FLINCH: FLY BRAIN DUEL</span>
             <span class="badge-spec badge-amber">CONNECTOME</span>
           </div>
-          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
-            <img src="assets/flinch-preview.jpeg" alt="FLINCH game preview" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-            <div class="absolute top-2 left-2 badge-spec badge-amber shadow-xs">PLAYABLE</div>
+          <div class="project-media bg-[#060b12]" data-lb-title="03 • FLINCH — Human vs. Drosophila Connectome Duel" data-lb-sub="Interactive LC4/LPLC2 circuit silencing & neural escape replay" data-lb-bg="bg-[#060b12]">
+            <img src="assets/flinch-preview.jpeg" alt="FLINCH Fly Brain Duel neural simulation interface" loading="lazy" class="w-full h-full object-cover" />
+            <span class="project-zoom-hint">[⤢ inspect]</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between gap-3">
             <div>
@@ -561,9 +667,9 @@
                 Playable escape duel against a connectome-based Drosophila melanogaster fly brain model. Features interactive LC4/LPLC2 circuit silencing and replay analysis comparing biological reflex timing to human reaction.
               </p>
             </div>
-            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
-              <div class="text-slate-500">TypeScript · Vite · Drosophila Connectome · WebGL</div>
-              <div class="flex items-center gap-2">
+            <div class="space-y-2 pt-2.5 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500 dark:text-slate-400">TypeScript · Vite · Drosophila Connectome · WebGL</div>
+              <div class="flex flex-wrap items-center gap-2.5">
                 <a href="https://flinch-fly-brain-duel.vercel.app" target="_blank" rel="noopener" class="text-emerald-600 dark:text-emerald-400 hover:underline font-bold">[play online]</a>
                 <a href="https://github.com/khordoo/flinch-fly-brain-duel" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo]</a>
               </div>
@@ -575,23 +681,23 @@
         <article class="project-card spec-box flex flex-col justify-between" data-category="genai mlops">
           <div class="spec-header">
             <span class="truncate">04 • ADVANCED AGENTIC RAG</span>
-            <span class="badge-spec badge-emerald">EVAL SUITE</span>
+            <span class="badge-spec badge-emerald">SYSTEM ARCH</span>
           </div>
-          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
-            <img src="assets/poreflow.png" alt="Advanced Agentic RAG Pipeline" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-            <div class="absolute top-2 left-2 badge-spec badge-emerald shadow-xs">PROD RAG</div>
+          <div class="project-media bg-white" data-lb-title="04 • Advanced Agentic RAG — System Architecture" data-lb-sub="Prefect ingestion, LangGraph answering, Qdrant/PostgreSQL hybrid search & Phoenix traces" data-lb-bg="bg-white">
+            <img src="assets/rag-architecture.png" alt="Advanced Agentic RAG System Architecture Diagram" loading="lazy" class="w-full h-full object-contain p-2" />
+            <span class="project-zoom-hint">[⤢ inspect]</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between gap-3">
             <div>
               <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">Advanced Agentic RAG</h3>
               <p class="font-mono text-xs text-emerald-600 dark:text-emerald-400 font-medium">Hierarchical Chunking, Reranking &amp; Telemetry</p>
               <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
-                Production-grade Retrieval-Augmented Generation pipeline featuring Reciprocal Rank Fusion (RRF), semantic chunking, cross-encoder reranking, and automated evaluation using Phoenix Experiments and RAGAS telemetry.
+                Production-grade Retrieval-Augmented Generation stack combining incremental Prefect ingestion, LangGraph multi-agent answering, hybrid Qdrant/PostgreSQL search with RRF reranking, and Phoenix &amp; RAGAS evaluations.
               </p>
             </div>
-            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
-              <div class="text-slate-500">Python · LangChain · Phoenix · RAGAS · Vector DB</div>
-              <div class="flex items-center gap-2">
+            <div class="space-y-2 pt-2.5 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500 dark:text-slate-400">Python · LangGraph · Prefect · Qdrant · Phoenix · RAGAS</div>
+              <div class="flex flex-wrap items-center gap-2.5">
                 <a href="https://github.com/khordoo/advanced-agentic-rag" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo &amp; docs]</a>
               </div>
             </div>
@@ -604,22 +710,22 @@
             <span class="truncate">05 • INDUSTRIAL MLOPS PLATFORM</span>
             <span class="badge-spec badge-emerald">MULT-MM$ IMPACT</span>
           </div>
-          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
-            <img src="assets/ai_2.jpg" alt="Industrial MLOps Platform" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-            <div class="absolute top-2 left-2 badge-spec badge-emerald shadow-xs">ENTERPRISE PROD</div>
+          <div class="project-media bg-[#041216]" data-lb-title="05 • Industrial MLOps Platform — Control Plane Topology" data-lb-sub="Automated SageMaker training, versioned registry, vLLM/Ray serving & drift monitoring" data-lb-bg="bg-[#041216]">
+            <img src="assets/mlops-platform.jpg" alt="Industrial MLOps Platform control plane and automated pipeline schematic" loading="lazy" class="w-full h-full object-contain bg-[#041216] p-1" />
+            <span class="project-zoom-hint">[⤢ inspect]</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between gap-3">
             <div>
               <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">Industrial MLOps Platform</h3>
-              <p class="font-mono text-xs text-emerald-600 dark:text-emerald-400 font-medium">Automated Training, Deployment &amp; Monitoring</p>
+              <p class="font-mono text-xs text-emerald-600 dark:text-emerald-400 font-medium">Automated Training, Deployment &amp; Drift Ops</p>
               <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
-                Designed and productionized an industrial machine learning solution with automated training, deployment, and monitoring, delivering MULT-MM$ impact.
+                Designed and productionized an enterprise industrial machine learning platform with automated SageMaker training, canary deployment, drift detection, and CI/CD governance—delivering MULT-MM$ business impact.
               </p>
             </div>
-            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
-              <div class="text-slate-500">AWS SageMaker · Ray · vLLM · MLflow · Docker · CI/CD</div>
-              <div class="flex items-center gap-2">
-                <span class="text-emerald-600 dark:text-emerald-400 font-bold">[enterprise-platform]</span>
+            <div class="space-y-2 pt-2.5 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500 dark:text-slate-400">AWS SageMaker · Ray · vLLM · MLflow · Docker · CI/CD</div>
+              <div class="flex flex-wrap items-center gap-2.5">
+                <span class="text-emerald-600 dark:text-emerald-400 font-bold">[enterprise-blueprint]</span>
               </div>
             </div>
           </div>
@@ -631,21 +737,21 @@
             <span class="truncate">06 • CLAUTH</span>
             <span class="badge-spec badge-cyan">PYPI PUBLISHED</span>
           </div>
-          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
-            <img src="assets/res-assist.jpg" alt="CLAUTH Bedrock CLI" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-            <div class="absolute top-2 left-2 badge-spec badge-cyan shadow-xs">CLI TOOL</div>
+          <div class="project-media bg-[#121212]" data-lb-title="06 • CLAUTH — Interactive AWS Bedrock Auth CLI" data-lb-sub="Automated SSO / IAM setup & region model discovery for Claude Code on AWS Bedrock" data-lb-bg="bg-[#121212]">
+            <img src="assets/clauth-init.png" alt="CLAUTH interactive terminal authentication wizard for AWS Bedrock" loading="lazy" class="w-full h-full object-cover object-top" />
+            <span class="project-zoom-hint">[⤢ inspect]</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between gap-3">
             <div>
               <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">CLAUTH: AWS Bedrock CLI</h3>
               <p class="font-mono text-xs text-sky-600 dark:text-sky-400 font-medium">Automated IAM/SSO Auth for Claude Code</p>
               <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
-                Published developer tool on PyPI automating the multi-step authentication wizard for Claude Code on AWS Bedrock. Features interactive IAM profile management and dynamic model discovery across AWS regions.
+                Published developer CLI on PyPI automating the multi-step authentication wizard for Claude Code on AWS Bedrock. Features interactive IAM/SSO profile management and dynamic model discovery across AWS regions.
               </p>
             </div>
-            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
-              <div class="text-slate-500">Python · PyPI · AWS Bedrock · SSO / IAM · Docker</div>
-              <div class="flex items-center gap-2">
+            <div class="space-y-2 pt-2.5 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500 dark:text-slate-400">Python · PyPI · AWS Bedrock · SSO / IAM · CLI</div>
+              <div class="flex flex-wrap items-center gap-2.5">
                 <a href="https://pypi.org/project/clauth/" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[PyPI package]</a>
                 <a href="https://github.com/khordoo/clauth" target="_blank" rel="noopener" class="text-emerald-600 dark:text-emerald-400 hover:underline font-bold">[repo]</a>
               </div>
@@ -659,9 +765,9 @@
             <span class="truncate">07 • DISASTER WATCH</span>
             <span class="badge-spec badge-amber">GOOGLE GRAND PRIZE</span>
           </div>
-          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
-            <img src="assets/disaster-watch.gif" alt="Disaster Watch platform demo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-            <div class="absolute top-2 left-2 badge-spec badge-amber shadow-xs">AWARD WINNER</div>
+          <div class="project-media bg-slate-100 dark:bg-slate-900" data-lb-title="07 • Disaster Watch — Real-Time NLP Crisis Map" data-lb-sub="Google TensorFlow 2.0 Global Competition Grand Prize Winner (★28 GitHub Stars)" data-lb-bg="bg-white">
+            <img src="assets/disaster-watch.gif" alt="Disaster Watch real-time crisis mapping platform demo" loading="lazy" class="w-full h-full object-cover" />
+            <span class="project-zoom-hint">[⤢ inspect]</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between gap-3">
             <div>
@@ -671,64 +777,65 @@
                 Won Google Grand Prize in the TensorFlow 2.0 Competition for developing an NLP platform that identifies natural disaster tweets in real time using deep NER classification and geoparsing for rapid emergency relief.
               </p>
             </div>
-            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
-              <div class="text-slate-500">TensorFlow 2.0 · Keras · NLP / NER · Geoparsing</div>
-              <div class="flex items-center gap-2">
-                <a href="https://github.com/khordoo/disaster-watch" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo]</a>
+            <div class="space-y-2 pt-2.5 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500 dark:text-slate-400">TensorFlow 2.0 · Keras · NLP / NER · Geoparsing</div>
+              <div class="flex flex-wrap items-center gap-2.5">
+                <a href="https://github.com/khordoo/disaster-watch-classifier" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo ★28]</a>
               </div>
             </div>
           </div>
         </article>
 
-        <!-- Card 8: Edge Object Detection -->
+        <!-- Card 8: Edge Object Detection (Traffic Watch) -->
         <article class="project-card spec-box flex flex-col justify-between" data-category="edge">
           <div class="spec-header">
-            <span class="truncate">08 • EDGE OBJECT DETECTION</span>
-            <span class="badge-spec badge-cyan">JETSON TX2</span>
+            <span class="truncate">08 • TRAFFIC WATCH EDGE</span>
+            <span class="badge-spec badge-cyan">JETSON · 30+ FPS</span>
           </div>
-          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
-            <img src="assets/traffic-watch.png" alt="Jetson Edge Object Detection" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-            <div class="absolute top-2 left-2 badge-spec badge-cyan shadow-xs">30+ FPS</div>
+          <div class="project-media bg-[#14171a]" data-lb-title="08 • Traffic Watch — Edge Object Detection & 3D Mapbox Telemetry" data-lb-sub="YOLO + Nvidia DeepStream on Jetson TX2 streaming live urban mobility predictions" data-lb-bg="bg-[#14171a]">
+            <img src="assets/traffic-watch-dark.jpg" alt="Traffic Watch dark 3D Mapbox dashboard with live edge object detection" loading="lazy" class="w-full h-full object-cover" />
+            <span class="project-zoom-hint">[⤢ inspect]</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between gap-3">
             <div>
               <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">Edge Object Detection</h3>
               <p class="font-mono text-xs text-sky-600 dark:text-sky-400 font-medium">Low-Latency Embedded Vision &amp; Telemetry</p>
               <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
-                Real-time object detection and classification running directly on Nvidia Jetson TX2 hardware using Nvidia DeepStream SDK, streaming live inference telemetry securely to AWS IoT Core over MQTT.
+                Real-time vehicle and pedestrian detection running on Nvidia Jetson TX2 via DeepStream &amp; YOLO, streaming live inference telemetry over MQTT to AWS IoT Core with 24-hour LSTM traffic forecasting.
               </p>
             </div>
-            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
-              <div class="text-slate-500">Nvidia DeepStream · Jetson TX2 · Docker · AWS IoT · MQTT</div>
-              <div class="flex items-center gap-2">
-                <a href="https://github.com/khordoo/edge-object-detection" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo]</a>
+            <div class="space-y-2 pt-2.5 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500 dark:text-slate-400">Nvidia DeepStream · YOLO · Jetson TX2 · AWS IoT · MQTT</div>
+              <div class="flex flex-wrap items-center gap-2.5">
+                <a href="https://github.com/khordoo/traffic-watch-object-detection" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo ★10]</a>
+                <a href="https://devpost.com/software/traffic-watch-glb7p0" target="_blank" rel="noopener" class="text-emerald-600 dark:text-emerald-400 hover:underline font-bold">[devpost]</a>
               </div>
             </div>
           </div>
         </article>
 
-        <!-- Card 9: Advanced Reinforcement Learning -->
+        <!-- Card 9: Deep Reinforcement Learning -->
         <article class="project-card spec-box flex flex-col justify-between" data-category="research">
           <div class="spec-header">
             <span class="truncate">09 • DEEP REINFORCEMENT LEARNING</span>
             <span class="badge-spec badge-emerald">TOP-10 GYM</span>
           </div>
-          <div class="relative w-full aspect-[16/10] bg-slate-100 dark:bg-slate-900 overflow-hidden border-b border-slate-900/10 dark:border-cyan-900/40">
-            <img src="assets/rocktyping.png" alt="Reinforcement learning simulation" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-            <div class="absolute top-2 left-2 badge-spec badge-emerald shadow-xs">TOP-10</div>
+          <div class="project-media bg-black" data-lb-title="09 • Deep RL Implementations — LunarLander N-Step DQN (Score 317)" data-lb-sub="Custom PyTorch DQN, Double DQN & Dueling DQN agents trained from scratch" data-lb-bg="bg-black">
+            <img src="assets/rl-lunarlander.gif" alt="Trained PyTorch N-step DQN agent landing LunarLander in OpenAI Gym" loading="lazy" class="w-full h-full object-contain" />
+            <span class="project-zoom-hint">[⤢ inspect]</span>
           </div>
           <div class="p-4 flex-1 flex flex-col justify-between gap-3">
             <div>
               <h3 class="font-display font-bold text-lg text-slate-900 dark:text-white">Deep RL Implementations</h3>
               <p class="font-mono text-xs text-emerald-600 dark:text-emerald-400 font-medium">Custom PyTorch DQN, Double &amp; Dueling Agents</p>
               <p class="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
-                Custom implementations of DQN, Double DQN, and Dueling DQN built from scratch in PyTorch. Achieved top-10 rankings on OpenAI Gym competitive leaderboards with novel prioritized replay buffer sampling.
+                Clean PyTorch implementations of DQN, Double DQN, Dueling DQN, and N-step returns built from scratch. Achieved top-10 rankings on OpenAI Gym leaderboards with prioritized replay sampling.
               </p>
             </div>
-            <div class="space-y-2 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
-              <div class="text-slate-500">PyTorch · OpenAI Gym · Dueling DQN · Deep RL</div>
-              <div class="flex items-center gap-2">
-                <a href="https://github.com/khordoo/deep-rl-implementations" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo]</a>
+            <div class="space-y-2 pt-2.5 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+              <div class="text-slate-500 dark:text-slate-400">PyTorch · OpenAI Gym · Dueling DQN · Deep RL</div>
+              <div class="flex flex-wrap items-center gap-2.5">
+                <a href="https://github.com/khordoo/Deep-Reinforcement-Learning-with-PyTorch" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 hover:underline font-bold">[repo]</a>
               </div>
             </div>
           </div>
@@ -736,16 +843,16 @@
 
       </div>
 
-      <!-- View 2: High-Density Directory Table (AwesomeJEV Style) -->
+      <!-- View 2: High-Density Directory Table -->
       <div id="projects-table" class="hidden spec-box overflow-x-auto bg-white dark:bg-[#071c22]">
         <table class="dir-table">
           <thead>
             <tr>
               <th style="width: 22%;">PROJECT</th>
-              <th style="width: 40%;">DESCRIPTION</th>
-              <th style="width: 20%;">STACK</th>
-              <th style="width: 10%;">IMPACT / STARS</th>
-              <th style="width: 8%;">LINKS</th>
+              <th style="width: 39%;">DESCRIPTION</th>
+              <th style="width: 19%;">STACK</th>
+              <th style="width: 10%;">SIGNAL</th>
+              <th style="width: 10%;">LINKS</th>
             </tr>
           </thead>
           <tbody>
@@ -756,8 +863,8 @@
               </td>
               <td>8M-parameter language model trained from scratch in 15 minutes. Custom SFT dataset &amp; PyPI SDK.</td>
               <td>PyTorch, Wasm, PyPI</td>
-              <td><span class="badge-spec badge-emerald">★ 8M Params</span></td>
-              <td><a href="https://github.com/khordoo/dusty-lm" target="_blank" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a> <a href="https://khordoo.github.io/dusty-lm/" target="_blank" class="text-emerald-600 dark:text-emerald-400 font-bold">[site]</a></td>
+              <td><span class="badge-spec badge-emerald">8M Params</span></td>
+              <td><a href="https://github.com/khordoo/dusty-lm" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a> <a href="https://khordoo.github.io/dusty-lm/" target="_blank" rel="noopener" class="text-emerald-600 dark:text-emerald-400 font-bold">[site]</a></td>
             </tr>
             <tr class="project-row" data-category="research genai">
               <td>
@@ -766,8 +873,8 @@
               </td>
               <td>Multi-drone autonomy simulation demonstrating TypeSafe Jev System 1 reflexes with System 2 guidance.</td>
               <td>TypeScript, Jev, OpenRouter</td>
-              <td><span class="badge-spec badge-cyan">★ 17 Stars</span></td>
-              <td><a href="https://github.com/khordoo/jev-reflex-autonomy-lab" target="_blank" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a> <a href="https://khordoo.github.io/jev-reflex-autonomy-lab/watch-demo.html" target="_blank" class="text-emerald-600 dark:text-emerald-400 font-bold">[demo]</a></td>
+              <td><span class="badge-spec badge-cyan">★ 24 Stars</span></td>
+              <td><a href="https://github.com/khordoo/jev-reflex-autonomy-lab" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a> <a href="https://jev-reflex-autonomy-lab.vercel.app" target="_blank" rel="noopener" class="text-emerald-600 dark:text-emerald-400 font-bold">[app]</a></td>
             </tr>
             <tr class="project-row" data-category="research">
               <td>
@@ -776,27 +883,27 @@
               </td>
               <td>Playable escape duel against a simulated Drosophila connectome neural model with LC4/LPLC2 replay.</td>
               <td>TypeScript, Vite, WebGL</td>
-              <td><span class="badge-spec badge-amber">★ Playable</span></td>
-              <td><a href="https://flinch-fly-brain-duel.vercel.app" target="_blank" class="text-emerald-600 dark:text-emerald-400 font-bold">[play]</a> <a href="https://github.com/khordoo/flinch-fly-brain-duel" target="_blank" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a></td>
+              <td><span class="badge-spec badge-amber">Playable</span></td>
+              <td><a href="https://flinch-fly-brain-duel.vercel.app" target="_blank" rel="noopener" class="text-emerald-600 dark:text-emerald-400 font-bold">[play]</a> <a href="https://github.com/khordoo/flinch-fly-brain-duel" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a></td>
             </tr>
             <tr class="project-row" data-category="genai mlops">
               <td>
                 <div class="font-bold text-slate-900 dark:text-white">Advanced Agentic RAG</div>
                 <div class="text-slate-500 text-[10px]">khordoo · Pipeline &amp; Eval</div>
               </td>
-              <td>Production RAG pipeline with hierarchical chunking, RRF reranking, Phoenix and RAGAS evaluations.</td>
-              <td>Python, LangChain, Phoenix</td>
-              <td><span class="badge-spec badge-emerald">Sub-50ms</span></td>
-              <td><a href="https://github.com/khordoo/advanced-agentic-rag" target="_blank" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a></td>
+              <td>Production RAG stack with Prefect ingestion, LangGraph agents, Qdrant hybrid search &amp; Phoenix evals.</td>
+              <td>Python, LangGraph, Phoenix</td>
+              <td><span class="badge-spec badge-emerald">Prod RAG</span></td>
+              <td><a href="https://github.com/khordoo/advanced-agentic-rag" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a></td>
             </tr>
             <tr class="project-row" data-category="mlops">
               <td>
                 <div class="font-bold text-slate-900 dark:text-white">Industrial MLOps Platform</div>
                 <div class="text-slate-500 text-[10px]">Enterprise · Production Platform</div>
               </td>
-              <td>Designed and productionized an industrial machine learning solution with automated training, deployment, and monitoring, delivering MULT-MM$ impact.</td>
+              <td>Enterprise industrial ML platform with automated training, canary deployment, and drift monitoring.</td>
               <td>SageMaker, Ray, Docker, CI/CD</td>
-              <td><span class="badge-spec badge-emerald">MULT-MM$ Impact</span></td>
+              <td><span class="badge-spec badge-emerald">MULT-MM$</span></td>
               <td><span class="text-emerald-600 dark:text-emerald-400 font-bold">[enterprise]</span></td>
             </tr>
             <tr class="project-row" data-category="mlops genai">
@@ -804,10 +911,10 @@
                 <div class="font-bold text-slate-900 dark:text-white">CLAUTH</div>
                 <div class="text-slate-500 text-[10px]">PyPI · Developer CLI</div>
               </td>
-              <td>Modern CLI for Claude Code on AWS Bedrock authentication, SSO setup wizard &amp; model auto-discovery.</td>
-              <td>Python, Bedrock, Docker</td>
-              <td><span class="badge-spec badge-cyan">Published</span></td>
-              <td><a href="https://pypi.org/project/clauth/" target="_blank" class="text-sky-600 dark:text-sky-400 font-bold">[pypi]</a> <a href="https://github.com/khordoo/clauth" target="_blank" class="text-emerald-600 dark:text-emerald-400 font-bold">[repo]</a></td>
+              <td>Published CLI for Claude Code on AWS Bedrock authentication, SSO setup wizard &amp; model discovery.</td>
+              <td>Python, Bedrock, IAM/SSO</td>
+              <td><span class="badge-spec badge-cyan">PyPI Live</span></td>
+              <td><a href="https://pypi.org/project/clauth/" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 font-bold">[pypi]</a> <a href="https://github.com/khordoo/clauth" target="_blank" rel="noopener" class="text-emerald-600 dark:text-emerald-400 font-bold">[repo]</a></td>
             </tr>
             <tr class="project-row" data-category="research">
               <td>
@@ -816,28 +923,28 @@
               </td>
               <td>Real-time NLP crisis mapping platform classifying disaster social media data via deep NER.</td>
               <td>TensorFlow 2.0, Keras, NLP</td>
-              <td><span class="badge-spec badge-amber">Grand Prize</span></td>
-              <td><a href="https://github.com/khordoo/disaster-watch" target="_blank" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a></td>
+              <td><span class="badge-spec badge-amber">★ 28 · Prize</span></td>
+              <td><a href="https://github.com/khordoo/disaster-watch-classifier" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a></td>
             </tr>
             <tr class="project-row" data-category="edge">
               <td>
-                <div class="font-bold text-slate-900 dark:text-white">Jetson Edge Vision</div>
+                <div class="font-bold text-slate-900 dark:text-white">Traffic Watch Edge</div>
                 <div class="text-slate-500 text-[10px]">Jetson TX2 · IoT Streaming</div>
               </td>
-              <td>Real-time object detection on edge hardware using Nvidia DeepStream SDK streaming to AWS IoT Core.</td>
-              <td>DeepStream, MQTT, AWS IoT</td>
-              <td><span class="badge-spec badge-cyan">30+ FPS</span></td>
-              <td><a href="https://github.com/khordoo/edge-object-detection" target="_blank" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a></td>
+              <td>Real-time vehicle &amp; pedestrian detection via DeepStream/YOLO streaming to AWS IoT Core + LSTM forecast.</td>
+              <td>DeepStream, YOLO, AWS IoT</td>
+              <td><span class="badge-spec badge-cyan">★ 10 · 30 FPS</span></td>
+              <td><a href="https://github.com/khordoo/traffic-watch-object-detection" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a> <a href="https://devpost.com/software/traffic-watch-glb7p0" target="_blank" rel="noopener" class="text-emerald-600 dark:text-emerald-400 font-bold">[info]</a></td>
             </tr>
             <tr class="project-row" data-category="research">
               <td>
                 <div class="font-bold text-slate-900 dark:text-white">Deep RL Implementations</div>
                 <div class="text-slate-500 text-[10px]">PyTorch · OpenAI Gym</div>
               </td>
-              <td>Custom DQN, Double DQN, and Dueling DQN agents achieving top-10 competitive rankings on Gym leaderboards.</td>
+              <td>Custom DQN, Double DQN, and Dueling DQN agents achieving top-10 competitive rankings on Gym.</td>
               <td>PyTorch, OpenAI Gym</td>
               <td><span class="badge-spec badge-emerald">Top-10 Rank</span></td>
-              <td><a href="https://github.com/khordoo/deep-rl-implementations" target="_blank" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a></td>
+              <td><a href="https://github.com/khordoo/Deep-Reinforcement-Learning-with-PyTorch" target="_blank" rel="noopener" class="text-sky-600 dark:text-sky-400 font-bold">[repo]</a></td>
             </tr>
           </tbody>
         </table>
@@ -846,9 +953,9 @@
     </section>
 
     <!-- ==========================================================================
-         Section 02: Chronology / Experience Log (STAR Method - No Private Figures)
+         Section 02: Chronology / Experience Log (Git-Log Timeline Rail)
          ========================================================================== -->
-    <section id="experience" class="flex flex-col gap-4">
+    <section id="experience" class="flex flex-col gap-4 scroll-mt-20">
       
       <div class="flex items-baseline justify-between border-b-2 border-slate-900 dark:border-cyan-900 pb-2">
         <div class="flex items-center gap-2">
@@ -860,10 +967,10 @@
         <span class="font-mono text-xs text-slate-500 dark:text-slate-400 font-medium">EXP_LOG // PROVEN ARCHITECTURE</span>
       </div>
 
-      <div class="flex flex-col gap-4">
+      <div class="timeline-rail flex flex-col gap-5">
 
         <!-- Role 1: Rio Tinto -->
-        <article class="spec-box p-5 bg-white dark:bg-[#071c22]">
+        <article class="timeline-node timeline-current spec-box p-5 bg-white dark:bg-[#071c22]">
           <div class="flex flex-wrap items-center justify-between gap-2 pb-2 mb-3 border-b border-slate-200 dark:border-cyan-950 font-mono text-xs">
             <div class="flex items-center gap-2">
               <span class="font-bold text-emerald-600 dark:text-emerald-400">commit a1f2e8d</span>
@@ -884,7 +991,7 @@
             <li class="flex items-start gap-2">
               <span class="text-emerald-500 mt-1 font-mono text-xs">▶</span>
               <div>
-                <strong>Reusable Multi-Agent RAG Framework:</strong> Led the architecture, development, and production deployment of advanced RAG and agentic AI systems on AWS and Azure using LangGraph, multi-agent workflows for intent routing, tool use, grounding verification, and self-correction, reducing delivery timelines to under 5 weeks and generating significant six-figure savings through reuse.
+                <strong>Reusable Multi-Agent RAG Framework:</strong> Led the architecture, development, and production deployment of advanced RAG and agentic AI systems on AWS and Azure using LangGraph, multi-agent workflows for intent routing, tool use, grounding verification, and self-correction, reducing delivery timelines to <span class="metric-pill">under 5 weeks</span> and generating significant <span class="metric-pill">six-figure savings</span> through reuse.
               </div>
             </li>
             <li class="flex items-start gap-2">
@@ -896,13 +1003,13 @@
             <li class="flex items-start gap-2">
               <span class="text-emerald-500 mt-1 font-mono text-xs">▶</span>
               <div>
-                <strong>Autonomous Prompt Optimization:</strong> Built a self-improving Azure DevOps LLM agent using Arize traces, deterministic evaluations, and autonomous prompt optimization, improving strict task success from 19% to 85%.
+                <strong>Autonomous Prompt Optimization:</strong> Built a self-improving Azure DevOps LLM agent using Arize traces, deterministic evaluations, and autonomous prompt optimization, improving strict task success from <span class="metric-pill">19% → 85%</span>.
               </div>
             </li>
             <li class="flex items-start gap-2">
               <span class="text-emerald-500 mt-1 font-mono text-xs">▶</span>
               <div>
-                <strong>Industrial MLOps Platform:</strong> Designed and productionized an industrial machine learning platform with automated training, deployment, drift detection, and monitoring on AWS SageMaker, delivering MULT-MM$ impact and establishing the corporate blueprint for all subsequent deployments.
+                <strong>Industrial MLOps Platform:</strong> Designed and productionized an industrial machine learning platform with automated training, deployment, drift detection, and monitoring on AWS SageMaker, delivering <span class="metric-pill">MULT-MM$ impact</span> and establishing the corporate blueprint for all subsequent deployments.
               </div>
             </li>
             <li class="flex items-start gap-2">
@@ -933,7 +1040,7 @@
         </article>
 
         <!-- Role 2: TMC -->
-        <article class="spec-box p-5 bg-white dark:bg-[#071c22]">
+        <article class="timeline-node spec-box p-5 bg-white dark:bg-[#071c22]">
           <div class="flex flex-wrap items-center justify-between gap-2 pb-2 mb-3 border-b border-slate-200 dark:border-cyan-950 font-mono text-xs">
             <div class="flex items-center gap-2">
               <span class="font-bold text-sky-600 dark:text-sky-400">commit 4c891bf</span>
@@ -978,14 +1085,14 @@
             <li class="flex items-start gap-2">
               <span class="text-sky-500 mt-1 font-mono text-xs">▶</span>
               <div>
-                Designed monitoring and observability for production ML systems covering model performance, data quality, operational failures, and retraining triggers; optimized PI server data extraction with Python AsyncIO (<span class="font-bold text-emerald-600 dark:text-emerald-400">80% speedup</span>).
+                Designed monitoring and observability for production ML systems covering model performance, data quality, operational failures, and retraining triggers; optimized PI server data extraction with Python AsyncIO (<span class="metric-pill">80% speedup</span>).
               </div>
             </li>
           </ul>
         </article>
 
         <!-- Role 3: SensorUp -->
-        <article class="spec-box p-5 bg-white dark:bg-[#071c22]">
+        <article class="timeline-node spec-box p-5 bg-white dark:bg-[#071c22]">
           <div class="flex flex-wrap items-center justify-between gap-2 pb-2 mb-3 border-b border-slate-200 dark:border-cyan-950 font-mono text-xs">
             <div class="flex items-center gap-2">
               <span class="font-bold text-sky-600 dark:text-sky-400">commit 8e23b1a</span>
@@ -1012,26 +1119,26 @@
             <li class="flex items-start gap-2">
               <span class="text-sky-500 mt-1 font-mono text-xs">▶</span>
               <div>
-                Developed an NLP and geospatial machine learning system to identify and geo-locate natural disasters from real-time social media streams, contributing to the Google TensorFlow Grand Prize recognition.
+                Developed an NLP and geospatial machine learning system to identify and geo-locate natural disasters from real-time social media streams, contributing to the <span class="metric-pill">Google TensorFlow Grand Prize</span> recognition.
               </div>
             </li>
             <li class="flex items-start gap-2">
               <span class="text-sky-500 mt-1 font-mono text-xs">▶</span>
               <div>
-                Deployed computer vision and object detection models using YOLO, NVIDIA Jetson, and DeepStream, processing 128 live video feeds at the edge and transmitting inference results through MQTT.
+                Deployed computer vision and object detection models using YOLO, NVIDIA Jetson, and DeepStream, processing <span class="metric-pill">128 live video feeds</span> at the edge and transmitting inference results through MQTT.
               </div>
             </li>
             <li class="flex items-start gap-2">
               <span class="text-sky-500 mt-1 font-mono text-xs">▶</span>
               <div>
-                Architected a serverless real-time data pipeline using AWS Lambda, Kinesis, and IoT Core to process high-frequency GPS data from <span class="font-bold text-emerald-600 dark:text-emerald-400">15,000+ railcars</span> and support real-time operational analytics.
+                Architected a serverless real-time data pipeline using AWS Lambda, Kinesis, and IoT Core to process high-frequency GPS data from <span class="metric-pill">15,000+ railcars</span> and support real-time operational analytics.
               </div>
             </li>
           </ul>
         </article>
 
         <!-- Role 4: Foundations (Independent Dev) -->
-        <article class="spec-box p-5 bg-white dark:bg-[#071c22]">
+        <article class="timeline-node spec-box p-5 bg-white dark:bg-[#071c22]">
           <div class="flex flex-wrap items-center justify-between gap-2 pb-2 mb-3 border-b border-slate-200 dark:border-cyan-950 font-mono text-xs">
             <div class="flex items-center gap-2">
               <span class="font-bold text-slate-600 dark:text-slate-400">commit 1f99c0d</span>
@@ -1069,9 +1176,9 @@
     </section>
 
     <!-- ==========================================================================
-         Section 03: System Specs / Tech Stack Matrix (AwesomeJEV Category Rows)
+         Section 03: System Specs / Tech Stack Matrix
          ========================================================================== -->
-    <section id="stack" class="flex flex-col gap-4">
+    <section id="stack" class="flex flex-col gap-4 scroll-mt-20">
       
       <div class="flex items-baseline justify-between border-b-2 border-slate-900 dark:border-cyan-900 pb-2">
         <div class="flex items-center gap-2">
@@ -1092,14 +1199,14 @@
             <span class="text-emerald-400 font-mono text-[10px]">RUNTIME</span>
           </div>
           <div class="flex flex-wrap gap-1.5 font-mono text-xs">
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">Python 3.12</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">PyTorch</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">C++20</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">CUDA</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Go (Golang)</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">SQL</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">TypeScript</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">AsyncIO</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">Python 3.12</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">PyTorch</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">C++20</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">CUDA</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Go (Golang)</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">SQL</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">TypeScript</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">AsyncIO</span>
           </div>
         </div>
 
@@ -1110,14 +1217,14 @@
             <span class="text-emerald-400 font-mono text-[10px]">INTELLIGENCE</span>
           </div>
           <div class="flex flex-wrap gap-1.5 font-mono text-xs">
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">LangGraph</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">Multi-Agent Orchestration</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Advanced RAG</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">RRF Reranking</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">DSPy</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">LoRA / PEFT</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">AWS Bedrock</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Phoenix / RAGAS</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">LangGraph</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">Multi-Agent Orchestration</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Advanced RAG</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">RRF Reranking</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">DSPy</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">LoRA / PEFT</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">AWS Bedrock</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Phoenix / RAGAS</span>
           </div>
         </div>
 
@@ -1128,14 +1235,14 @@
             <span class="text-sky-400 font-mono text-[10px]">DISTRIBUTED</span>
           </div>
           <div class="flex flex-wrap gap-1.5 font-mono text-xs">
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">AWS SageMaker</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Ray Cluster</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Triton Inference</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">vLLM</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Docker</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">CI/CD Pipelines</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Drift Detection</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">AWS Lambda / Step Functions</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">AWS SageMaker</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Ray Cluster</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Triton Inference</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">vLLM</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Docker</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">CI/CD Pipelines</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Drift Detection</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">AWS Lambda / Step Functions</span>
           </div>
         </div>
 
@@ -1146,14 +1253,14 @@
             <span class="text-amber-400 font-mono text-[10px]">INGESTION</span>
           </div>
           <div class="flex flex-wrap gap-1.5 font-mono text-xs">
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">Nvidia DeepStream</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Jetson TX2 Edge</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">AWS IoT Core</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">MQTT Protocols</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">PostgreSQL</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">DynamoDB</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">FastAPI</span>
-            <span class="px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Redis / Vector DB</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900 font-semibold">Nvidia DeepStream</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Jetson TX2 Edge</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">AWS IoT Core</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">MQTT Protocols</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">PostgreSQL</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">DynamoDB</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">FastAPI</span>
+            <span class="stack-pill px-2 py-1 bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-cyan-900">Redis / Vector DB</span>
           </div>
         </div>
 
@@ -1164,7 +1271,7 @@
     <!-- ==========================================================================
          Section 04: Accreditations, Certifications & Honors
          ========================================================================== -->
-    <section id="certs" class="flex flex-col gap-6">
+    <section id="certs" class="flex flex-col gap-6 scroll-mt-20">
       
       <div class="flex items-baseline justify-between border-b-2 border-slate-900 dark:border-cyan-900 pb-2">
         <div class="flex items-center gap-2">
@@ -1429,29 +1536,60 @@
     </section>
 
     <!-- ==========================================================================
-         Section 05: Academic Background & Degrees
+         Section 05: Academic Foundations & Open-Source Footprint
          ========================================================================== -->
-    <section class="flex flex-col gap-4">
+    <section id="education" class="flex flex-col gap-4 scroll-mt-20">
       
       <div class="flex items-baseline justify-between border-b-2 border-slate-900 dark:border-cyan-900 pb-2">
         <div class="flex items-center gap-2">
           <span class="font-mono text-emerald-600 dark:text-emerald-400 font-bold text-sm">05 /</span>
           <h2 class="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight text-slate-900 dark:text-white">
-            Academic Foundations
+            Academic &amp; Open-Source Roots
           </h2>
         </div>
-        <span class="font-mono text-xs text-slate-500 dark:text-slate-400 font-medium">DEGREES &amp; ALGORITHMIC ROOTS</span>
+        <span class="font-mono text-xs text-slate-500 dark:text-slate-400 font-medium">DEGREES &amp; PUBLIC RESEARCH</span>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-        <div class="spec-box p-4 bg-white dark:bg-[#071c22]">
-          <div class="font-mono text-xs text-emerald-600 dark:text-emerald-400 font-semibold mb-1">GRADUATE DEGREE // CALGARY, AB</div>
-          <h4 class="font-display font-bold text-lg text-slate-900 dark:text-white">University of Calgary</h4>
-          <p class="font-mono text-xs text-slate-600 dark:text-slate-300 font-medium mt-0.5">Master of Engineering - MEng, Computational Modeling &amp; Engineering</p>
-          <p class="text-xs text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
-            Advanced fluid dynamics, dynamic modeling, mathematical simulation, and computational porous media analysis.
-          </p>
+        <!-- Card A: Graduate Degree -->
+        <div class="spec-box p-5 bg-white dark:bg-[#071c22] flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="font-mono text-xs text-emerald-600 dark:text-emerald-400 font-semibold">GRADUATE DEGREE // CALGARY, AB</span>
+              <span class="badge-spec badge-emerald">MENG</span>
+            </div>
+            <h4 class="font-display font-bold text-lg text-slate-900 dark:text-white">University of Calgary</h4>
+            <p class="font-mono text-xs text-slate-600 dark:text-slate-300 font-medium mt-0.5">Master of Engineering — Computational Modeling &amp; Engineering</p>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-2.5 leading-relaxed">
+              Advanced fluid dynamics, numerical simulation, mathematical optimization, and high-dimensional computational modeling in Python &amp; C++.
+            </p>
+          </div>
+          <div class="pt-3 mt-3 border-t border-slate-100 dark:border-cyan-950 font-mono text-[10px] text-slate-400">
+            NUMERICAL SOLVERS · STOCHASTIC MODELING · SCIENTIFIC COMPUTING
+          </div>
+        </div>
+
+        <!-- Card B: Open-Source & Community Output -->
+        <div class="spec-box p-5 bg-white dark:bg-[#071c22] flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="font-mono text-xs text-sky-600 dark:text-sky-400 font-semibold">PUBLIC RESEARCH // MONTREAL, QC</span>
+              <span class="badge-spec badge-cyan">OPEN SOURCE</span>
+            </div>
+            <h4 class="font-display font-bold text-lg text-slate-900 dark:text-white">Published SDKs, Models &amp; Experiments</h4>
+            <p class="font-mono text-xs text-slate-600 dark:text-slate-300 font-medium mt-0.5">PyPI Packages · Hugging Face Weights · Interactive Simulators</p>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-2.5 leading-relaxed">
+              Active builder shipping reproducible AI artifacts: <code>clauth</code> &amp; <code>dustylm-sdk</code> on PyPI, open weights &amp; datasets on Hugging Face, weight-space model editing research (<code>dusty-wsp</code>), and playable neural simulators.
+            </p>
+          </div>
+          <div class="pt-3 mt-3 border-t border-slate-100 dark:border-cyan-950 flex flex-wrap items-center gap-3 font-mono text-[10px]">
+            <span class="text-emerald-600 dark:text-emerald-400 font-semibold">● 2 PyPI Packages</span>
+            <span class="text-slate-400">·</span>
+            <span class="text-sky-600 dark:text-sky-400 font-semibold">● 75+ GitHub Stars</span>
+            <span class="text-slate-400">·</span>
+            <span class="text-amber-600 dark:text-amber-400 font-semibold">● Open HF Weights</span>
+          </div>
         </div>
 
       </div>
@@ -1459,104 +1597,76 @@
     </section>
 
     <!-- ==========================================================================
-         Section 06: Interactive CLI Terminal Sandbox
+         Section 06: Dispatch / Contact Footer (Montreal & Role Conversion)
          ========================================================================== -->
-    <section id="terminal" class="flex flex-col gap-4">
-      
-      <div class="flex items-baseline justify-between border-b-2 border-slate-900 dark:border-cyan-900 pb-2">
-        <div class="flex items-center gap-2">
-          <span class="font-mono text-emerald-600 dark:text-emerald-400 font-bold text-sm">06 /</span>
-          <h2 class="font-display text-2xl sm:text-3xl font-bold uppercase tracking-tight text-slate-900 dark:text-white">
-            Interactive CLI Sandbox
-          </h2>
-        </div>
-        <span class="font-mono text-xs text-slate-500 dark:text-slate-400 font-medium">TERMINAL // LIVE SHELL</span>
-      </div>
-
-      <div class="spec-box !bg-[#031518] text-slate-200">
-        
-        <div class="spec-header !bg-[#021013] !border-b !border-teal-900/60">
-          <span class="text-emerald-400 font-bold flex items-center gap-1.5">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            mahmood@lab:~/portfolio [zsh]
-          </span>
-          <span class="text-[11px] text-slate-400">TTY: /dev/pts/1</span>
-        </div>
-
-        <div id="interactive-terminal" class="p-4 font-mono text-xs sm:text-sm max-h-[360px] min-h-[220px] overflow-y-auto space-y-2">
-          
-          <div class="text-slate-400">
-            Welcome to Mahmood Khordoo's interactive shell. Type <span class="text-emerald-400 font-bold">help</span> to list commands.
-          </div>
-
-          <div id="terminal-cli-output" class="space-y-1"></div>
-
-          <div class="flex items-center gap-2 pt-2 border-t border-teal-900/40">
-            <span class="text-emerald-400 font-bold shrink-0">mahmood@lab:~$</span>
-            <input 
-              type="text" 
-              id="terminal-cli-input" 
-              placeholder="type a command (whoami, about, projects, exp, skills, certs, contact, theme, clear)..." 
-              class="w-full bg-transparent border-none outline-none text-white font-mono text-xs sm:text-sm placeholder:text-slate-600 focus:outline-none"
-            />
-          </div>
-
-        </div>
-
-        <div class="px-4 py-2 bg-[#021013] border-t border-teal-900/60 flex items-center justify-between font-mono text-[10px] text-slate-400">
-          <span>Shortcuts: Press <kbd class="px-1 bg-slate-900 text-emerald-400 border border-slate-700 font-bold">/</kbd> anywhere to focus</span>
-          <span>Up / Down arrows for history</span>
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- ==========================================================================
-         Section 07: Dispatch / Transmission Footer
-         ========================================================================== -->
-    <footer id="contact" class="spec-box p-6 bg-white dark:bg-[#071c22] mt-4">
+    <footer id="contact" class="spec-box p-6 bg-white dark:bg-[#071c22] mt-2 scroll-mt-20">
       
       <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-6 border-b border-slate-200 dark:border-cyan-950">
         <div>
-          <div class="font-mono text-xs uppercase tracking-wider text-emerald-600 dark:text-emerald-400 font-semibold mb-1 flex items-center gap-2">
+          <div class="font-mono text-xs uppercase tracking-wider text-emerald-600 dark:text-emerald-400 font-semibold mb-1.5 flex items-center gap-2">
             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            NODE DISPATCH // MONTREAL, QC
+            NODE DISPATCH // MONTREAL, QC [45.5°N 73.5°W]
           </div>
-          <h3 class="font-display font-bold text-2xl text-slate-900 dark:text-white">
-            Available for Research Collaboration &amp; Staff/Lead Advisory.
+          <h3 class="font-display font-bold text-2xl sm:text-[1.65rem] text-slate-900 dark:text-white leading-tight">
+            Open to Senior / Staff ML &amp; GenAI Lead Roles — Montreal &amp; Remote.
           </h3>
-          <p class="text-sm text-slate-600 dark:text-slate-300 mt-1 max-w-2xl leading-relaxed">
-            Specializing in high-concurrency autonomous reasoning architectures, multi-agent evaluation frameworks, and distributed ML pipelines.
+          <p class="text-sm text-slate-600 dark:text-slate-300 mt-1.5 max-w-2xl leading-relaxed">
+            Looking to lead high-impact multi-agent architectures, production RAG &amp; evaluation stacks, and scalable MLOps platforms with ambitious engineering teams.
           </p>
         </div>
 
-        <div class="flex flex-wrap gap-2 shrink-0">
-          <a href="mailto:m.khordoo@gmail.com" class="retro-btn retro-btn-primary py-2 px-4 text-xs font-bold shadow-sm">
+        <div class="flex flex-wrap gap-2.5 shrink-0">
+          <a href="mailto:m.khordoo@gmail.com" class="retro-btn retro-btn-primary py-2.5 px-4 text-xs font-bold">
             <span class="material-symbols-outlined text-[16px]">mail</span>
             <span>Transmit Message</span>
           </a>
+          <button type="button" data-copy-email="m.khordoo@gmail.com" class="retro-btn py-2.5 px-3.5 text-xs font-bold">
+            <span class="material-symbols-outlined text-[15px]">content_copy</span>
+            <span data-copy-label>m.khordoo@gmail.com</span>
+          </button>
         </div>
       </div>
 
       <div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-3 font-mono text-xs text-slate-500 dark:text-slate-400">
-        <div class="flex items-center gap-4">
-          <a href="https://github.com/khordoo" target="_blank" rel="noopener" class="hover:text-emerald-600 dark:hover:text-emerald-400">GITHUB</a>
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="https://github.com/khordoo" target="_blank" rel="noopener" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">GITHUB</a>
           <span>·</span>
-          <a href="https://linkedin.com/in/khordoo" target="_blank" rel="noopener" class="hover:text-emerald-600 dark:hover:text-emerald-400">LINKEDIN</a>
+          <a href="https://linkedin.com/in/khordoo" target="_blank" rel="noopener" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">LINKEDIN</a>
           <span>·</span>
-          <a href="https://huggingface.co/mkhordoo" target="_blank" rel="noopener" class="hover:text-emerald-600 dark:hover:text-emerald-400">HUGGING FACE</a>
+          <a href="https://huggingface.co/mkhordoo" target="_blank" rel="noopener" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">HUGGING FACE</a>
           <span>·</span>
-          <a href="https://pypi.org/project/clauth/" target="_blank" rel="noopener" class="hover:text-emerald-600 dark:hover:text-emerald-400">PYPI</a>
+          <a href="https://pypi.org/project/clauth/" target="_blank" rel="noopener" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">PYPI</a>
         </div>
         <div class="text-[11px]">
-          MAHMOOD KHORDOO &bull; HOSTED ON GITHUB PAGES &bull; EST. 2026
+          MAHMOOD KHORDOO &bull; MONTREAL, QC &bull; EST. 2026
         </div>
       </div>
 
     </footer>
 
   </main>
+
+  <!-- Project Visual Click-to-Zoom Lightbox -->
+  <div id="project-lightbox" class="lightbox-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lightbox-dialog">
+      <div class="spec-header !bg-[#021216] !border-b !border-teal-900">
+        <div class="flex items-center gap-2 min-w-0">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+          <span id="lightbox-title" class="truncate text-emerald-300 font-bold">PROJECT PREVIEW</span>
+        </div>
+        <button id="lightbox-close" type="button" class="crt-btn !text-emerald-300 !border-emerald-500/50 hover:!bg-emerald-500 hover:!text-slate-950">
+          [ESC / CLOSE]
+        </button>
+      </div>
+      <div class="p-3 bg-[#020f13]">
+        <img id="lightbox-img" src="" alt="" class="w-full max-h-[76vh] object-contain" />
+      </div>
+      <div class="px-4 py-2 bg-[#021216] border-t border-teal-900/70 font-mono text-[11px] text-slate-300 flex items-center justify-between gap-4">
+        <span id="lightbox-subtitle" class="truncate"></span>
+        <span class="text-slate-500 shrink-0">Click outside or press ESC</span>
+      </div>
+    </div>
+  </div>
 
   <!-- Interactive JavaScript Engine -->
   <script src="script.js"></script>

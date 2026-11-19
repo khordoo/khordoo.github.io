@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 /* ==========================================================================
-   Precision Engineering Lab & Retro MS-DOS Theme Variables
-   Inspired by awesomejev.com (rectangles, crisp borders) & imnosovsky.dev
+   Precision Engineering Lab & Retro CRT Theme Variables
+   Neo-Brutalist crisp borders, high-signal telemetry & tactile surfaces
    ========================================================================== */
 
 :root {
@@ -12,6 +12,7 @@
 
   /* Light Theme (Default - Precision Lab) */
   --bg-page: #f8fafc;
+  --bg-grid-dot: rgba(15, 23, 42, 0.085);
   --bg-surface: #ffffff;
   --bg-surface-dim: #f1f5f9;
   --bg-surface-high: #e2e8f0;
@@ -21,6 +22,8 @@
   --border-strong: #0f172a;
   --border-subtle: #cbd5e1;
   --border-hairline: #e2e8f0;
+  --shadow-brutal: rgba(15, 23, 42, 0.11);
+  --shadow-brutal-hover: rgba(5, 150, 105, 0.28);
 
   /* Accents */
   --accent-primary: #059669; /* Terminal Emerald */
@@ -31,24 +34,27 @@
   --accent-red: #dc2626;
 
   /* Terminal Phosphors */
-  --term-bg: #07171b;
+  --term-bg: #041519;
   --term-fg: #6ee7b7;
   --term-border: #134e4a;
-  --term-header: #022026;
+  --term-header: #021014;
   --term-cursor: #34d399;
 }
 
 html.dark {
-  --bg-page: #041216;
+  --bg-page: #031216;
+  --bg-grid-dot: rgba(52, 211, 153, 0.09);
   --bg-surface: #071a1f;
   --bg-surface-dim: #0a242c;
   --bg-surface-high: #0f303b;
   --text-main: #e6fffa;
   --text-muted: #94d8ce;
-  --text-dim: #5c9993;
-  --border-strong: #145967;
+  --text-dim: #64a39d;
+  --border-strong: #155e6e;
   --border-subtle: #0f404b;
-  --border-hairline: #0a2d35;
+  --border-hairline: #0c313a;
+  --shadow-brutal: rgba(0, 0, 0, 0.45);
+  --shadow-brutal-hover: rgba(16, 185, 129, 0.25);
 
   --accent-primary: #10b981;
   --accent-primary-hover: #34d399;
@@ -56,23 +62,31 @@ html.dark {
   --accent-cyan: #38bdf8;
   --accent-amber: #fbbf24;
 
-  --term-bg: #031417;
+  --term-bg: #031115;
   --term-fg: #86efac;
   --term-border: #155e75;
-  --term-header: #020c0e;
+  --term-header: #020b0e;
   --term-cursor: #4ade80;
 }
 
 /* ==========================================================================
-   Base Styles
+   Base Styles & Engineering Blueprint Grid
    ========================================================================== */
 
 * {
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: clip;
+  max-width: 100%;
+}
+
 body {
   background-color: var(--bg-page);
+  background-image: radial-gradient(var(--bg-grid-dot) 1px, transparent 1px);
+  background-size: 24px 24px;
   color: var(--text-main);
   font-family: var(--font-body);
   line-height: 1.5;
@@ -82,8 +96,13 @@ body {
 }
 
 ::selection {
-  background-color: rgba(5, 150, 105, 0.25);
+  background-color: rgba(16, 185, 129, 0.25);
   color: #047857;
+}
+
+html.dark ::selection {
+  background-color: rgba(52, 211, 153, 0.28);
+  color: #a7f3d0;
 }
 
 /* Typography Utility Classes */
@@ -95,30 +114,124 @@ body {
   font-family: var(--font-display);
 }
 
+/* Top Scroll Progress Telemetry Bar */
+#scroll-progress-bar {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-cyan));
+  z-index: 60;
+  transition: width 0.08s linear;
+  pointer-events: none;
+}
+
 /* ==========================================================================
-   AwesomeJEV Neo-Brutalist & Retro PC Elements
+   Neo-Brutalist Precision Lab Surfaces & Spec Sheets
    ========================================================================== */
 
-/* Crisp Inverted Header Boxes */
 .spec-box {
   background-color: var(--bg-surface);
   border: 1.5px solid var(--border-strong);
-  box-shadow: 2px 2px 0px rgba(15, 23, 42, 0.08);
+  box-shadow: 3px 3px 0px var(--shadow-brutal);
   position: relative;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
 }
 
 .spec-header {
   background-color: var(--border-strong);
   color: #ffffff;
   font-family: var(--font-mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.05em;
-  padding: 0.4rem 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 0.45rem 0.75rem;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.5rem;
   border-bottom: 1.5px solid var(--border-strong);
+}
+
+html.dark .spec-header {
+  background-color: #092730;
+  border-bottom-color: var(--border-strong);
+  color: #e6fffa;
+}
+
+/* Project Card Tactile Lift */
+.project-card {
+  will-change: transform;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-primary);
+  box-shadow: 5px 5px 0px var(--shadow-brutal-hover);
+}
+
+/* Project Media Viewport */
+.project-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-bottom: 1.5px solid var(--border-hairline);
+  cursor: zoom-in;
+}
+
+html.dark .project-media {
+  border-bottom-color: var(--border-subtle);
+}
+
+.project-media img {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.project-card:hover .project-media img {
+  transform: scale(1.035);
+}
+
+.project-zoom-hint {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  background-color: rgba(2, 16, 20, 0.86);
+  color: #6ee7b7;
+  border: 1px solid rgba(52, 211, 153, 0.45);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.45rem;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  pointer-events: none;
+}
+
+.project-card:hover .project-zoom-hint {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero Executive KPI Tiles */
+.kpi-tile {
+  background-color: var(--bg-surface);
+  border: 1.5px solid var(--border-strong);
+  box-shadow: 2px 2px 0px var(--shadow-brutal);
+  padding: 0.75rem 0.85rem;
+  position: relative;
+  transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.kpi-tile:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-primary);
+  box-shadow: 4px 4px 0px var(--shadow-brutal-hover);
 }
 
 /* Spec sheet key-value table */
@@ -126,7 +239,7 @@ body {
   width: 100%;
   border-collapse: collapse;
   font-family: var(--font-mono);
-  font-size: 0.8125rem;
+  font-size: 0.8rem;
 }
 
 .spec-table tr {
@@ -138,15 +251,15 @@ body {
 }
 
 .spec-table td {
-  padding: 0.5rem 0.75rem;
+  padding: 0.55rem 0.8rem;
   vertical-align: top;
 }
 
 .spec-table td.key {
   color: var(--text-dim);
-  width: 25%;
-  min-width: 110px;
-  font-weight: 500;
+  width: 24%;
+  min-width: 118px;
+  font-weight: 600;
   text-transform: lowercase;
 }
 
@@ -154,7 +267,7 @@ body {
   color: var(--text-main);
 }
 
-/* Directory / Table View (AwesomeJEV style) */
+/* Directory / Table View */
 .dir-table {
   width: 100%;
   border-collapse: collapse;
@@ -168,7 +281,7 @@ body {
   font-size: 0.6875rem;
   font-weight: 600;
   text-align: left;
-  padding: 0.5rem 0.75rem;
+  padding: 0.55rem 0.75rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   border-bottom: 1.5px solid var(--border-strong);
@@ -189,7 +302,7 @@ body {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 600;
-  padding: 0.35rem 0.75rem;
+  padding: 0.38rem 0.75rem;
   border: 1.5px solid var(--border-strong);
   background-color: var(--bg-surface);
   color: var(--text-main);
@@ -198,13 +311,21 @@ body {
   align-items: center;
   gap: 0.4rem;
   cursor: pointer;
-  transition: all 0.1s ease;
+  transition: all 0.12s ease;
   user-select: none;
+  box-shadow: 2px 2px 0px var(--shadow-brutal);
 }
 
 .retro-btn:hover {
   background-color: var(--border-strong);
   color: #ffffff;
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px var(--shadow-brutal);
+}
+
+.retro-btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px var(--shadow-brutal);
 }
 
 .retro-btn.active {
@@ -212,30 +333,88 @@ body {
   color: #ffffff;
 }
 
+html.dark .retro-btn.active {
+  background-color: #10b981;
+  border-color: #10b981;
+  color: #031216;
+}
+
 .retro-btn-primary {
   background-color: var(--accent-primary);
-  border-color: var(--accent-primary);
+  border-color: var(--border-strong);
   color: #ffffff;
 }
 
 .retro-btn-primary:hover {
   background-color: var(--accent-primary-hover);
-  border-color: var(--accent-primary-hover);
+  border-color: var(--border-strong);
   color: #ffffff;
 }
 
-/* Tag Badges */
+html.dark .retro-btn-primary {
+  background-color: #10b981;
+  border-color: #34d399;
+  color: #031216;
+}
+
+html.dark .retro-btn-primary:hover {
+  background-color: #34d399;
+  color: #031216;
+}
+
+/* Dark CRT Bezel Controls (Portrait Switcher) */
+.crt-btn {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid rgba(20, 83, 95, 0.9);
+  background-color: rgba(4, 30, 37, 0.85);
+  color: #94a3b8;
+  cursor: pointer;
+  transition: all 0.14s ease;
+  user-select: none;
+}
+
+.crt-btn:hover {
+  border-color: #34d399;
+  color: #ecfdf5;
+  background-color: rgba(16, 185, 129, 0.16);
+}
+
+.crt-btn.active {
+  background-color: #10b981;
+  border-color: #34d399;
+  color: #021418;
+  font-weight: 700;
+}
+
+.crt-btn[data-phosphor="cyan"].active {
+  background-color: #38bdf8;
+  border-color: #7dd3fc;
+  color: #021418;
+}
+
+.crt-btn[data-phosphor="amber"].active {
+  background-color: #fbbf24;
+  border-color: #fde68a;
+  color: #021418;
+}
+
+/* Tag Badges (Light & Dark Balanced) */
 .badge-spec {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
   padding: 0.15rem 0.45rem;
   font-family: var(--font-mono);
-  font-size: 0.6875rem;
+  font-size: 0.66rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   border-radius: 2px;
+  white-space: nowrap;
 }
 
 .badge-emerald {
@@ -246,7 +425,7 @@ body {
 
 .badge-cyan {
   background-color: #f0f9ff;
-  color: #0284c7;
+  color: #0369a1;
   border: 1px solid #bae6fd;
 }
 
@@ -262,6 +441,116 @@ body {
   border: 1px solid #cbd5e1;
 }
 
+html.dark .badge-emerald {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #6ee7b7;
+  border: 1px solid rgba(52, 211, 153, 0.35);
+}
+
+html.dark .badge-cyan {
+  background-color: rgba(56, 189, 248, 0.14);
+  color: #7dd3fc;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+}
+
+html.dark .badge-amber {
+  background-color: rgba(251, 191, 36, 0.14);
+  color: #fcd34d;
+  border: 1px solid rgba(251, 191, 36, 0.35);
+}
+
+html.dark .badge-slate {
+  background-color: rgba(148, 163, 184, 0.12);
+  color: #cbd5e1;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+}
+
+/* Badges inside dark .spec-header bar stay crisp in both themes */
+.spec-header .badge-emerald {
+  background-color: rgba(16, 185, 129, 0.18);
+  color: #6ee7b7;
+  border-color: rgba(52, 211, 153, 0.45);
+}
+
+.spec-header .badge-cyan {
+  background-color: rgba(56, 189, 248, 0.18);
+  color: #7dd3fc;
+  border-color: rgba(56, 189, 248, 0.45);
+}
+
+.spec-header .badge-amber {
+  background-color: rgba(251, 191, 36, 0.18);
+  color: #fcd34d;
+  border-color: rgba(251, 191, 36, 0.45);
+}
+
+/* Metric Inline Highlight in Experience Bullets */
+.metric-pill {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.92em;
+  padding: 0.05rem 0.32rem;
+  border-radius: 2px;
+  background-color: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+html.dark .metric-pill {
+  background-color: rgba(16, 185, 129, 0.16);
+  color: #6ee7b7;
+  border-color: rgba(52, 211, 153, 0.35);
+}
+
+/* Chronology Git-Log Timeline Rail */
+.timeline-rail {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.timeline-rail::before {
+  content: '';
+  position: absolute;
+  left: 0.42rem;
+  top: 1.4rem;
+  bottom: 1.4rem;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent-primary) 0%, var(--accent-cyan) 55%, var(--border-subtle) 100%);
+}
+
+.timeline-node {
+  position: relative;
+}
+
+.timeline-node::before {
+  content: '';
+  position: absolute;
+  left: -1.42rem;
+  top: 1.35rem;
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 9999px;
+  background-color: var(--bg-surface);
+  border: 2.5px solid var(--accent-cyan);
+  z-index: 2;
+}
+
+.timeline-node.timeline-current::before {
+  border-color: var(--accent-primary);
+  background-color: var(--accent-primary);
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.22);
+}
+
+@media (max-width: 640px) {
+  .timeline-rail {
+    padding-left: 0;
+  }
+  .timeline-rail::before,
+  .timeline-node::before {
+    display: none;
+  }
+}
+
 /* ==========================================================================
    ASCII Portrait Display & CRT Scanline Effects
    ========================================================================== */
@@ -270,8 +559,10 @@ body {
   position: relative;
   background-color: var(--term-bg);
   border: 1.5px solid var(--border-strong);
-  box-shadow: 4px 4px 0px rgba(15, 23, 42, 0.15);
+  box-shadow: 4px 4px 0px var(--shadow-brutal);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .ascii-screen {
@@ -281,14 +572,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 480px;
+  min-height: 430px;
+  flex: 1;
 }
 
 .ascii-pre {
   margin: 0;
   font-family: var(--font-mono);
-  font-size: clamp(3.8px, 0.5vw, 7.2px);
-  line-height: 1.08;
+  font-size: clamp(3.6px, 0.48vw, 6.8px);
+  line-height: 1.06;
   letter-spacing: 0px;
   white-space: pre;
   user-select: none;
@@ -298,7 +590,7 @@ body {
 /* Phosphor Colors */
 .phosphor-green .ascii-pre {
   color: #34d399;
-  text-shadow: 0 0 4px rgba(52, 211, 153, 0.4);
+  text-shadow: 0 0 4px rgba(52, 211, 153, 0.42);
 }
 
 .phosphor-cyan .ascii-pre {
@@ -340,7 +632,7 @@ body {
 }
 
 /* ==========================================================================
-   Terminal Window & Interactive Shell
+   Embedded Live Interactive Terminal (Replaces Primitives Box)
    ========================================================================== */
 
 .terminal-card {
@@ -348,49 +640,55 @@ body {
   border: 1.5px solid var(--border-strong);
   color: #a7f3d0;
   font-family: var(--font-mono);
-  box-shadow: 2px 2px 0px rgba(15, 23, 42, 0.08);
+  box-shadow: 3px 3px 0px var(--shadow-brutal);
+  display: flex;
+  flex-direction: column;
 }
 
 .terminal-bar {
   background-color: var(--term-header);
   border-bottom: 1px solid var(--term-border);
-  padding: 0.4rem 0.75rem;
-  font-size: 0.75rem;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.72rem;
   color: #6ee7b7;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.terminal-body {
-  padding: 0.85rem;
-  font-size: 0.8125rem;
-  line-height: 1.6;
+.terminal-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #155e75 #031115;
 }
 
-.terminal-prompt {
-  color: #34d399;
-  font-weight: 600;
+.terminal-scroll::-webkit-scrollbar {
+  width: 6px;
 }
 
-.terminal-cmd {
-  color: #ffffff;
+.terminal-scroll::-webkit-scrollbar-track {
+  background: #031115;
 }
 
-.terminal-input-row {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.terminal-scroll::-webkit-scrollbar-thumb {
+  background-color: #155e75;
 }
 
-.terminal-input {
-  background: transparent;
-  border: none;
-  outline: none;
-  color: #ffffff;
+.term-chip {
   font-family: var(--font-mono);
-  font-size: 0.8125rem;
-  flex: 1;
+  font-size: 0.625rem;
+  font-weight: 600;
+  padding: 0.12rem 0.36rem;
+  background-color: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(20, 120, 110, 0.55);
+  color: #6ee7b7;
+  cursor: pointer;
+  transition: all 0.12s ease;
+}
+
+.term-chip:hover {
+  background-color: rgba(16, 185, 129, 0.22);
+  border-color: #34d399;
+  color: #ffffff;
 }
 
 .cursor-blink {
@@ -400,6 +698,45 @@ body {
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
+}
+
+/* ==========================================================================
+   Project Screenshot Lightbox Modal
+   ========================================================================== */
+
+.lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color: rgba(2, 12, 16, 0.88);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.lightbox-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-dialog {
+  max-width: 1080px;
+  width: 100%;
+  background-color: #041519;
+  border: 1.5px solid #10b981;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65);
+  overflow: hidden;
+  transform: scale(0.97);
+  transition: transform 0.2s ease;
+}
+
+.lightbox-backdrop.open .lightbox-dialog {
+  transform: scale(1);
 }
 
 /* ==========================================================================
@@ -416,4 +753,26 @@ body {
   .retro-grid {
     grid-template-columns: 1fr;
   }
+  .spec-table td {
+    padding: 0.45rem 0.6rem;
+    font-size: 0.75rem;
+  }
+  .spec-table td.key {
+    min-width: 88px;
+    width: 30%;
+  }
+  .crt-btn {
+    font-size: 0.58rem;
+    padding: 0.18rem 0.35rem;
+  }
+}
+
+/* Tech Stack Tag Hover */
+.stack-pill {
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.stack-pill:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
 }
