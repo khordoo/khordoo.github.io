@@ -568,10 +568,10 @@ html.dark .metric-pill {
 .ascii-screen {
   position: relative;
   overflow: hidden;
-  padding: 0.75rem 0.5rem;
+  padding: 0.35rem 0 0 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   min-height: 430px;
   flex: 1;
 }
@@ -579,8 +579,8 @@ html.dark .metric-pill {
 .ascii-pre {
   margin: 0;
   font-family: var(--font-mono);
-  font-size: clamp(3.6px, 0.48vw, 6.8px);
-  line-height: 1.06;
+  font-size: clamp(3.6px, 0.54vw, 7.35px);
+  line-height: 1.03;
   letter-spacing: 0px;
   white-space: pre;
   user-select: none;

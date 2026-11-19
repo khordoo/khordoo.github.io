@@ -123,7 +123,7 @@ function initAsciiPortrait() {
           container.classList.remove('phosphor-green', 'phosphor-cyan', 'phosphor-amber');
           container.classList.add(`phosphor-${mode}`);
         }
-        if (resReadout) resReadout.textContent = 'RES: 84x64 CHARS // ASCII';
+        if (resReadout) resReadout.textContent = 'RES: 112x70 CHARS // ASCII';
         if (modeReadout) modeReadout.textContent = `CRT ${mode.toUpperCase()} // ACTIVE`;
       }
     });
