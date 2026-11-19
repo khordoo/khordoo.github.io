@@ -224,26 +224,27 @@ function initTerminalCLI() {
       case 'help':
         outRow.innerHTML = `
           <div class="grid grid-cols-2 gap-x-3 gap-y-0.5">
-            <div><span class="text-emerald-400 font-bold">whoami</span> — Role &amp; summary</div>
-            <div><span class="text-emerald-400 font-bold">montreal</span> — Base &amp; status</div>
-            <div><span class="text-emerald-400 font-bold">projects</span> — 9 featured repos</div>
-            <div><span class="text-emerald-400 font-bold">exp</span> — Career log</div>
-            <div><span class="text-emerald-400 font-bold">skills</span> — Compute &amp; AI stack</div>
-            <div><span class="text-emerald-400 font-bold">certs</span> — 7 verified certs</div>
-            <div><span class="text-amber-400 font-bold">awards</span> — Google &amp; AWS wins</div>
-            <div><span class="text-emerald-400 font-bold">contact</span> — Direct dispatch</div>
-            <div><span class="text-sky-400 font-bold">photo</span> / <span class="text-sky-400 font-bold">ascii</span> — Portrait view</div>
-            <div><span class="text-sky-400 font-bold">theme</span> / <span class="text-sky-400 font-bold">clear</span> — UI / Reset</div>
+            <div><span class="text-emerald-400 font-bold">whoami</span>: Role &amp; summary</div>
+            <div><span class="text-emerald-400 font-bold">montreal</span>: Base &amp; status</div>
+            <div><span class="text-emerald-400 font-bold">projects</span>: 10 featured repos</div>
+            <div><span class="text-emerald-400 font-bold">exp</span>: Career log</div>
+            <div><span class="text-emerald-400 font-bold">skills</span>: Compute &amp; AI stack</div>
+            <div><span class="text-emerald-400 font-bold">certs</span>: AWS certs &amp; training</div>
+            <div><span class="text-amber-400 font-bold">awards</span>: Google, AWS, Arize &amp; Gym</div>
+            <div><span class="text-emerald-400 font-bold">contact</span>: Direct dispatch</div>
+            <div><span class="text-sky-400 font-bold">photo</span> / <span class="text-sky-400 font-bold">ascii</span>: Portrait view</div>
+            <div><span class="text-sky-400 font-bold">theme</span> / <span class="text-sky-400 font-bold">clear</span>: UI / Reset</div>
           </div>
         `;
         break;
 
       case 'whoami':
         outRow.innerHTML = `
-          <div class="text-white font-bold">Mahmood Khordoo — Senior AI &amp; Machine Learning Engineer</div>
-          <div class="text-emerald-300">&gt; Focus: GenAI, Multi-Agent Systems, Production MLOps</div>
+          <div class="text-white font-bold">Mahmood Khordoo | Technical Lead · Senior Applied AI Engineer</div>
+          <div class="text-emerald-300">&gt; Focus: Agentic AI, Advanced RAG, LLM Evaluation, Production MLOps</div>
           <div class="text-slate-300">&gt; Base: Montreal, QC [45.5°N 73.5°W]</div>
-          <div class="text-slate-300">&gt; Impact: MULT-MM$ MLOps Platform · &lt;5wk Multi-Agent RAG · 19%→85% Agent Eval</div>
+          <div class="text-slate-300">&gt; Lead: Technical lead on a multimillion-dollar AI initiative</div>
+          <div class="text-slate-300">&gt; Impact: 45%→93% Retrieval · 4mo→5wk Agentic Delivery · 19%→85% Agent Eval</div>
         `;
         break;
 
@@ -252,7 +253,7 @@ function initTerminalCLI() {
       case 'status':
         outRow.innerHTML = `
           <div class="text-emerald-300 font-semibold">● NODE: MONTREAL, QUEBEC, CANADA [45.5017°N, 73.5673°W]</div>
-          <div class="text-slate-300">&gt; Focus: Enterprise GenAI, Multi-Agent Systems &amp; Production MLOps</div>
+          <div class="text-slate-300">&gt; Focus: Enterprise Agentic AI, Advanced RAG &amp; Production MLOps</div>
           <div class="text-slate-400">&gt; Timezone: America/Toronto (EST/EDT) · Direct: <a href="mailto:m.khordoo@gmail.com" class="text-emerald-400 hover:underline">m.khordoo@gmail.com</a></div>
         `;
         break;
@@ -261,9 +262,9 @@ function initTerminalCLI() {
       case 'cat':
         outRow.innerHTML = `
           <div class="text-slate-300">
-            10+ years architecting production ML, enterprise MLOps, and autonomous multi-agent systems.
-            Industrial MLOps Platform (MULT-MM$ impact), reusable LangGraph RAG (&lt;5wk delivery, six-figure savings),
-            8M-param LLM from scratch (DustyLM), and biological connectome simulations (FLINCH).
+            Technical Lead with 8+ years taking enterprise AI from prototype to production on AWS &amp; Azure.
+            Led a team shipping reusable LangGraph agents (3–4 months → 5 weeks), lifted retrieval accuracy 45% → 93%,
+            and built an 8M-param LLM from scratch (DustyLM).
           </div>
         `;
         break;
@@ -272,15 +273,16 @@ function initTerminalCLI() {
       case 'ls':
         outRow.innerHTML = `
           <div class="flex flex-col gap-1">
-            <div>★ <a href="https://github.com/khordoo/dusty-lm" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-semibold">DustyLM</a> — 8M-param LLM in 15m [PyTorch, PyPI, Wasm]</div>
-            <div>★ <a href="https://jev-reflex-autonomy-lab.vercel.app" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-semibold">JEV Reflex Lab</a> — Multi-drone System 1/2 (★24)</div>
-            <div>★ <a href="https://flinch-fly-brain-duel.vercel.app" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-semibold">FLINCH</a> — Drosophila connectome escape duel</div>
-            <div>★ <a href="https://github.com/khordoo/advanced-agentic-rag" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-semibold">Advanced Agentic RAG</a> — Hybrid RRF &amp; Phoenix eval</div>
-            <div>★ <a href="#projects" class="text-emerald-400 hover:underline font-semibold">Industrial MLOps Platform</a> — SageMaker &amp; drift ops (MULT-MM$)</div>
-            <div>★ <a href="https://pypi.org/project/clauth/" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-semibold">CLAUTH</a> — PyPI CLI for Claude Code + AWS Bedrock</div>
-            <div>★ <a href="https://github.com/khordoo/disaster-watch-classifier" target="_blank" rel="noopener" class="text-amber-400 hover:underline font-semibold">Disaster Watch</a> — Google TF 2.0 Grand Prize (★28)</div>
-            <div>★ <a href="https://github.com/khordoo/traffic-watch-object-detection" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-semibold">Traffic Watch Edge</a> — Jetson TX2 + DeepStream (★10)</div>
-            <div>★ <a href="https://github.com/khordoo/Deep-Reinforcement-Learning-with-PyTorch" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-semibold">Deep RL PyTorch</a> — Double/Dueling DQN (Top-10 Gym)</div>
+            <div>★ <a href="https://github.com/khordoo/dusty-lm" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-semibold">DustyLM</a>: 8M-param LLM in 15m [PyTorch, PyPI, Wasm]</div>
+            <div>★ <a href="https://latent-earth-globe.vercel.app/" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-semibold">Latent Earth</a>: Cross-model LLM decision benchmark (30 runs)</div>
+            <div>★ <a href="https://jev-reflex-autonomy-lab.vercel.app" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-semibold">JEV Reflex Lab</a>: Multi-drone System 1/2 (★24)</div>
+            <div>★ <a href="https://flinch-fly-brain-duel.vercel.app" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-semibold">FLINCH</a>: Drosophila connectome escape duel</div>
+            <div>★ <a href="https://github.com/khordoo/advanced-agentic-rag" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-semibold">Advanced Agentic RAG</a>: Hybrid RRF &amp; Phoenix eval</div>
+            <div>★ <a href="#projects" class="text-emerald-400 hover:underline font-semibold">ML Industrialization Blueprint</a>: SageMaker pipelines (months → weeks)</div>
+            <div>★ <a href="https://pypi.org/project/clauth/" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-semibold">CLAUTH</a>: PyPI CLI for Claude Code + AWS Bedrock</div>
+            <div>★ <a href="https://github.com/khordoo/disaster-watch-classifier" target="_blank" rel="noopener" class="text-amber-400 hover:underline font-semibold">Disaster Watch</a>: Google TF 2.0 Grand Prize (★28)</div>
+            <div>★ <a href="https://github.com/khordoo/traffic-watch-object-detection" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-semibold">Traffic Watch Edge</a>: Jetson TX2 + DeepStream (★10)</div>
+            <div>★ <a href="https://github.com/khordoo/Deep-Reinforcement-Learning-with-PyTorch" target="_blank" rel="noopener" class="text-sky-400 hover:underline font-semibold">Deep RL PyTorch</a>: Double/Dueling DQN (Top-10 Gym)</div>
           </div>
         `;
         break;
@@ -289,10 +291,10 @@ function initTerminalCLI() {
       case 'experience':
         outRow.innerHTML = `
           <div class="flex flex-col gap-1">
-            <div><span class="text-emerald-400 font-bold">[2021—Now]</span> Rio Tinto (Montreal) — Sr. GenAI &amp; ML Eng / Lead</div>
-            <div><span class="text-sky-400 font-bold">[2020—21]</span> TMC (Montreal) — Sr. Data Eng, ML &amp; MLOps (80% ETL speedup)</div>
-            <div><span class="text-sky-400 font-bold">[2018—20]</span> SensorUp — Data Scientist (15k+ IoT railcars, 128 feeds)</div>
-            <div><span class="text-slate-400 font-bold">[2017—18]</span> Independent Research — Python/C++ Algorithm Dev</div>
+            <div><span class="text-emerald-400 font-bold">[2021–Now]</span> Rio Tinto (Montreal) · Technical Lead · Sr. Applied AI &amp; ML Eng</div>
+            <div><span class="text-sky-400 font-bold">[2020–21]</span> TMC (Montreal) · Sr. Data &amp; ML Eng (months → weeks deploys)</div>
+            <div><span class="text-sky-400 font-bold">[2018–20]</span> SensorUp · Data Scientist (15k+ IoT railcars, 128 feeds)</div>
+            <div><span class="text-slate-400 font-bold">[2017–18]</span> Independent Research · Python Algorithm Developer</div>
           </div>
         `;
         break;
@@ -300,25 +302,26 @@ function initTerminalCLI() {
       case 'skills':
       case 'stack':
         outRow.innerHTML = `
-          <div><span class="text-emerald-400 font-semibold">Core:</span> Python 3.12, PyTorch, C++20, CUDA, Go, SQL, TypeScript</div>
-          <div><span class="text-sky-400 font-semibold">GenAI:</span> LangGraph, Multi-Agent RAG, RRF, DSPy, LoRA, Bedrock, Phoenix</div>
-          <div><span class="text-amber-400 font-semibold">MLOps:</span> AWS SageMaker, Ray, Triton, vLLM, Docker, CI/CD, IaC</div>
+          <div><span class="text-emerald-400 font-semibold">Core:</span> Python, PyTorch, Hugging Face, SQL, TypeScript, FastAPI</div>
+          <div><span class="text-sky-400 font-semibold">GenAI:</span> LangGraph, LangChain, DSPy, Hybrid RAG, SFT/LoRA, Bedrock, Azure OpenAI, RAGAS, Phoenix, Langfuse</div>
+          <div><span class="text-amber-400 font-semibold">MLOps:</span> AWS SageMaker, Databricks, MLflow, Prefect, Kubernetes, Docker, Terraform, CI/CD</div>
         `;
         break;
 
       case 'certs':
         outRow.innerHTML = `
-          <div>✓ <span class="text-emerald-400">AWS ML Specialty</span> · <span class="text-sky-400">AWS Solutions Architect</span> · <span class="text-sky-400">AWS Developer</span></div>
-          <div>✓ DeepLearning.AI Specialization · Udacity Data Eng · Triplebyte DS · IBM DS</div>
+          <div>✓ <span class="text-emerald-400">AWS ML Specialty</span> · <span class="text-sky-400">AWS Solutions Architect – Associate</span> · <span class="text-sky-400">AWS Developer</span></div>
+          <div class="text-slate-400">+ Training: DeepLearning.AI Specialization · Udacity Data Eng · Triplebyte DS · IBM DS</div>
         `;
         break;
 
       case 'awards':
       case 'honors':
         outRow.innerHTML = `
-          <div><span class="text-amber-400 font-bold">🏆 Google Grand Prize</span> — TensorFlow 2.0 Global Competition</div>
-          <div><span class="text-emerald-400 font-bold">🥇 1st Place Winner</span> — AWS GenAI Hackathon</div>
-          <div><span class="text-sky-400 font-bold">⚡ Arize Phoenix</span> — Self-Improving Cloud Agents (19% → 85%)</div>
+          <div><span class="text-amber-400 font-bold">🏆 Google Grand Prize</span>: TensorFlow 2.0 Global Competition</div>
+          <div><span class="text-emerald-400 font-bold">🥇 1st Place Winner</span>: AWS GenAI Hackathon</div>
+          <div><span class="text-sky-400 font-bold">⚡ Arize Hackathon Prize</span>: Self-Improving Agent (19% → 85%)</div>
+          <div><span class="text-slate-300 font-bold">◆ OpenAI Gym Top 10</span>: Community RL Leaderboards</div>
         `;
         break;
 
