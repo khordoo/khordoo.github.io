@@ -1279,85 +1279,104 @@
         <span class="font-mono text-xs text-slate-500 dark:text-slate-400 font-medium">SYS.CREDENTIALS &amp; AWARDS // VERIFIED</span>
       </div>
 
-      <!-- Part A: Honors & Global Awards (Featured prominently) -->
+      <!-- Part A: Honors & Global Awards (Featured prominently with Crown + Company Header) -->
       <div class="flex flex-col gap-3">
         <div class="flex items-center justify-between">
           <span class="font-mono text-xs font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider flex items-center gap-2">
             <span class="text-amber-500 text-sm">★</span>
             Honors &amp; Global Awards (03)
           </span>
-          <span class="font-mono text-[10px] text-slate-400">COMPETITIONS &amp; BENCHMARKS</span>
+          <span class="font-mono text-[10px] text-slate-400">DISTINCTIONS &amp; COMPETITIONS</span>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
           <!-- Award 1: Google Grand Prize -->
-          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between border-l-4 border-l-amber-500">
-            <div>
-              <div class="flex items-start justify-between gap-2 mb-2">
-                <span class="badge-spec badge-amber text-[9px]">GLOBAL AWARD</span>
-                <span class="font-mono text-[10px] text-slate-400 font-bold">GOOGLE // TF 2.0</span>
+          <div class="spec-box bg-white dark:bg-[#071c22] flex flex-col justify-between overflow-hidden">
+            <div class="spec-header">
+              <div class="flex items-center gap-2.5 min-w-0">
+                <svg class="w-4 h-4 text-amber-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 18h18v2H3z"/>
+                  <path d="M4 15L2 7l5.5 3.5L12 4l4.5 6.5L22 7l-2 8H4z"/>
+                </svg>
+                <span class="h-3.5 w-px bg-slate-600 dark:bg-cyan-800 shrink-0"></span>
+                <span class="font-display font-bold tracking-wide text-white text-[13px] truncate">GOOGLE</span>
               </div>
-              <div class="flex items-center gap-2 mb-2">
-                <span class="text-2xl">🏆</span>
-                <h4 class="font-display font-bold text-base text-slate-900 dark:text-white leading-snug">Google Grand Prize Winner</h4>
-              </div>
-              <div class="font-mono text-[11px] text-amber-600 dark:text-amber-400 font-semibold mb-2">TensorFlow 2.0 Global Competition</div>
-              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                Awarded top worldwide honor for developing Disaster Watch, a real-time crisis mapping platform integrating natural language processing, entity recognition, and geoparsing for emergency response dispatch.
-              </p>
+              <span class="badge-spec badge-amber text-[9px]">2019 · GRAND PRIZE</span>
             </div>
-            <div class="pt-3 mt-3 border-t border-slate-100 dark:border-cyan-950 font-mono text-[10px] text-slate-400">
-              WORLDWIDE RECOGNITION · NLP &amp; GEOPARSING
-            </div>
-          </div>
-
-          <!-- Award 2: Winner, AWS GenAI Hackathon -->
-          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between border-l-4 border-l-emerald-500">
-            <div>
-              <div class="flex items-start justify-between gap-2 mb-2">
-                <span class="badge-spec badge-emerald text-[9px]">HACKATHON WINNER</span>
-                <span class="font-mono text-[10px] text-slate-400 font-bold">AWS // AMAZON</span>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-display font-bold text-base text-slate-900 dark:text-white leading-snug">Grand Prize Winner — #PoweredByTF 2.0 Challenge</h4>
+                <div class="font-mono text-[11px] text-amber-600 dark:text-amber-400 font-semibold mt-1 mb-2">Disaster Watch · Global Competition</div>
+                <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Awarded top worldwide honor for developing Disaster Watch, a real-time crisis mapping platform integrating natural language processing, entity recognition, and geoparsing for emergency response dispatch.
+                </p>
               </div>
-              <div class="flex items-center gap-2 mb-2">
-                <span class="text-2xl">🥇</span>
-                <h4 class="font-display font-bold text-base text-slate-900 dark:text-white leading-snug">Winner — AWS GenAI Hackathon</h4>
+              <div class="pt-3 mt-3 border-t border-slate-100 dark:border-cyan-950 flex items-center justify-between gap-2 font-mono text-[10px]">
+                <span class="text-slate-400">DISTINCTION · TF 2.0</span>
+                <a href="https://blog.tensorflow.org/2019/09/disaster-watch-crisis-mapping-platform.html" target="_blank" rel="noopener" class="text-amber-600 dark:text-amber-400 hover:underline font-bold">[tensorflow blog ↗]</a>
               </div>
-              <div class="font-mono text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold mb-2">Architected Winning Solution</div>
-              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                Architected and productionized the winning enterprise generative AI solution, demonstrating multi-agent orchestration, resilient prompt engineering, and serverless cloud deployment.
-              </p>
-            </div>
-            <div class="pt-3 mt-3 border-t border-slate-100 dark:border-cyan-950 font-mono text-[10px] text-slate-400">
-              FIRST PLACE · AWS BEDROCK &amp; MULTI-AGENT
             </div>
           </div>
 
-          <!-- Award 3: Arize Phoenix: Building Self-Improving Agents -->
-          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between border-l-4 border-l-cyan-500">
-            <div>
-              <div class="flex items-start justify-between gap-2 mb-2">
-                <span class="badge-spec badge-cyan text-[9px]">AGENTIC EVALUATION</span>
-                <span class="font-mono text-[10px] text-slate-400 font-bold">ARIZE // PHOENIX</span>
+          <!-- Award 2: Winner, Amazon / AWS Multi-Agent Hackathon -->
+          <div class="spec-box bg-white dark:bg-[#071c22] flex flex-col justify-between overflow-hidden">
+            <div class="spec-header">
+              <div class="flex items-center gap-2.5 min-w-0">
+                <svg class="w-4 h-4 text-emerald-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 18h18v2H3z"/>
+                  <path d="M4 15L2 7l5.5 3.5L12 4l4.5 6.5L22 7l-2 8H4z"/>
+                </svg>
+                <span class="h-3.5 w-px bg-slate-600 dark:bg-cyan-800 shrink-0"></span>
+                <span class="font-display font-bold tracking-wide text-white text-[13px] truncate">AMAZON / AWS</span>
               </div>
-              <div class="flex items-center gap-2 mb-2">
-                <span class="text-2xl">⚡</span>
+              <span class="badge-spec badge-emerald text-[9px]">2025 · 1ST PLACE</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
+                <h4 class="font-display font-bold text-base text-slate-900 dark:text-white leading-snug">First Place Winner — Multi-Agent System Hackathon</h4>
+                <div class="font-mono text-[11px] text-emerald-600 dark:text-emerald-400 font-semibold mt-1 mb-2">AWS GenAI Hackathon · Winning Architecture</div>
+                <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Architected and productionized the first-place enterprise generative AI solution, demonstrating multi-agent orchestration, resilient prompt engineering, and serverless AWS Bedrock deployment.
+                </p>
+              </div>
+              <div class="pt-3 mt-3 border-t border-slate-100 dark:border-cyan-950 font-mono text-[10px] text-slate-400">
+                DISTINCTION · AWS BEDROCK &amp; MULTI-AGENT
+              </div>
+            </div>
+          </div>
+
+          <!-- Award 3: Arize AI — Self-Improving Agents -->
+          <div class="spec-box bg-white dark:bg-[#071c22] flex flex-col justify-between overflow-hidden">
+            <div class="spec-header">
+              <div class="flex items-center gap-2.5 min-w-0">
+                <svg class="w-4 h-4 text-sky-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 18h18v2H3z"/>
+                  <path d="M4 15L2 7l5.5 3.5L12 4l4.5 6.5L22 7l-2 8H4z"/>
+                </svg>
+                <span class="h-3.5 w-px bg-slate-600 dark:bg-cyan-800 shrink-0"></span>
+                <span class="font-display font-bold tracking-wide text-white text-[13px] truncate">ARIZE AI</span>
+              </div>
+              <span class="badge-spec badge-cyan text-[9px]">AGENTIC EVAL</span>
+            </div>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div>
                 <h4 class="font-display font-bold text-base text-slate-900 dark:text-white leading-snug">Arize Phoenix: Building Self-Improving Agents</h4>
+                <div class="font-mono text-[11px] text-sky-600 dark:text-sky-400 font-semibold mt-1 mb-2">Cloud Resource Provisioning &amp; Online Evaluation</div>
+                <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Engineered self-improving agents utilizing Arize CLI skills and Phoenix golden datasets; implemented continuous online evaluation loops to autonomously optimize prompt reliability for cloud provisioning agents.
+                </p>
               </div>
-              <div class="font-mono text-[11px] text-sky-600 dark:text-sky-400 font-semibold mb-2">Cloud Resource Provisioning &amp; Online Evaluation</div>
-              <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
-                Engineered self-improving agents utilizing Arize CLI skills and Phoenix golden datasets; implemented continuous online evaluation loops to autonomously optimize prompt reliability for agents responsible for provisioning resources in cloud environments.
-              </p>
-            </div>
-            <div class="pt-3 mt-3 border-t border-slate-100 dark:border-cyan-950 font-mono text-[10px] text-slate-400">
-              ARIZE CLI · GOLDEN DATASET · ONLINE EVAL
+              <div class="pt-3 mt-3 border-t border-slate-100 dark:border-cyan-950 font-mono text-[10px] text-slate-400">
+                ARIZE CLI · GOLDEN DATASET · ONLINE EVAL
+              </div>
             </div>
           </div>
 
         </div>
       </div>
 
-      <!-- Part B: Verified Professional Certifications -->
+      <!-- Part B: Verified Professional Certifications (Matching Company-First Header Bars) -->
       <div class="flex flex-col gap-3 pt-2">
         <div class="flex items-center justify-between border-t border-dashed border-slate-300 dark:border-cyan-900/60 pt-4">
           <span class="font-mono text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider flex items-center gap-2">
@@ -1370,139 +1389,173 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
           <!-- Cert 1: AWS ML Specialty -->
-          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between">
-            <div class="flex items-start gap-3">
-              <div class="w-14 h-14 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
-                <img src="assets/aws-ml.png" alt="AWS Certified Machine Learning Specialty" class="w-full h-full object-contain" />
+          <div class="spec-box bg-white dark:bg-[#071c22] flex flex-col justify-between overflow-hidden">
+            <div class="spec-header">
+              <div class="flex items-center gap-2 min-w-0">
+                <span class="material-symbols-outlined text-[15px] text-emerald-400 shrink-0">verified</span>
+                <span class="h-3 w-px bg-slate-600 dark:bg-cyan-800 shrink-0"></span>
+                <span class="font-display font-bold tracking-wide text-white text-xs truncate">AMAZON WEB SERVICES</span>
               </div>
-              <div class="min-w-0 flex-1">
-                <div class="flex items-center justify-between">
-                  <span class="badge-spec badge-emerald text-[9px]">SPECIALTY</span>
-                  <span class="font-mono text-[10px] text-slate-400 font-bold">AWS</span>
-                </div>
-                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white mt-1">Machine Learning - Specialty</h4>
-              </div>
+              <span class="badge-spec badge-emerald text-[9px]">SPECIALTY</span>
             </div>
-            <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
-              Deep Learning, SageMaker, Model Deployment, Feature Stores, Distributed Training.
-            </p>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
+                  <img src="assets/aws-ml.png" alt="AWS Certified Machine Learning Specialty" class="w-full h-full object-contain" />
+                </div>
+                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white leading-snug">Machine Learning — Specialty</h4>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2.5 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+                Deep Learning, SageMaker, Model Deployment, Feature Stores, Distributed Training.
+              </p>
+            </div>
           </div>
 
           <!-- Cert 2: AWS Solutions Architect -->
-          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between">
-            <div class="flex items-start gap-3">
-              <div class="w-14 h-14 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
-                <img src="assets/aws-architect.png" alt="AWS Certified Solutions Architect" class="w-full h-full object-contain" />
+          <div class="spec-box bg-white dark:bg-[#071c22] flex flex-col justify-between overflow-hidden">
+            <div class="spec-header">
+              <div class="flex items-center gap-2 min-w-0">
+                <span class="material-symbols-outlined text-[15px] text-sky-400 shrink-0">verified</span>
+                <span class="h-3 w-px bg-slate-600 dark:bg-cyan-800 shrink-0"></span>
+                <span class="font-display font-bold tracking-wide text-white text-xs truncate">AMAZON WEB SERVICES</span>
               </div>
-              <div class="min-w-0 flex-1">
-                <div class="flex items-center justify-between">
-                  <span class="badge-spec badge-cyan text-[9px]">ARCHITECT</span>
-                  <span class="font-mono text-[10px] text-slate-400 font-bold">AWS</span>
-                </div>
-                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white mt-1">Solutions Architect</h4>
-              </div>
+              <span class="badge-spec badge-cyan text-[9px]">ARCHITECT</span>
             </div>
-            <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
-              Multi-Region HA, Cloud Security, Distributed Systems Architecture, Cost Optimization.
-            </p>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
+                  <img src="assets/aws-architect.png" alt="AWS Certified Solutions Architect" class="w-full h-full object-contain" />
+                </div>
+                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white leading-snug">Solutions Architect</h4>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2.5 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+                Multi-Region HA, Cloud Security, Distributed Systems Architecture, Cost Optimization.
+              </p>
+            </div>
           </div>
 
           <!-- Cert 3: AWS Developer Associate -->
-          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between">
-            <div class="flex items-start gap-3">
-              <div class="w-14 h-14 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
-                <img src="assets/aws-developer.png" alt="AWS Certified Developer Associate" class="w-full h-full object-contain" />
+          <div class="spec-box bg-white dark:bg-[#071c22] flex flex-col justify-between overflow-hidden">
+            <div class="spec-header">
+              <div class="flex items-center gap-2 min-w-0">
+                <span class="material-symbols-outlined text-[15px] text-sky-400 shrink-0">verified</span>
+                <span class="h-3 w-px bg-slate-600 dark:bg-cyan-800 shrink-0"></span>
+                <span class="font-display font-bold tracking-wide text-white text-xs truncate">AMAZON WEB SERVICES</span>
               </div>
-              <div class="min-w-0 flex-1">
-                <div class="flex items-center justify-between">
-                  <span class="badge-spec badge-cyan text-[9px]">ASSOCIATE</span>
-                  <span class="font-mono text-[10px] text-slate-400 font-bold">AWS</span>
-                </div>
-                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white mt-1">Developer - Associate</h4>
-              </div>
+              <span class="badge-spec badge-cyan text-[9px]">ASSOCIATE</span>
             </div>
-            <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
-              Serverless Lambda, Containers, Microservices, CI/CD Pipeline Automation, IAM.
-            </p>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
+                  <img src="assets/aws-developer.png" alt="AWS Certified Developer Associate" class="w-full h-full object-contain" />
+                </div>
+                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white leading-snug">Developer — Associate</h4>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2.5 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+                Serverless Lambda, Containers, Microservices, CI/CD Pipeline Automation, IAM.
+              </p>
+            </div>
           </div>
 
           <!-- Cert 4: Deep Learning Specialization -->
-          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between">
-            <div class="flex items-start gap-3">
-              <div class="w-14 h-14 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
-                <img src="assets/cert_deeplearning.png" alt="Deep Learning Specialization" class="w-full h-full object-contain rounded" />
+          <div class="spec-box bg-white dark:bg-[#071c22] flex flex-col justify-between overflow-hidden">
+            <div class="spec-header">
+              <div class="flex items-center gap-2 min-w-0">
+                <span class="material-symbols-outlined text-[15px] text-emerald-400 shrink-0">verified</span>
+                <span class="h-3 w-px bg-slate-600 dark:bg-cyan-800 shrink-0"></span>
+                <span class="font-display font-bold tracking-wide text-white text-xs truncate">DEEPLEARNING.AI</span>
               </div>
-              <div class="min-w-0 flex-1">
-                <div class="flex items-center justify-between">
-                  <span class="badge-spec badge-emerald text-[9px]">SPECIALIZATION</span>
-                  <span class="font-mono text-[10px] text-slate-400 font-bold">DEEPLEARNING.AI</span>
-                </div>
-                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white mt-1">Deep Learning Specialization</h4>
-                <div class="font-mono text-[10px] text-slate-400 mt-0.5">ID: EMPUKWSQAE7Q</div>
-              </div>
+              <span class="badge-spec badge-emerald text-[9px]">SPECIALIZATION</span>
             </div>
-            <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
-              Neural Networks, Backprop, CNNs, Sequence Models, Attention Mechanisms &amp; Transformers.
-            </p>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
+                  <img src="assets/cert_deeplearning.png" alt="Deep Learning Specialization" class="w-full h-full object-contain rounded" />
+                </div>
+                <div class="min-w-0">
+                  <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white leading-snug">Deep Learning Specialization</h4>
+                  <div class="font-mono text-[10px] text-slate-400 mt-0.5">ID: EMPUKWSQAE7Q</div>
+                </div>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2.5 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+                Neural Networks, Backprop, CNNs, Sequence Models, Attention Mechanisms &amp; Transformers.
+              </p>
+            </div>
           </div>
 
           <!-- Cert 5: Data Engineering NanoDegree -->
-          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between">
-            <div class="flex items-start gap-3">
-              <div class="w-14 h-14 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
-                <img src="assets/cert_udacity.png" alt="Data Engineering NanoDegree" class="w-full h-full object-contain rounded" />
+          <div class="spec-box bg-white dark:bg-[#071c22] flex flex-col justify-between overflow-hidden">
+            <div class="spec-header">
+              <div class="flex items-center gap-2 min-w-0">
+                <span class="material-symbols-outlined text-[15px] text-sky-400 shrink-0">verified</span>
+                <span class="h-3 w-px bg-slate-600 dark:bg-cyan-800 shrink-0"></span>
+                <span class="font-display font-bold tracking-wide text-white text-xs truncate">UDACITY</span>
               </div>
-              <div class="min-w-0 flex-1">
-                <div class="flex items-center justify-between">
-                  <span class="badge-spec badge-cyan text-[9px]">NANODEGREE</span>
-                  <span class="font-mono text-[10px] text-slate-400 font-bold">UDACITY</span>
-                </div>
-                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white mt-1">Data Engineering NanoDegree</h4>
-              </div>
+              <span class="badge-spec badge-cyan text-[9px]">NANODEGREE</span>
             </div>
-            <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
-              Data Modeling, Cloud Data Warehouses, Apache Spark, Data Lakes &amp; Automated Airflow Pipelines.
-            </p>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
+                  <img src="assets/cert_udacity.png" alt="Data Engineering NanoDegree" class="w-full h-full object-contain rounded" />
+                </div>
+                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white leading-snug">Data Engineering NanoDegree</h4>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2.5 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+                Data Modeling, Cloud Data Warehouses, Apache Spark, Data Lakes &amp; Automated Airflow Pipelines.
+              </p>
+            </div>
           </div>
 
           <!-- Cert 6: Triplebyte Certified Data Scientist -->
-          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between">
-            <div class="flex items-start gap-3">
-              <div class="w-14 h-14 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
-                <img src="assets/cert_triplebyte.png" alt="Triplebyte Certified Data Scientist" class="w-full h-full object-contain rounded" />
+          <div class="spec-box bg-white dark:bg-[#071c22] flex flex-col justify-between overflow-hidden">
+            <div class="spec-header">
+              <div class="flex items-center gap-2 min-w-0">
+                <span class="material-symbols-outlined text-[15px] text-emerald-400 shrink-0">verified</span>
+                <span class="h-3 w-px bg-slate-600 dark:bg-cyan-800 shrink-0"></span>
+                <span class="font-display font-bold tracking-wide text-white text-xs truncate">TRIPLEBYTE</span>
               </div>
-              <div class="min-w-0 flex-1">
-                <div class="flex items-center justify-between">
-                  <span class="badge-spec badge-emerald text-[9px]">CERTIFIED</span>
-                  <span class="font-mono text-[10px] text-slate-400 font-bold">TRIPLEBYTE</span>
-                </div>
-                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white mt-1">Triplebyte Certified Data Scientist</h4>
-                <div class="font-mono text-[10px] text-slate-400 mt-0.5">ID: JbNDjOg</div>
-              </div>
+              <span class="badge-spec badge-emerald text-[9px]">CERTIFIED</span>
             </div>
-            <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
-              Advanced Machine Learning, Statistical Inference, Python Data Science, Algorithmic Analysis.
-            </p>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
+                  <img src="assets/cert_triplebyte.png" alt="Triplebyte Certified Data Scientist" class="w-full h-full object-contain rounded" />
+                </div>
+                <div class="min-w-0">
+                  <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white leading-snug">Certified Data Scientist</h4>
+                  <div class="font-mono text-[10px] text-slate-400 mt-0.5">ID: JbNDjOg</div>
+                </div>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2.5 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+                Advanced Machine Learning, Statistical Inference, Python Data Science, Algorithmic Analysis.
+              </p>
+            </div>
           </div>
 
           <!-- Cert 7: Professional Data Science Certificate -->
-          <div class="spec-box p-4 bg-white dark:bg-[#071c22] flex flex-col justify-between">
-            <div class="flex items-start gap-3">
-              <div class="w-14 h-14 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
-                <img src="assets/cert_ibm.png" alt="IBM Data Science Professional" class="w-full h-full object-contain rounded" />
+          <div class="spec-box bg-white dark:bg-[#071c22] flex flex-col justify-between overflow-hidden">
+            <div class="spec-header">
+              <div class="flex items-center gap-2 min-w-0">
+                <span class="material-symbols-outlined text-[15px] text-slate-300 shrink-0">verified</span>
+                <span class="h-3 w-px bg-slate-600 dark:bg-cyan-800 shrink-0"></span>
+                <span class="font-display font-bold tracking-wide text-white text-xs truncate">IBM</span>
               </div>
-              <div class="min-w-0 flex-1">
-                <div class="flex items-center justify-between">
-                  <span class="badge-spec badge-slate text-[9px]">PROFESSIONAL</span>
-                  <span class="font-mono text-[10px] text-slate-400 font-bold">IBM</span>
-                </div>
-                <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white mt-1">Professional Data Science Certificate</h4>
-                <div class="font-mono text-[10px] text-slate-400 mt-0.5">ID: CUNQGFUWD3KR</div>
-              </div>
+              <span class="badge-spec badge-slate text-[9px]">PROFESSIONAL</span>
             </div>
-            <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
-              Statistical Analysis, Machine Learning Algorithms, Python, SQL &amp; Data Engineering.
-            </p>
+            <div class="p-4 flex-1 flex flex-col justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 p-1 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-cyan-900 shrink-0">
+                  <img src="assets/cert_ibm.png" alt="IBM Data Science Professional" class="w-full h-full object-contain rounded" />
+                </div>
+                <div class="min-w-0">
+                  <h4 class="font-display font-bold text-sm text-slate-900 dark:text-white leading-snug">Professional Data Science Certificate</h4>
+                  <div class="font-mono text-[10px] text-slate-400 mt-0.5">ID: CUNQGFUWD3KR</div>
+                </div>
+              </div>
+              <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 pt-2.5 border-t border-slate-100 dark:border-cyan-950 font-mono text-[11px]">
+                Statistical Analysis, Machine Learning Algorithms, Python, SQL &amp; Data Engineering.
+              </p>
+            </div>
           </div>
 
           <!-- Credential Verification Summary Card (Spans 2 columns on desktop) -->

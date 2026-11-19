@@ -484,6 +484,12 @@ html.dark .badge-slate {
   border-color: rgba(251, 191, 36, 0.45);
 }
 
+.spec-header .badge-slate {
+  background-color: rgba(148, 163, 184, 0.18);
+  color: #e2e8f0;
+  border-color: rgba(148, 163, 184, 0.4);
+}
+
 /* Metric Inline Highlight in Experience Bullets */
 .metric-pill {
   font-family: var(--font-mono);
