@@ -240,9 +240,9 @@ function initTerminalCLI() {
 
       case 'whoami':
         outRow.innerHTML = `
-          <div class="text-white font-bold">Mahmood Khordoo — Senior ML Engineer &amp; Technical Lead</div>
+          <div class="text-white font-bold">Mahmood Khordoo — Senior AI &amp; Machine Learning Engineer</div>
           <div class="text-emerald-300">&gt; Focus: GenAI, Multi-Agent Systems, Production MLOps</div>
-          <div class="text-slate-300">&gt; Base: Montreal, QC [45.5°N 73.5°W] · Hybrid / Remote</div>
+          <div class="text-slate-300">&gt; Base: Montreal, QC [45.5°N 73.5°W]</div>
           <div class="text-slate-300">&gt; Impact: MULT-MM$ MLOps Platform · &lt;5wk Multi-Agent RAG · 19%→85% Agent Eval</div>
         `;
         break;
@@ -252,8 +252,7 @@ function initTerminalCLI() {
       case 'status':
         outRow.innerHTML = `
           <div class="text-emerald-300 font-semibold">● NODE: MONTREAL, QUEBEC, CANADA [45.5017°N, 73.5673°W]</div>
-          <div class="text-slate-300">&gt; Availability: Open to Staff / Lead ML &amp; GenAI opportunities</div>
-          <div class="text-slate-300">&gt; Work Mode: Montreal Hybrid/On-site or Remote (North America / Global)</div>
+          <div class="text-slate-300">&gt; Focus: Enterprise GenAI, Multi-Agent Systems &amp; Production MLOps</div>
           <div class="text-slate-400">&gt; Timezone: America/Toronto (EST/EDT) · Direct: <a href="mailto:m.khordoo@gmail.com" class="text-emerald-400 hover:underline">m.khordoo@gmail.com</a></div>
         `;
         break;
