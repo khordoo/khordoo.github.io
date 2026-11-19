@@ -266,10 +266,10 @@
             <div class="bg-[#031d23] px-3 py-1.5 border-b border-teal-900/70 flex items-center justify-between text-[10px] font-mono text-slate-300">
               <span class="text-slate-400 uppercase tracking-wider">MODE:</span>
               <div class="flex items-center gap-1.5">
-                <button type="button" data-phosphor="photo" class="crt-btn active">PHOTO</button>
-                <button type="button" data-phosphor="green" class="crt-btn">ASCII GRN</button>
+                <button type="button" data-phosphor="green" class="crt-btn active">ASCII GRN</button>
                 <button type="button" data-phosphor="cyan" class="crt-btn">ASCII CYN</button>
                 <button type="button" data-phosphor="amber" class="crt-btn">ASCII AMB</button>
+                <button type="button" data-phosphor="photo" class="crt-btn">PHOTO</button>
               </div>
             </div>
 
@@ -278,8 +278,8 @@
               <div class="crt-scanlines"></div>
               <div class="crt-radial-glow"></div>
 
-              <!-- Real Photo Overlay (DEFAULT) -->
-              <div id="photo-overlay" class="absolute inset-0 z-20 bg-[#021216] flex flex-col items-center justify-center p-5">
+              <!-- Real Photo Overlay (Toggleable via PHOTO button) -->
+              <div id="photo-overlay" class="hidden absolute inset-0 z-20 bg-[#021216] flex flex-col items-center justify-center p-5">
                 <div class="relative w-full max-w-[335px] aspect-[1137/1528] p-1.5 border border-emerald-500/40 bg-[#041d23] shadow-2xl">
                   <!-- Precision Corner Reticles -->
                   <span class="absolute -top-1 -left-1 w-3 h-3 border-t-2 border-l-2 border-emerald-400"></span>
@@ -370,8 +370,8 @@
 
             <!-- Bottom CRT Status Bar -->
             <div class="bg-[#021419] px-3 py-1.5 border-t border-teal-900/80 flex items-center justify-between font-mono text-[10px] text-slate-400">
-              <span id="portrait-res-readout">RES: 1137x1528 // HD SOURCE</span>
-              <span id="portrait-mode-readout" class="text-emerald-400 font-medium">OPTICAL // ACTIVE</span>
+              <span id="portrait-res-readout">RES: 112x70 CHARS // ASCII</span>
+              <span id="portrait-mode-readout" class="text-emerald-400 font-medium">CRT GREEN // ACTIVE</span>
             </div>
 
           </div>
